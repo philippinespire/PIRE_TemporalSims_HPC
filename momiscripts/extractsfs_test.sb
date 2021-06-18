@@ -1,0 +1,124 @@
+#!/bin/bash
+#SBATCH --nodes 1
+#SBATCH --ntasks-per-node 1
+#SBATCH --time 2:00:00
+#SBATCH --mem-per-cpu 1000
+#SBATCH --job-name g1_n10e3_extractsfs_test
+#SBATCH --output g1_n10e3_extractsfs_test.txt
+
+source ~/anaconda3/etc/profile.d/conda.sh
+
+conda activate momi-env
+
+for it in  $(seq 1 5);
+do
+	python -m momi.extract_sfs /projects/f_mlp195/brendanr/g1_n10e3_constant_n500_test/constant_recap/vcf/i${it}_n20_wgs_maf1.sfs.gz 100 /projects/f_mlp195/brendanr/g1_n10e3_constant_n500_test/constant_recap/vcf/i${it}_n20_wgs_chr*_maf1.snpAlleleCounts.gz
+done
+
+for it in  $(seq 1 5);
+do
+	python -m momi.extract_sfs /projects/f_mlp195/brendanr/g1_n10e3_constant_n500_test/constant_recap/vcf/i${it}_n50_wgs_maf1.sfs.gz 100 /projects/f_mlp195/brendanr/g1_n10e3_constant_n500_test/constant_recap/vcf/i${it}_n50_wgs_chr*_maf1.snpAlleleCounts.gz
+done
+
+for it in  $(seq 1 5);
+do
+	python -m momi.extract_sfs /projects/f_mlp195/brendanr/g1_n10e3_constant_n500_test/constant_recap/vcf/i${it}_n100_wgs_maf1.sfs.gz 100 /projects/f_mlp195/brendanr/g1_n10e3_constant_n500_test/constant_recap/vcf/i${it}_n100_wgs_chr*_maf1.snpAlleleCounts.gz
+done
+
+for it in  $(seq 1 5);
+do
+	python -m momi.extract_sfs /projects/f_mlp195/brendanr/g1_n10e3_constant_n500_test/constant_recap/vcf/i${it}_n50_rad10k_maf1.sfs.gz 100 /projects/f_mlp195/brendanr/g1_n10e3_constant_n500_test/constant_recap/vcf/i${it}_n50_rad10k_chr*_maf1.snpAlleleCounts.gz
+done
+
+for it in  $(seq 1 5);
+do
+	python -m momi.extract_sfs /projects/f_mlp195/brendanr/g1_n10e3_constant_n500_test/constant_recap/vcf/i${it}_n50_rad50k_maf1.sfs.gz 100 /projects/f_mlp195/brendanr/g1_n10e3_constant_n500_test/constant_recap/vcf/i${it}_n50_rad50k_chr*_maf1.snpAlleleCounts.gz
+done
+
+for it in  $(seq 1 5);
+do
+	python -m momi.extract_sfs /projects/f_mlp195/brendanr/g1_n10e3_constant_n500_test/constant_recap/vcf/i${it}_n100_rad10k_maf1.sfs.gz 100 /projects/f_mlp195/brendanr/g1_n10e3_constant_n500_test/constant_recap/vcf/i${it}_n100_rad10k_chr*_maf1.snpAlleleCounts.gz
+done
+
+for it in  $(seq 1 5);
+do
+	python -m momi.extract_sfs /projects/f_mlp195/brendanr/g1_n10e3_constant_n500_test/constant_recap/vcf/i${it}_n100_rad50k_maf1.sfs.gz 100 /projects/f_mlp195/brendanr/g1_n10e3_constant_n500_test/constant_recap/vcf/i${it}_n100_rad50k_chr*_maf1.snpAlleleCounts.gz
+done
+
+for it in  $(seq 1 5);
+do
+	python -m momi.extract_sfs /projects/f_mlp195/brendanr/g1_n10e3_constant_n500_test/constant_recap/vcf/i${it}_n200_rad10k_maf1.sfs.gz 100 /projects/f_mlp195/brendanr/g1_n10e3_constant_n500_test/constant_recap/vcf/i${it}_n200_rad10k_chr*_maf1.snpAlleleCounts.gz
+done
+
+for it in  $(seq 1 5);
+do
+	python -m momi.extract_sfs /projects/f_mlp195/brendanr/g1_n10e3_constant_n500_test/constant_recap/vcf/i${it}_n200_rad50k_maf1.sfs.gz 100 /projects/f_mlp195/brendanr/g1_n10e3_constant_n500_test/constant_recap/vcf/i${it}_n200_rad50k_chr*_maf1.snpAlleleCounts.gz
+done
+
+for it in  $(seq 1 5);
+do
+	python -m momi.extract_sfs /projects/f_mlp195/brendanr/g1_n10e3_constant_n500_test/constant_recap/vcf/i${it}_n500_rad10k_maf1.sfs.gz 100 /projects/f_mlp195/brendanr/g1_n10e3_constant_n500_test/constant_recap/vcf/i${it}_n500_rad10k_chr*_maf1.snpAlleleCounts.gz
+done
+
+for it in  $(seq 1 5);
+do
+	python -m momi.extract_sfs /projects/f_mlp195/brendanr/g1_n10e3_constant_n500_test/constant_recap/vcf/i${it}_n500_rad50k_maf1.sfs.gz 100 /projects/f_mlp195/brendanr/g1_n10e3_constant_n500_test/constant_recap/vcf/i${it}_n500_rad50k_chr*_maf1.snpAlleleCounts.gz
+done
+
+### nomaf
+
+for it in  $(seq 1 5);
+do
+	python -m momi.extract_sfs /projects/f_mlp195/brendanr/g1_n10e3_constant_n500_test/constant_recap/vcf/i${it}_n20_wgs_nomaf.sfs.gz 100 /projects/f_mlp195/brendanr/g1_n10e3_constant_n500_test/constant_recap/vcf/i${it}_n20_wgs_chr*_nomaf.snpAlleleCounts.gz
+done
+
+for it in  $(seq 1 5);
+do
+	python -m momi.extract_sfs /projects/f_mlp195/brendanr/g1_n10e3_constant_n500_test/constant_recap/vcf/i${it}_n50_wgs_nomaf.sfs.gz 100 /projects/f_mlp195/brendanr/g1_n10e3_constant_n500_test/constant_recap/vcf/i${it}_n50_wgs_chr*_nomaf.snpAlleleCounts.gz
+done
+
+for it in  $(seq 1 5);
+do
+	python -m momi.extract_sfs /projects/f_mlp195/brendanr/g1_n10e3_constant_n500_test/constant_recap/vcf/i${it}_n100_wgs_nomaf.sfs.gz 100 /projects/f_mlp195/brendanr/g1_n10e3_constant_n500_test/constant_recap/vcf/i${it}_n100_wgs_chr*_nomaf.snpAlleleCounts.gz
+done
+
+for it in  $(seq 1 5);
+do
+	python -m momi.extract_sfs /projects/f_mlp195/brendanr/g1_n10e3_constant_n500_test/constant_recap/vcf/i${it}_n50_rad10k_nomaf.sfs.gz 100 /projects/f_mlp195/brendanr/g1_n10e3_constant_n500_test/constant_recap/vcf/i${it}_n50_rad10k_chr*_nomaf.snpAlleleCounts.gz
+done
+
+for it in  $(seq 1 5);
+do
+	python -m momi.extract_sfs /projects/f_mlp195/brendanr/g1_n10e3_constant_n500_test/constant_recap/vcf/i${it}_n50_rad50k_nomaf.sfs.gz 100 /projects/f_mlp195/brendanr/g1_n10e3_constant_n500_test/constant_recap/vcf/i${it}_n50_rad50k_chr*_nomaf.snpAlleleCounts.gz
+done
+
+for it in  $(seq 1 5);
+do
+	python -m momi.extract_sfs /projects/f_mlp195/brendanr/g1_n10e3_constant_n500_test/constant_recap/vcf/i${it}_n100_rad10k_nomaf.sfs.gz 100 /projects/f_mlp195/brendanr/g1_n10e3_constant_n500_test/constant_recap/vcf/i${it}_n100_rad10k_chr*_nomaf.snpAlleleCounts.gz
+done
+
+for it in  $(seq 1 5);
+do
+	python -m momi.extract_sfs /projects/f_mlp195/brendanr/g1_n10e3_constant_n500_test/constant_recap/vcf/i${it}_n100_rad50k_nomaf.sfs.gz 100 /projects/f_mlp195/brendanr/g1_n10e3_constant_n500_test/constant_recap/vcf/i${it}_n100_rad50k_chr*_nomaf.snpAlleleCounts.gz
+done
+
+for it in  $(seq 1 5);
+do
+	python -m momi.extract_sfs /projects/f_mlp195/brendanr/g1_n10e3_constant_n500_test/constant_recap/vcf/i${it}_n200_rad10k_nomaf.sfs.gz 100 /projects/f_mlp195/brendanr/g1_n10e3_constant_n500_test/constant_recap/vcf/i${it}_n200_rad10k_chr*_nomaf.snpAlleleCounts.gz
+done
+
+for it in  $(seq 1 5);
+do
+	python -m momi.extract_sfs /projects/f_mlp195/brendanr/g1_n10e3_constant_n500_test/constant_recap/vcf/i${it}_n200_rad50k_nomaf.sfs.gz 100 /projects/f_mlp195/brendanr/g1_n10e3_constant_n500_test/constant_recap/vcf/i${it}_n200_rad50k_chr*_nomaf.snpAlleleCounts.gz
+done
+
+for it in  $(seq 1 5);
+do
+	python -m momi.extract_sfs /projects/f_mlp195/brendanr/g1_n10e3_constant_n500_test/constant_recap/vcf/i${it}_n500_rad10k_nomaf.sfs.gz 100 /projects/f_mlp195/brendanr/g1_n10e3_constant_n500_test/constant_recap/vcf/i${it}_n500_rad10k_chr*_nomaf.snpAlleleCounts.gz
+done
+
+for it in  $(seq 1 5);
+do
+	python -m momi.extract_sfs /projects/f_mlp195/brendanr/g1_n10e3_constant_n500_test/constant_recap/vcf/i${it}_n500_rad50k_nomaf.sfs.gz 100 /projects/f_mlp195/brendanr/g1_n10e3_constant_n500_test/constant_recap/vcf/i${it}_n500_rad50k_chr*_nomaf.snpAlleleCounts.gz
+done
+

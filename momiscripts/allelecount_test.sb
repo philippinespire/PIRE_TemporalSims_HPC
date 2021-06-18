@@ -1,0 +1,13 @@
+#!/bin/bash
+#SBATCH --nodes 2
+#SBATCH --ntasks-per-node 1
+#SBATCH --time 4:00:00
+#SBATCH --mem-per-cpu 4000
+#SBATCH --job-name SLiMs_allelecount_test
+#SBATCH --output SLiMs_allelecount_test.txt
+
+source ~/anaconda3/etc/profile.d/conda.sh
+
+conda activate momi-env
+
+python3 allelecount_test.py
