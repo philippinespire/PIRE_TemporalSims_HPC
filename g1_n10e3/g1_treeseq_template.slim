@@ -1,0 +1,124 @@
+// Keywords: nonWF, non-Wright-Fisher, tree sequence, chromosome
+// This script uses a preset pedigree to generate a tree sequence for a given chromosome.
+
+// function for reading table of matings/deaths from recipe
+function (i)readIntTable(s$ path)
+{
+	if (!fileExists(path))
+		stop("readIntTable(): File not found at path " + path);
+	l = readFile(path);
+	m = sapply(l, "asInteger(strsplit(applyValue));", simplify="matrix");
+	return t(m);
+}
+
+// simplified nonWF model - I am not specifying as sexes were included in the pedigree-generating model
+initialize() {
+	initializeSLiMModelType("nonWF");
+	initializeTreeSeq();
+	initializeMutationType("m1", 0.5, "f", 0.0);
+	m1.convertToSubstitution = F;
+	initializeGenomicElementType("g1", m1, 1.0);
+	initializeGenomicElement(g1, 0, 29999999);
+	initializeMutationRate(0);
+	initializeRecombinationRate(1e-8);
+	defineConstant("M", readIntTable(matingfile));
+	defineConstant("Mg",drop(M[,0]));
+}
+
+// set passed variables as simulation variables
+1 early() {
+	sim.setValue("matingfile", matingfile);
+	sim.setValue("generationfile", generationfile);
+//	sim.setValue("M",readIntTable(matingfile));
+//	sim.setValue("Mg", drop(M[,0]));
+	sim.setValue("t0sampfile", t0sampfile);
+	sim.setValue("t90sampfile", t90sampfile);
+	sim.setValue("t60sampfile", t60sampfile);
+	sim.setValue("t30sampfile", t30sampfile);
+	sim.setValue("t120sampfile", t120sampfile);
+	sim.setValue("treeseqfile",treeseqfile);
+}
+
+// generate offspring from based on pre-generated pedigree
+reproduction() {
+	// generate all offspring for the generation
+	m = M[Mg == sim.generation,];
+	
+	for (index in seqLen(nrow(m))) {
+		row = m[index,];
+		ind = p1.subsetIndividuals(tag=row[,1]);
+		mate = p1.subsetIndividuals(tag=row[,2]);
+		child = p1.addCrossed(ind, mate);
+		child.tag = row[,3];
+	}
+	gendat=c("generation:",sim.generation);   
+	genline=paste(gendat,sep=" ");
+	writeFile(generationfile,genline,append=T);
+	self.active = 0;
+}
+
+// generate initial population
+1 early() {
+	sim.setValue("K", Nhistoric);
+	sim.addSubpop("p1", Nhistoric);
+	
+	// provide initial tags and remember the next tag value
+	p1.individuals.tag = 1:Nhistoric;
+}
+
+// Survival for non-overlapping generations - all individuals from previous generation die at the end of time step
+early()
+{
+	inds = sim.subpopulations.individuals;
+	inds[inds.age > 0].fitnessScaling = 0.0;
+}
+
+// Tree sequence - remember individuals from each potential sampling time point. Changing this from previous scenarios to only sample 100 individuals per time point.
+100 late()
+{	
+	sampind=NULL;
+	t120samps=asInteger(readFile(t120sampfile));
+	for (i in seqLen(length(t120samps)))
+	{sampind=c(sampind,p1.subsetIndividuals(tag=t120samps[i]));};
+	sim.treeSeqRememberIndividuals(sampind); 
+}
+
+130 late()
+{	
+	sampind=NULL;
+	t90samps=asInteger(readFile(t90sampfile));
+	for (i in seqLen(length(t90samps)))
+	{sampind=c(sampind,p1.subsetIndividuals(tag=t90samps[i]));};
+	sim.treeSeqRememberIndividuals(sampind); 
+}
+
+160 late() 
+{	
+	sampind=NULL;
+	t60samps=asInteger(readFile(t60sampfile));
+	for (i in seqLen(length(t60samps)))
+	{sampind=c(sampind,p1.subsetIndividuals(tag=t60samps[i]));};
+	sim.treeSeqRememberIndividuals(sampind); 
+}
+
+190 late()
+{	
+	sampind=NULL;
+	t30samps=asInteger(readFile(t30sampfile));
+	for (i in seqLen(length(t30samps)))
+	{sampind=c(sampind,p1.subsetIndividuals(tag=t30samps[i]));};
+	sim.treeSeqRememberIndividuals(sampind); 
+}
+
+220 late()
+{	
+	sampind=NULL;
+	t0samps=asInteger(readFile(t0sampfile));
+	for (i in seqLen(length(t0samps)))
+	{sampind=c(sampind,p1.subsetIndividuals(tag=t0samps[i]));};
+	sim.treeSeqRememberIndividuals(sampind); 
+}
+
+// OUTPUT FILES for treeseq
+
+220 late() { sim.treeSeqOutput(treeseqfile); }

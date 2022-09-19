@@ -1,0 +1,13 @@
+#!/bin/bash
+#SBATCH --nodes 1
+#SBATCH --ntasks-per-node 1
+#SBATCH --time 24:00:00
+#SBATCH --mem-per-cpu 4000
+#SBATCH --job-name SLiMs_g3_n10e3_td190_l95_infermomi_nomaf_rad200
+#SBATCH --output SLiMs_g3_n10e3_td190_l95_infermomi_nomaf_rad200.txt
+
+source ~/anaconda3/etc/profile.d/conda.sh
+
+conda activate momi-env
+
+python3 infermomi_nomaf_rad200_g3n10e3_td190l95.py

@@ -1,0 +1,28 @@
+multiprocessing.pool.RemoteTraceback: 
+"""
+Traceback (most recent call last):
+  File "/home/br450/anaconda3/envs/momi-env/lib/python3.7/multiprocessing/pool.py", line 121, in worker
+    result = (True, func(*args, **kwds))
+  File "/home/br450/anaconda3/envs/momi-env/lib/python3.7/multiprocessing/pool.py", line 47, in starmapstar
+    return list(itertools.starmap(args[0], args[1]))
+  File "infermomi_nomaf_radall_g3n10e4_constant_4mods.py", line 15, in momi_inference
+    sfs = momi.Sfs.load(sfsfile)
+  File "/home/br450/anaconda3/envs/momi-env/lib/python3.7/site-packages/momi/data/sfs.py", line 97, in load
+    with gzip.open(fname, "rt") as f:
+  File "/home/br450/anaconda3/envs/momi-env/lib/python3.7/gzip.py", line 58, in open
+    binary_file = GzipFile(filename, gz_mode, compresslevel)
+  File "/home/br450/anaconda3/envs/momi-env/lib/python3.7/gzip.py", line 168, in __init__
+    fileobj = self.myfileobj = builtins.open(filename, mode or 'rb')
+FileNotFoundError: [Errno 2] No such file or directory: '/projects/f_mlp195/brendanr/g3_n10e4_constant_n500/constant_recap/vcf/i1_n200_rad50k_contemp_nomaf.sfs.gz'
+"""
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "infermomi_nomaf_radall_g3n10e4_constant_4mods.py", line 338, in <module>
+    result = a_pool.starmap(momi_inference, zip(its,dats,mafs))
+  File "/home/br450/anaconda3/envs/momi-env/lib/python3.7/multiprocessing/pool.py", line 276, in starmap
+    return self._map_async(func, iterable, starmapstar, chunksize).get()
+  File "/home/br450/anaconda3/envs/momi-env/lib/python3.7/multiprocessing/pool.py", line 657, in get
+    raise self._value
+FileNotFoundError: [Errno 2] No such file or directory: '/projects/f_mlp195/brendanr/g3_n10e4_constant_n500/constant_recap/vcf/i1_n200_rad50k_contemp_nomaf.sfs.gz'

@@ -1,0 +1,26 @@
+multiprocessing.pool.RemoteTraceback: 
+"""
+Traceback (most recent call last):
+  File "/home/br450/anaconda3/envs/momi-env/lib/python3.7/multiprocessing/pool.py", line 121, in worker
+    result = (True, func(*args, **kwds))
+  File "/home/br450/anaconda3/envs/momi-env/lib/python3.7/multiprocessing/pool.py", line 47, in starmapstar
+    return list(itertools.starmap(args[0], args[1]))
+  File "allelecounts_schemes_n10e3_constant_bot.py", line 19, in allele_counts
+    sfs=momi.SnpAlleleCounts.read_vcf(vcf_file=vcffile,ind2pop=ind2popdict,bed_file=bedfile,ancestral_alleles=False)
+  File "/home/br450/anaconda3/envs/momi-env/lib/python3.7/site-packages/momi/data/snps.py", line 96, in read_vcf
+    bcf_in.subset_samples(list(ind2pop.keys()))
+  File "pysam/libcbcf.pyx", line 4455, in pysam.libcbcf.VariantFile.subset_samples
+  File "pysam/libcbcf.pyx", line 2032, in pysam.libcbcf.VariantHeader._subset_samples
+ValueError: missing 26 requested samples
+"""
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "allelecounts_schemes_n10e3_constant_bot.py", line 163, in <module>
+    result = a_pool.starmap(allele_counts, zip(its,chrs))
+  File "/home/br450/anaconda3/envs/momi-env/lib/python3.7/multiprocessing/pool.py", line 276, in starmap
+    return self._map_async(func, iterable, starmapstar, chunksize).get()
+  File "/home/br450/anaconda3/envs/momi-env/lib/python3.7/multiprocessing/pool.py", line 657, in get
+    raise self._value
+ValueError: missing 26 requested samples

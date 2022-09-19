@@ -1,0 +1,2 @@
+/home/br450/anaconda3/envs/momi-env/lib/python3.7/site-packages/autograd/numpy/numpy_vjps.py:53: RuntimeWarning: overflow encountered in double_scalars
+  lambda ans, x, y : unbroadcast_f(y, lambda g: - g * x / y**2))

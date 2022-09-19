@@ -1,0 +1,549 @@
+#!/bin/bash
+#SBATCH --nodes 1
+#SBATCH --ntasks-per-node 1
+#SBATCH --exclusive
+#SBATCH --time 20:00:00
+#SBATCH --mem-per-cpu 8000
+#SBATCH --job-name NeEst_g1_n10e3_td130_l99_rad_nomaf
+#SBATCH --output NeEst_g1_n10e3_td130_l99_rad_nomaf.txt
+
+dir="/projects/f_mlp195/brendanr/"
+NeEst="${dir}"Ne2-1L""
+sim="g1_n10e3_td130_l99_n500/"
+simdir="${dir}${sim}"
+vcf2gp="${dir}"vcf2genepop.pl""
+cd ${simdir}
+indlineinfo="${simdir}indlineinfo"
+indline500_contemp="${simdir}indline500_contemp"
+indline200_contemp="${simdir}indline200_contemp"
+indline100_contemp="${simdir}indline100_contemp"
+indline50_contemp="${simdir}indline50_contemp"
+indline20_contemp="${simdir}indline20_contemp"
+indline500_2samp="${simdir}indline500_2samp"
+indline200_2samp="${simdir}indline200_2samp"
+indline100_2samp="${simdir}indline100_2samp"
+indline50_2samp="${simdir}indline50_2samp"
+indline20_2samp="${simdir}indline20_2samp"
+indline500_serial="${simdir}indline500_serial"
+indline200_serial="${simdir}indline200_serial"
+indline100_serial="${simdir}indline100_serial"
+indline50_serial="${simdir}indline50_serial"
+indline20_serial="${simdir}indline20_serial"
+indlinefields="#CHROM POS ID REF ALT QUAL FILTER INFO FORMAT "
+echo ${indlinefields} | tr " " "\n" > ${indlineinfo}
+for i in {1..500}; do echo ""time0_ind"${i}" >> ${indlineinfo}; done
+cat ${indlineinfo} | tr "\n" "\t" > ${indline500_contemp}
+truncate -s-1 ${indline500_contemp}
+echo "" >> ${indline500_contemp}
+echo ${indlinefields} | tr " " "\n" > ${indlineinfo}
+for i in {1..200}; do echo ""time0_ind"${i}" >> ${indlineinfo}; done
+cat ${indlineinfo} | tr "\n" "\t" > ${indline200_contemp}
+truncate -s-1 ${indline200_contemp}
+echo "" >> ${indline200_contemp}
+echo ${indlinefields} | tr " " "\n" > ${indlineinfo}
+for i in {1..100}; do echo ""time0_ind"${i}" >> ${indlineinfo}; done
+cat ${indlineinfo} | tr "\n" "\t" > ${indline100_contemp}
+truncate -s-1 ${indline100_contemp}
+echo "" >> ${indline100_contemp}
+echo ${indlinefields} | tr " " "\n" > ${indlineinfo}
+for i in {1..50}; do echo ""time0_ind"${i}" >> ${indlineinfo}; done
+cat ${indlineinfo} | tr "\n" "\t" > ${indline50_contemp}
+truncate -s-1 ${indline50_contemp}
+echo "" >> ${indline50_contemp}
+echo ${indlinefields} | tr " " "\n" > ${indlineinfo}
+for i in {1..20}; do echo ""time0_ind"${i}" >> ${indlineinfo}; done
+cat ${indlineinfo} | tr "\n" "\t" > ${indline20_contemp}
+truncate -s-1 ${indline20_contemp}
+echo "" >> ${indline20_contemp}
+echo ${indlinefields} | tr " " "\n" > ${indlineinfo}
+for i in {1..400}; do echo ""time0_ind"${i}" >> ${indlineinfo}; done
+for i in {1..100}; do echo ""time120_ind"${i}" >> ${indlineinfo}; done
+cat ${indlineinfo} | tr "\n" "\t" > ${indline500_2samp}
+truncate -s-1 ${indline500_2samp}
+echo "" >> ${indline500_2samp}
+echo ${indlinefields} | tr " " "\n" > ${indlineinfo}
+for i in {1..100}; do echo ""time0_ind"${i}" >> ${indlineinfo}; done
+for i in {1..100}; do echo ""time120_ind"${i}" >> ${indlineinfo}; done
+cat ${indlineinfo} | tr "\n" "\t" > ${indline200_2samp}
+truncate -s-1 ${indline200_2samp}
+echo "" >> ${indline200_2samp}
+echo ${indlinefields} | tr " " "\n" > ${indlineinfo}
+for i in {1..50}; do echo ""time0_ind"${i}" >> ${indlineinfo}; done
+for i in {1..50}; do echo ""time120_ind"${i}" >> ${indlineinfo}; done
+cat ${indlineinfo} | tr "\n" "\t" > ${indline100_2samp}
+truncate -s-1 ${indline100_2samp}
+echo "" >> ${indline100_2samp}
+echo ${indlinefields} | tr " " "\n" > ${indlineinfo}
+for i in {1..25}; do echo ""time0_ind"${i}" >> ${indlineinfo}; done
+for i in {1..25}; do echo ""time120_ind"${i}" >> ${indlineinfo}; done
+cat ${indlineinfo} | tr "\n" "\t" > ${indline50_2samp}
+truncate -s-1 ${indline50_2samp}
+echo "" >> ${indline50_2samp}
+echo ${indlinefields} | tr " " "\n" > ${indlineinfo}
+for i in {1..10}; do echo ""time0_ind"${i}" >> ${indlineinfo}; done
+for i in {1..10}; do echo ""time120_ind"${i}" >> ${indlineinfo}; done
+cat ${indlineinfo} | tr "\n" "\t" > ${indline20_2samp}
+truncate -s-1 ${indline20_2samp}
+echo "" >> ${indline20_2samp}
+echo ${indlinefields} | tr " " "\n" > ${indlineinfo}
+for i in {1..100}; do echo ""time0_ind"${i}" >> ${indlineinfo}; done
+for i in {1..100}; do echo ""time30_ind"${i}" >> ${indlineinfo}; done
+for i in {1..100}; do echo ""time60_ind"${i}" >> ${indlineinfo}; done
+for i in {1..100}; do echo ""time90_ind"${i}" >> ${indlineinfo}; done
+for i in {1..100}; do echo ""time120_ind"${i}" >> ${indlineinfo}; done
+cat ${indlineinfo} | tr "\n" "\t" > ${indline500_serial}
+truncate -s-1 ${indline500_serial}
+echo "" >> ${indline500_serial}
+echo ${indlinefields} | tr " " "\n" > ${indlineinfo}
+for i in {1..40}; do echo ""time0_ind"${i}" >> ${indlineinfo}; done
+for i in {1..40}; do echo ""time30_ind"${i}" >> ${indlineinfo}; done
+for i in {1..40}; do echo ""time60_ind"${i}" >> ${indlineinfo}; done
+for i in {1..40}; do echo ""time90_ind"${i}" >> ${indlineinfo}; done
+for i in {1..40}; do echo ""time120_ind"${i}" >> ${indlineinfo}; done
+cat ${indlineinfo} | tr "\n" "\t" > ${indline200_serial}
+truncate -s-1 ${indline200_serial}
+echo "" >> ${indline200_serial}
+echo ${indlinefields} | tr " " "\n" > ${indlineinfo}
+for i in {1..20}; do echo ""time0_ind"${i}" >> ${indlineinfo}; done
+for i in {1..20}; do echo ""time30_ind"${i}" >> ${indlineinfo}; done
+for i in {1..20}; do echo ""time60_ind"${i}" >> ${indlineinfo}; done
+for i in {1..20}; do echo ""time90_ind"${i}" >> ${indlineinfo}; done
+for i in {1..20}; do echo ""time120_ind"${i}" >> ${indlineinfo}; done
+cat ${indlineinfo} | tr "\n" "\t" > ${indline100_serial}
+truncate -s-1 ${indline100_serial}
+echo "" >> ${indline100_serial}
+echo ${indlinefields} | tr " " "\n" > ${indlineinfo}
+for i in {1..10}; do echo ""time0_ind"${i}" >> ${indlineinfo}; done
+for i in {1..10}; do echo ""time30_ind"${i}" >> ${indlineinfo}; done
+for i in {1..10}; do echo ""time60_ind"${i}" >> ${indlineinfo}; done
+for i in {1..10}; do echo ""time90_ind"${i}" >> ${indlineinfo}; done
+for i in {1..10}; do echo ""time120_ind"${i}" >> ${indlineinfo}; done
+cat ${indlineinfo} | tr "\n" "\t" > ${indline50_serial}
+truncate -s-1 ${indline50_serial}
+echo "" >> ${indline50_serial}
+echo ${indlinefields} | tr " " "\n" > ${indlineinfo}
+for i in {1..4}; do echo ""time0_ind"${i}" >> ${indlineinfo}; done
+for i in {1..4}; do echo ""time30_ind"${i}" >> ${indlineinfo}; done
+for i in {1..4}; do echo ""time60_ind"${i}" >> ${indlineinfo}; done
+for i in {1..4}; do echo ""time90_ind"${i}" >> ${indlineinfo}; done
+for i in {1..4}; do echo ""time120_ind"${i}" >> ${indlineinfo}; done
+cat ${indlineinfo} | tr "\n" "\t" > ${indline20_serial}
+truncate -s-1 ${indline20_serial}
+echo "" >> ${indline20_serial}
+it=1
+while [ $it -le 5 ]
+do
+	data="wgs_n20"
+	scheme="serial"
+	maf="nomaf" 
+	first="${dir}${sim}"constant_recap/vcf/i"${it}"_chr_1_"${data}"_"${scheme}"_"${maf}".recode.vcf.gz""
+	outfile="${dir}${sim}"constant_recap/vcf/i"${it}"_allchr_"${data}"_"${scheme}"_"${maf}".recode.vcf""
+	outgp="${dir}${sim}"constant_recap/vcf/i"${it}"_allchr_"${data}"_"${scheme}"_"${maf}".gen""
+	ordgp="${dir}${sim}"constant_recap/vcf/i"${it}"_allchr_"${data}"_"${scheme}"_"${maf}"_ord.gen""
+	chromfile="${dir}${sim}"constant_recap/vcf/i"${it}"_allchr_"${data}"_"${scheme}"_"${maf}"_chrom""
+	locfile="${dir}${sim}"constant_recap/vcf/i"${it}"_allchr_"${data}"_"${scheme}"_"${maf}"_loc""
+	chromlocfile="${dir}${sim}"constant_recap/vcf/i"${it}"_allchr_"${data}"_"${scheme}"_"${maf}"_chromloc""
+	chromloc=""i"${it}"_allchr_"${data}"_"${scheme}"_"${maf}"_chromloc""
+	gploc=""i"${it}"_allchr_"${data}"_"${scheme}"_"${maf}"_ord.gen""
+	infofile="${dir}${sim}"constant_recap/vcf/i"${it}"_allchr_"${data}"_"${scheme}"_"${maf}"_info""
+	optionfile="${dir}${sim}"constant_recap/vcf/i"${it}"_allchr_"${data}"_"${scheme}"_"${maf}"_option""
+	ldout=""i"${it}"_allchr_"${data}"_"${scheme}"_"${maf}"_LD.txt""
+	vcfdir="${dir}${sim}"constant_recap/vcf/""
+	zcat < ${first} | grep '^##fileformat' > ${outfile}
+	zcat < ${first} | grep '^##source' >> ${outfile}
+	zcat < ${first} | grep '^##FILTER' >> ${outfile}
+	for chr in {1..25}
+	do
+		chrfile="${dir}${sim}"constant_recap/vcf/i"${it}"_chr_"${chr}"_"${data}"_"${scheme}"_"${maf}".recode.vcf.gz""
+		zcat < ${chrfile} | grep '^##contig' >> ${outfile}
+	done
+	zcat < ${first} | grep '^##FORMAT' >> ${outfile}
+	cat ${indline20_serial} >> ${outfile}
+	for chr in {1..25}
+	do
+		chrfile="${dir}${sim}"constant_recap/vcf/i"${it}"_chr_"${chr}"_"${data}"_"${scheme}"_"${maf}".recode.vcf.gz""
+		zcat < ${chrfile} | grep -v '^#' >> ${outfile}
+	done
+	perl ${vcf2gp} vcf=${outfile} pops=time0,time30,time60,time90,time120 > ${outgp}  
+	gzip ${outfile}
+	head -n 7 ${outgp} >> ${ordgp}
+	tail -n 15 ${outgp} >> ${ordgp}
+	head -n 12 ${outgp} | tail -n 5 >> ${ordgp}
+	tail -n +2 ${ordgp} | head -1 | tr " " "\n" | awk -F "_" {'print $1'} > ${chromfile}
+	tail -n +2 ${ordgp} | head -1 | tr " " "\n" | awk -F "," {'print $1'} > ${locfile}
+	paste ${chromfile} ${locfile} > ${chromlocfile}
+	(echo "1"; echo ${vcfdir} ; echo ${gploc} ; echo "2" ; echo ${simdir} ; echo ${ldout} ; echo "2" ; echo "0.05 0.01"; echo "0") > ${infofile}
+	(echo "0 0" ; echo "0" ; echo "0" ; echo "0" ; echo "1" ; echo "1" ; echo "0" ; echo "0" ; echo "0" ; echo "2 ${chromloc}") > ${optionfile}
+	${NeEst} i:${infofile} o:${optionfile}
+	(echo -e ${ordgp} ; echo -e "8\n" ; echo -e "5\n" ; echo -e "0\n" ; echo -e "30\n" ; echo -e "60\n" ; echo -e "90\n" ; echo -e "120\n") | ${NeEst}
+	it=$(( $it + 1 ))
+done
+it=1
+while [ $it -le 5 ]
+do
+	data="wgs_n20"
+	scheme="2samp"
+	maf="nomaf" 
+	first="${dir}${sim}"constant_recap/vcf/i"${it}"_chr_1_"${data}"_"${scheme}"_"${maf}".recode.vcf.gz""
+	outfile="${dir}${sim}"constant_recap/vcf/i"${it}"_allchr_"${data}"_"${scheme}"_"${maf}".recode.vcf""
+	outgp="${dir}${sim}"constant_recap/vcf/i"${it}"_allchr_"${data}"_"${scheme}"_"${maf}".gen""
+	ordgp="${dir}${sim}"constant_recap/vcf/i"${it}"_allchr_"${data}"_"${scheme}"_"${maf}"_ord.gen""
+	chromfile="${dir}${sim}"constant_recap/vcf/i"${it}"_allchr_"${data}"_"${scheme}"_"${maf}"_chrom""
+	locfile="${dir}${sim}"constant_recap/vcf/i"${it}"_allchr_"${data}"_"${scheme}"_"${maf}"_loc""
+	chromlocfile="${dir}${sim}"constant_recap/vcf/i"${it}"_allchr_"${data}"_"${scheme}"_"${maf}"_chromloc""
+	chromloc=""i"${it}"_allchr_"${data}"_"${scheme}"_"${maf}"_chromloc""
+	gploc=""i"${it}"_allchr_"${data}"_"${scheme}"_"${maf}".gen""
+	infofile="${dir}${sim}"constant_recap/vcf/i"${it}"_allchr_"${data}"_"${scheme}"_"${maf}"_info""
+	optionfile="${dir}${sim}"constant_recap/vcf/i"${it}"_allchr_"${data}"_"${scheme}"_"${maf}"_option""
+	ldout=""i"${it}"_allchr_"${data}"_"${scheme}"_"${maf}"_LD.txt""
+	vcfdir="${dir}${sim}"constant_recap/vcf/""
+	zcat < ${first} | grep '^##fileformat' > ${outfile}
+	zcat < ${first} | grep '^##source' >> ${outfile}
+	zcat < ${first} | grep '^##FILTER' >> ${outfile}
+	for chr in {1..25}
+	do
+		chrfile="${dir}${sim}"constant_recap/vcf/i"${it}"_chr_"${chr}"_"${data}"_"${scheme}"_"${maf}".recode.vcf.gz""
+		zcat < ${chrfile} | grep '^##contig' >> ${outfile}
+	done
+	zcat < ${first} | grep '^##FORMAT' >> ${outfile}
+	cat ${indline20_2samp} >> ${outfile}
+	for chr in {1..25}
+	do
+		chrfile="${dir}${sim}"constant_recap/vcf/i"${it}"_chr_"${chr}"_"${data}"_"${scheme}"_"${maf}".recode.vcf.gz""
+		zcat < ${chrfile} | grep -v '^#' >> ${outfile}
+	done
+	perl ${vcf2gp} vcf=${outfile} pops=time0,time30,time60,time90,time120 > ${outgp}  
+	gzip ${outfile}
+	### make file associating chromosomes with loci
+	tail -n +2 ${outgp} | head -1 | tr " " "\n" | awk -F "_" {'print $1'} > ${chromfile}
+	tail -n +2 ${outgp} | head -1 | tr " " "\n" | awk -F "," {'print $1'} > ${locfile}
+	paste ${chromfile} ${locfile} > ${chromlocfile}
+	### command-line NeEstimator for LD estimates
+	### generate input and option files first then run
+	(echo "1"; echo ${vcfdir} ; echo ${gploc} ; echo "2" ; echo ${simdir} ; echo ${ldout} ; echo "2" ; echo "0.05 0.01"; echo "0") > ${infofile}
+	(echo "0 0" ; echo "0" ; echo "0" ; echo "0" ; echo "1" ; echo "1" ; echo "0" ; echo "0" ; echo "0" ; echo "2 ${chromloc}") > ${optionfile}
+	${NeEst} i:${infofile} o:${optionfile}
+	it=$(( $it + 1 ))
+done
+it=1
+while [ $it -le 5 ]
+do
+	data="wgs_n20"
+	scheme="contemp"
+	maf="nomaf" 
+	first="${dir}${sim}"constant_recap/vcf/i"${it}"_chr_1_"${data}"_"${scheme}"_"${maf}".recode.vcf.gz""
+	outfile="${dir}${sim}"constant_recap/vcf/i"${it}"_allchr_"${data}"_"${scheme}"_"${maf}".recode.vcf""
+	outgp="${dir}${sim}"constant_recap/vcf/i"${it}"_allchr_"${data}"_"${scheme}"_"${maf}".gen""
+	ordgp="${dir}${sim}"constant_recap/vcf/i"${it}"_allchr_"${data}"_"${scheme}"_"${maf}"_ord.gen""
+	chromfile="${dir}${sim}"constant_recap/vcf/i"${it}"_allchr_"${data}"_"${scheme}"_"${maf}"_chrom""
+	locfile="${dir}${sim}"constant_recap/vcf/i"${it}"_allchr_"${data}"_"${scheme}"_"${maf}"_loc""
+	chromlocfile="${dir}${sim}"constant_recap/vcf/i"${it}"_allchr_"${data}"_"${scheme}"_"${maf}"_chromloc""
+	chromloc=""i"${it}"_allchr_"${data}"_"${scheme}"_"${maf}"_chromloc""
+	gploc=""i"${it}"_allchr_"${data}"_"${scheme}"_"${maf}".gen""
+	infofile="${dir}${sim}"constant_recap/vcf/i"${it}"_allchr_"${data}"_"${scheme}"_"${maf}"_info""
+	optionfile="${dir}${sim}"constant_recap/vcf/i"${it}"_allchr_"${data}"_"${scheme}"_"${maf}"_option""
+	ldout=""i"${it}"_allchr_"${data}"_"${scheme}"_"${maf}"_LD.txt""
+	vcfdir="${dir}${sim}"constant_recap/vcf/""
+	zcat < ${first} | grep '^##fileformat' > ${outfile}
+	zcat < ${first} | grep '^##source' >> ${outfile}
+	zcat < ${first} | grep '^##FILTER' >> ${outfile}
+	for chr in {1..25}
+	do
+		chrfile="${dir}${sim}"constant_recap/vcf/i"${it}"_chr_"${chr}"_"${data}"_"${scheme}"_"${maf}".recode.vcf.gz""
+		zcat < ${chrfile} | grep '^##contig' >> ${outfile}
+	done
+	zcat < ${first} | grep '^##FORMAT' >> ${outfile}
+	cat ${indline20_contemp} >> ${outfile}
+	for chr in {1..25}
+	do
+		chrfile="${dir}${sim}"constant_recap/vcf/i"${it}"_chr_"${chr}"_"${data}"_"${scheme}"_"${maf}".recode.vcf.gz""
+		zcat < ${chrfile} | grep -v '^#' >> ${outfile}
+	done
+	perl ${vcf2gp} vcf=${outfile} pops=time0,time30,time60,time90,time120 > ${outgp}  
+	gzip ${outfile}
+	tail -n +2 ${outgp} | head -1 | tr " " "\n" | awk -F "_" {'print $1'} > ${chromfile}
+	tail -n +2 ${outgp} | head -1 | tr " " "\n" | awk -F "," {'print $1'} > ${locfile}
+	paste ${chromfile} ${locfile} > ${chromlocfile}
+	(echo "1"; echo ${vcfdir} ; echo ${gploc} ; echo "2" ; echo ${simdir} ; echo ${ldout} ; echo "2" ; echo "0.05 0.01"; echo "0") > ${infofile}
+	(echo "0 0" ; echo "0" ; echo "0" ; echo "0" ; echo "1" ; echo "1" ; echo "0" ; echo "0" ; echo "0" ; echo "2 ${chromloc}") > ${optionfile}
+	${NeEst} i:${infofile} o:${optionfile}
+	it=$(( $it + 1 ))
+done
+it=1
+while [ $it -le 5 ]
+do
+	data="wgs_n50"
+	scheme="serial"
+	maf="nomaf" 
+	first="${dir}${sim}"constant_recap/vcf/i"${it}"_chr_1_"${data}"_"${scheme}"_"${maf}".recode.vcf.gz""
+	outfile="${dir}${sim}"constant_recap/vcf/i"${it}"_allchr_"${data}"_"${scheme}"_"${maf}".recode.vcf""
+	outgp="${dir}${sim}"constant_recap/vcf/i"${it}"_allchr_"${data}"_"${scheme}"_"${maf}".gen""
+	ordgp="${dir}${sim}"constant_recap/vcf/i"${it}"_allchr_"${data}"_"${scheme}"_"${maf}"_ord.gen""
+	chromfile="${dir}${sim}"constant_recap/vcf/i"${it}"_allchr_"${data}"_"${scheme}"_"${maf}"_chrom""
+	locfile="${dir}${sim}"constant_recap/vcf/i"${it}"_allchr_"${data}"_"${scheme}"_"${maf}"_loc""
+	chromlocfile="${dir}${sim}"constant_recap/vcf/i"${it}"_allchr_"${data}"_"${scheme}"_"${maf}"_chromloc""
+	chromloc=""i"${it}"_allchr_"${data}"_"${scheme}"_"${maf}"_chromloc""
+	gploc=""i"${it}"_allchr_"${data}"_"${scheme}"_"${maf}"_ord.gen""
+	infofile="${dir}${sim}"constant_recap/vcf/i"${it}"_allchr_"${data}"_"${scheme}"_"${maf}"_info""
+	optionfile="${dir}${sim}"constant_recap/vcf/i"${it}"_allchr_"${data}"_"${scheme}"_"${maf}"_option""
+	ldout=""i"${it}"_allchr_"${data}"_"${scheme}"_"${maf}"_LD.txt""
+	vcfdir="${dir}${sim}"constant_recap/vcf/""
+	zcat < ${first} | grep '^##fileformat' > ${outfile}
+	zcat < ${first} | grep '^##source' >> ${outfile}
+	zcat < ${first} | grep '^##FILTER' >> ${outfile}
+	for chr in {1..25}
+	do
+		chrfile="${dir}${sim}"constant_recap/vcf/i"${it}"_chr_"${chr}"_"${data}"_"${scheme}"_"${maf}".recode.vcf.gz""
+		zcat < ${chrfile} | grep '^##contig' >> ${outfile}
+	done
+	zcat < ${first} | grep '^##FORMAT' >> ${outfile}
+	cat ${indline50_serial} >> ${outfile}
+	for chr in {1..25}
+	do
+		chrfile="${dir}${sim}"constant_recap/vcf/i"${it}"_chr_"${chr}"_"${data}"_"${scheme}"_"${maf}".recode.vcf.gz""
+		zcat < ${chrfile} | grep -v '^#' >> ${outfile}
+	done
+	perl ${vcf2gp} vcf=${outfile} pops=time0,time30,time60,time90,time120 > ${outgp}  
+	gzip ${outfile}
+	head -n 13 ${outgp} >> ${ordgp}
+	tail -n 33 ${outgp} >> ${ordgp}
+	head -n 24 ${outgp} | tail -n 11 >> ${ordgp}
+	tail -n +2 ${ordgp} | head -1 | tr " " "\n" | awk -F "_" {'print $1'} > ${chromfile}
+	tail -n +2 ${ordgp} | head -1 | tr " " "\n" | awk -F "," {'print $1'} > ${locfile}
+	paste ${chromfile} ${locfile} > ${chromlocfile}
+	(echo "1"; echo ${vcfdir} ; echo ${gploc} ; echo "2" ; echo ${simdir} ; echo ${ldout} ; echo "2" ; echo "0.05 0.01"; echo "0") > ${infofile}
+	(echo "0 0" ; echo "0" ; echo "0" ; echo "0" ; echo "1" ; echo "1" ; echo "0" ; echo "0" ; echo "0" ; echo "2 ${chromloc}") > ${optionfile}
+	${NeEst} i:${infofile} o:${optionfile}
+	(echo -e ${ordgp} ; echo -e "8\n" ; echo -e "5\n" ; echo -e "0\n" ; echo -e "30\n" ; echo -e "60\n" ; echo -e "90\n" ; echo -e "120\n") | ${NeEst}
+	it=$(( $it + 1 ))
+done
+it=1
+while [ $it -le 5 ]
+do
+	data="wgs_n50"
+	scheme="2samp"
+	maf="nomaf" 
+	first="${dir}${sim}"constant_recap/vcf/i"${it}"_chr_1_"${data}"_"${scheme}"_"${maf}".recode.vcf.gz""
+	outfile="${dir}${sim}"constant_recap/vcf/i"${it}"_allchr_"${data}"_"${scheme}"_"${maf}".recode.vcf""
+	outgp="${dir}${sim}"constant_recap/vcf/i"${it}"_allchr_"${data}"_"${scheme}"_"${maf}".gen""
+	ordgp="${dir}${sim}"constant_recap/vcf/i"${it}"_allchr_"${data}"_"${scheme}"_"${maf}"_ord.gen""
+	chromfile="${dir}${sim}"constant_recap/vcf/i"${it}"_allchr_"${data}"_"${scheme}"_"${maf}"_chrom""
+	locfile="${dir}${sim}"constant_recap/vcf/i"${it}"_allchr_"${data}"_"${scheme}"_"${maf}"_loc""
+	chromlocfile="${dir}${sim}"constant_recap/vcf/i"${it}"_allchr_"${data}"_"${scheme}"_"${maf}"_chromloc""
+	chromloc=""i"${it}"_allchr_"${data}"_"${scheme}"_"${maf}"_chromloc""
+	gploc=""i"${it}"_allchr_"${data}"_"${scheme}"_"${maf}".gen""
+	infofile="${dir}${sim}"constant_recap/vcf/i"${it}"_allchr_"${data}"_"${scheme}"_"${maf}"_info""
+	optionfile="${dir}${sim}"constant_recap/vcf/i"${it}"_allchr_"${data}"_"${scheme}"_"${maf}"_option""
+	ldout=""i"${it}"_allchr_"${data}"_"${scheme}"_"${maf}"_LD.txt""
+	vcfdir="${dir}${sim}"constant_recap/vcf/""
+	zcat < ${first} | grep '^##fileformat' > ${outfile}
+	zcat < ${first} | grep '^##source' >> ${outfile}
+	zcat < ${first} | grep '^##FILTER' >> ${outfile}
+	for chr in {1..25}
+	do
+		chrfile="${dir}${sim}"constant_recap/vcf/i"${it}"_chr_"${chr}"_"${data}"_"${scheme}"_"${maf}".recode.vcf.gz""
+		zcat < ${chrfile} | grep '^##contig' >> ${outfile}
+	done
+	zcat < ${first} | grep '^##FORMAT' >> ${outfile}
+	cat ${indline50_2samp} >> ${outfile}
+	for chr in {1..25}
+	do
+		chrfile="${dir}${sim}"constant_recap/vcf/i"${it}"_chr_"${chr}"_"${data}"_"${scheme}"_"${maf}".recode.vcf.gz""
+		zcat < ${chrfile} | grep -v '^#' >> ${outfile}
+	done
+	perl ${vcf2gp} vcf=${outfile} pops=time0,time30,time60,time90,time120 > ${outgp}  
+	gzip ${outfile}
+	### make file associating chromosomes with loci
+	tail -n +2 ${outgp} | head -1 | tr " " "\n" | awk -F "_" {'print $1'} > ${chromfile}
+	tail -n +2 ${outgp} | head -1 | tr " " "\n" | awk -F "," {'print $1'} > ${locfile}
+	paste ${chromfile} ${locfile} > ${chromlocfile}
+	### command-line NeEstimator for LD estimates
+	### generate input and option files first then run
+	(echo "1"; echo ${vcfdir} ; echo ${gploc} ; echo "2" ; echo ${simdir} ; echo ${ldout} ; echo "2" ; echo "0.05 0.01"; echo "0") > ${infofile}
+	(echo "0 0" ; echo "0" ; echo "0" ; echo "0" ; echo "1" ; echo "1" ; echo "0" ; echo "0" ; echo "0" ; echo "2 ${chromloc}") > ${optionfile}
+	${NeEst} i:${infofile} o:${optionfile}
+	it=$(( $it + 1 ))
+done
+it=1
+while [ $it -le 5 ]
+do
+	data="wgs_n50"
+	scheme="contemp"
+	maf="nomaf" 
+	first="${dir}${sim}"constant_recap/vcf/i"${it}"_chr_1_"${data}"_"${scheme}"_"${maf}".recode.vcf.gz""
+	outfile="${dir}${sim}"constant_recap/vcf/i"${it}"_allchr_"${data}"_"${scheme}"_"${maf}".recode.vcf""
+	outgp="${dir}${sim}"constant_recap/vcf/i"${it}"_allchr_"${data}"_"${scheme}"_"${maf}".gen""
+	ordgp="${dir}${sim}"constant_recap/vcf/i"${it}"_allchr_"${data}"_"${scheme}"_"${maf}"_ord.gen""
+	chromfile="${dir}${sim}"constant_recap/vcf/i"${it}"_allchr_"${data}"_"${scheme}"_"${maf}"_chrom""
+	locfile="${dir}${sim}"constant_recap/vcf/i"${it}"_allchr_"${data}"_"${scheme}"_"${maf}"_loc""
+	chromlocfile="${dir}${sim}"constant_recap/vcf/i"${it}"_allchr_"${data}"_"${scheme}"_"${maf}"_chromloc""
+	chromloc=""i"${it}"_allchr_"${data}"_"${scheme}"_"${maf}"_chromloc""
+	gploc=""i"${it}"_allchr_"${data}"_"${scheme}"_"${maf}".gen""
+	infofile="${dir}${sim}"constant_recap/vcf/i"${it}"_allchr_"${data}"_"${scheme}"_"${maf}"_info""
+	optionfile="${dir}${sim}"constant_recap/vcf/i"${it}"_allchr_"${data}"_"${scheme}"_"${maf}"_option""
+	ldout=""i"${it}"_allchr_"${data}"_"${scheme}"_"${maf}"_LD.txt""
+	vcfdir="${dir}${sim}"constant_recap/vcf/""
+	zcat < ${first} | grep '^##fileformat' > ${outfile}
+	zcat < ${first} | grep '^##source' >> ${outfile}
+	zcat < ${first} | grep '^##FILTER' >> ${outfile}
+	for chr in {1..25}
+	do
+		chrfile="${dir}${sim}"constant_recap/vcf/i"${it}"_chr_"${chr}"_"${data}"_"${scheme}"_"${maf}".recode.vcf.gz""
+		zcat < ${chrfile} | grep '^##contig' >> ${outfile}
+	done
+	zcat < ${first} | grep '^##FORMAT' >> ${outfile}
+	cat ${indline50_contemp} >> ${outfile}
+	for chr in {1..25}
+	do
+		chrfile="${dir}${sim}"constant_recap/vcf/i"${it}"_chr_"${chr}"_"${data}"_"${scheme}"_"${maf}".recode.vcf.gz""
+		zcat < ${chrfile} | grep -v '^#' >> ${outfile}
+	done
+	perl ${vcf2gp} vcf=${outfile} pops=time0,time30,time60,time90,time120 > ${outgp}  
+	gzip ${outfile}
+	tail -n +2 ${outgp} | head -1 | tr " " "\n" | awk -F "_" {'print $1'} > ${chromfile}
+	tail -n +2 ${outgp} | head -1 | tr " " "\n" | awk -F "," {'print $1'} > ${locfile}
+	paste ${chromfile} ${locfile} > ${chromlocfile}
+	(echo "1"; echo ${vcfdir} ; echo ${gploc} ; echo "2" ; echo ${simdir} ; echo ${ldout} ; echo "2" ; echo "0.05 0.01"; echo "0") > ${infofile}
+	(echo "0 0" ; echo "0" ; echo "0" ; echo "0" ; echo "1" ; echo "1" ; echo "0" ; echo "0" ; echo "0" ; echo "2 ${chromloc}") > ${optionfile}
+	${NeEst} i:${infofile} o:${optionfile}
+	it=$(( $it + 1 ))
+done
+it=1
+while [ $it -le 5 ]
+do
+	data="wgs_n100"
+	scheme="serial"
+	maf="nomaf" 
+	first="${dir}${sim}"constant_recap/vcf/i"${it}"_chr_1_"${data}"_"${scheme}"_"${maf}".recode.vcf.gz""
+	outfile="${dir}${sim}"constant_recap/vcf/i"${it}"_allchr_"${data}"_"${scheme}"_"${maf}".recode.vcf""
+	outgp="${dir}${sim}"constant_recap/vcf/i"${it}"_allchr_"${data}"_"${scheme}"_"${maf}".gen""
+	ordgp="${dir}${sim}"constant_recap/vcf/i"${it}"_allchr_"${data}"_"${scheme}"_"${maf}"_ord.gen""
+	chromfile="${dir}${sim}"constant_recap/vcf/i"${it}"_allchr_"${data}"_"${scheme}"_"${maf}"_chrom""
+	locfile="${dir}${sim}"constant_recap/vcf/i"${it}"_allchr_"${data}"_"${scheme}"_"${maf}"_loc""
+	chromlocfile="${dir}${sim}"constant_recap/vcf/i"${it}"_allchr_"${data}"_"${scheme}"_"${maf}"_chromloc""
+	chromloc=""i"${it}"_allchr_"${data}"_"${scheme}"_"${maf}"_chromloc""
+	gploc=""i"${it}"_allchr_"${data}"_"${scheme}"_"${maf}"_ord.gen""
+	infofile="${dir}${sim}"constant_recap/vcf/i"${it}"_allchr_"${data}"_"${scheme}"_"${maf}"_info""
+	optionfile="${dir}${sim}"constant_recap/vcf/i"${it}"_allchr_"${data}"_"${scheme}"_"${maf}"_option""
+	ldout=""i"${it}"_allchr_"${data}"_"${scheme}"_"${maf}"_LD.txt""
+	vcfdir="${dir}${sim}"constant_recap/vcf/""
+	zcat < ${first} | grep '^##fileformat' > ${outfile}
+	zcat < ${first} | grep '^##source' >> ${outfile}
+	zcat < ${first} | grep '^##FILTER' >> ${outfile}
+	for chr in {1..25}
+	do
+		chrfile="${dir}${sim}"constant_recap/vcf/i"${it}"_chr_"${chr}"_"${data}"_"${scheme}"_"${maf}".recode.vcf.gz""
+		zcat < ${chrfile} | grep '^##contig' >> ${outfile}
+	done
+	zcat < ${first} | grep '^##FORMAT' >> ${outfile}
+	cat ${indline100_serial} >> ${outfile}
+	for chr in {1..25}
+	do
+		chrfile="${dir}${sim}"constant_recap/vcf/i"${it}"_chr_"${chr}"_"${data}"_"${scheme}"_"${maf}".recode.vcf.gz""
+		zcat < ${chrfile} | grep -v '^#' >> ${outfile}
+	done
+	perl ${vcf2gp} vcf=${outfile} pops=time0,time30,time60,time90,time120 > ${outgp}  
+	gzip ${outfile}
+	head -n 23 ${outgp} >> ${ordgp}
+	tail -n 63 ${outgp} >> ${ordgp}
+	head -n 44 ${outgp} | tail -n 21 >> ${ordgp}
+	tail -n +2 ${ordgp} | head -1 | tr " " "\n" | awk -F "_" {'print $1'} > ${chromfile}
+	tail -n +2 ${ordgp} | head -1 | tr " " "\n" | awk -F "," {'print $1'} > ${locfile}
+	paste ${chromfile} ${locfile} > ${chromlocfile}
+	(echo "1"; echo ${vcfdir} ; echo ${gploc} ; echo "2" ; echo ${simdir} ; echo ${ldout} ; echo "2" ; echo "0.05 0.01"; echo "0") > ${infofile}
+	(echo "0 0" ; echo "0" ; echo "0" ; echo "0" ; echo "1" ; echo "1" ; echo "0" ; echo "0" ; echo "0" ; echo "2 ${chromloc}") > ${optionfile}
+	${NeEst} i:${infofile} o:${optionfile}
+	(echo -e ${ordgp} ; echo -e "8\n" ; echo -e "5\n" ; echo -e "0\n" ; echo -e "30\n" ; echo -e "60\n" ; echo -e "90\n" ; echo -e "120\n") | ${NeEst}
+	it=$(( $it + 1 ))
+done
+it=1
+while [ $it -le 5 ]
+do
+	data="wgs_n100"
+	scheme="2samp"
+	maf="nomaf" 
+	first="${dir}${sim}"constant_recap/vcf/i"${it}"_chr_1_"${data}"_"${scheme}"_"${maf}".recode.vcf.gz""
+	outfile="${dir}${sim}"constant_recap/vcf/i"${it}"_allchr_"${data}"_"${scheme}"_"${maf}".recode.vcf""
+	outgp="${dir}${sim}"constant_recap/vcf/i"${it}"_allchr_"${data}"_"${scheme}"_"${maf}".gen""
+	ordgp="${dir}${sim}"constant_recap/vcf/i"${it}"_allchr_"${data}"_"${scheme}"_"${maf}"_ord.gen""
+	chromfile="${dir}${sim}"constant_recap/vcf/i"${it}"_allchr_"${data}"_"${scheme}"_"${maf}"_chrom""
+	locfile="${dir}${sim}"constant_recap/vcf/i"${it}"_allchr_"${data}"_"${scheme}"_"${maf}"_loc""
+	chromlocfile="${dir}${sim}"constant_recap/vcf/i"${it}"_allchr_"${data}"_"${scheme}"_"${maf}"_chromloc""
+	chromloc=""i"${it}"_allchr_"${data}"_"${scheme}"_"${maf}"_chromloc""
+	gploc=""i"${it}"_allchr_"${data}"_"${scheme}"_"${maf}".gen""
+	infofile="${dir}${sim}"constant_recap/vcf/i"${it}"_allchr_"${data}"_"${scheme}"_"${maf}"_info""
+	optionfile="${dir}${sim}"constant_recap/vcf/i"${it}"_allchr_"${data}"_"${scheme}"_"${maf}"_option""
+	ldout=""i"${it}"_allchr_"${data}"_"${scheme}"_"${maf}"_LD.txt""
+	vcfdir="${dir}${sim}"constant_recap/vcf/""
+	zcat < ${first} | grep '^##fileformat' > ${outfile}
+	zcat < ${first} | grep '^##source' >> ${outfile}
+	zcat < ${first} | grep '^##FILTER' >> ${outfile}
+	for chr in {1..25}
+	do
+		chrfile="${dir}${sim}"constant_recap/vcf/i"${it}"_chr_"${chr}"_"${data}"_"${scheme}"_"${maf}".recode.vcf.gz""
+		zcat < ${chrfile} | grep '^##contig' >> ${outfile}
+	done
+	zcat < ${first} | grep '^##FORMAT' >> ${outfile}
+	cat ${indline100_2samp} >> ${outfile}
+	for chr in {1..25}
+	do
+		chrfile="${dir}${sim}"constant_recap/vcf/i"${it}"_chr_"${chr}"_"${data}"_"${scheme}"_"${maf}".recode.vcf.gz""
+		zcat < ${chrfile} | grep -v '^#' >> ${outfile}
+	done
+	perl ${vcf2gp} vcf=${outfile} pops=time0,time30,time60,time90,time120 > ${outgp}  
+	gzip ${outfile}
+	### make file associating chromosomes with loci
+	tail -n +2 ${outgp} | head -1 | tr " " "\n" | awk -F "_" {'print $1'} > ${chromfile}
+	tail -n +2 ${outgp} | head -1 | tr " " "\n" | awk -F "," {'print $1'} > ${locfile}
+	paste ${chromfile} ${locfile} > ${chromlocfile}
+	### command-line NeEstimator for LD estimates
+	### generate input and option files first then run
+	(echo "1"; echo ${vcfdir} ; echo ${gploc} ; echo "2" ; echo ${simdir} ; echo ${ldout} ; echo "2" ; echo "0.05 0.01"; echo "0") > ${infofile}
+	(echo "0 0" ; echo "0" ; echo "0" ; echo "0" ; echo "1" ; echo "1" ; echo "0" ; echo "0" ; echo "0" ; echo "2 ${chromloc}") > ${optionfile}
+	${NeEst} i:${infofile} o:${optionfile}
+	it=$(( $it + 1 ))
+done
+it=1
+while [ $it -le 5 ]
+do
+	data="wgs_n100"
+	scheme="contemp"
+	maf="nomaf" 
+	first="${dir}${sim}"constant_recap/vcf/i"${it}"_chr_1_"${data}"_"${scheme}"_"${maf}".recode.vcf.gz""
+	outfile="${dir}${sim}"constant_recap/vcf/i"${it}"_allchr_"${data}"_"${scheme}"_"${maf}".recode.vcf""
+	outgp="${dir}${sim}"constant_recap/vcf/i"${it}"_allchr_"${data}"_"${scheme}"_"${maf}".gen""
+	ordgp="${dir}${sim}"constant_recap/vcf/i"${it}"_allchr_"${data}"_"${scheme}"_"${maf}"_ord.gen""
+	chromfile="${dir}${sim}"constant_recap/vcf/i"${it}"_allchr_"${data}"_"${scheme}"_"${maf}"_chrom""
+	locfile="${dir}${sim}"constant_recap/vcf/i"${it}"_allchr_"${data}"_"${scheme}"_"${maf}"_loc""
+	chromlocfile="${dir}${sim}"constant_recap/vcf/i"${it}"_allchr_"${data}"_"${scheme}"_"${maf}"_chromloc""
+	chromloc=""i"${it}"_allchr_"${data}"_"${scheme}"_"${maf}"_chromloc""
+	gploc=""i"${it}"_allchr_"${data}"_"${scheme}"_"${maf}".gen""
+	infofile="${dir}${sim}"constant_recap/vcf/i"${it}"_allchr_"${data}"_"${scheme}"_"${maf}"_info""
+	optionfile="${dir}${sim}"constant_recap/vcf/i"${it}"_allchr_"${data}"_"${scheme}"_"${maf}"_option""
+	ldout=""i"${it}"_allchr_"${data}"_"${scheme}"_"${maf}"_LD.txt""
+	vcfdir="${dir}${sim}"constant_recap/vcf/""
+	zcat < ${first} | grep '^##fileformat' > ${outfile}
+	zcat < ${first} | grep '^##source' >> ${outfile}
+	zcat < ${first} | grep '^##FILTER' >> ${outfile}
+	for chr in {1..25}
+	do
+		chrfile="${dir}${sim}"constant_recap/vcf/i"${it}"_chr_"${chr}"_"${data}"_"${scheme}"_"${maf}".recode.vcf.gz""
+		zcat < ${chrfile} | grep '^##contig' >> ${outfile}
+	done
+	zcat < ${first} | grep '^##FORMAT' >> ${outfile}
+	cat ${indline100_contemp} >> ${outfile}
+	for chr in {1..25}
+	do
+		chrfile="${dir}${sim}"constant_recap/vcf/i"${it}"_chr_"${chr}"_"${data}"_"${scheme}"_"${maf}".recode.vcf.gz""
+		zcat < ${chrfile} | grep -v '^#' >> ${outfile}
+	done
+	perl ${vcf2gp} vcf=${outfile} pops=time0,time30,time60,time90,time120 > ${outgp}  
+	gzip ${outfile}
+	tail -n +2 ${outgp} | head -1 | tr " " "\n" | awk -F "_" {'print $1'} > ${chromfile}
+	tail -n +2 ${outgp} | head -1 | tr " " "\n" | awk -F "," {'print $1'} > ${locfile}
+	paste ${chromfile} ${locfile} > ${chromlocfile}
+	(echo "1"; echo ${vcfdir} ; echo ${gploc} ; echo "2" ; echo ${simdir} ; echo ${ldout} ; echo "2" ; echo "0.05 0.01"; echo "0") > ${infofile}
+	(echo "0 0" ; echo "0" ; echo "0" ; echo "0" ; echo "1" ; echo "1" ; echo "0" ; echo "0" ; echo "0" ; echo "2 ${chromloc}") > ${optionfile}
+	${NeEst} i:${infofile} o:${optionfile}
+	it=$(( $it + 1 ))
+done

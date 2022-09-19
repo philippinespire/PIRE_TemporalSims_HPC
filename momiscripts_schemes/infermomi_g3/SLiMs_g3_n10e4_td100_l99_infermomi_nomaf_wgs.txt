@@ -1,0 +1,1 @@
+/var/lib/slurm/slurmd/job16818300/slurm_script: line 13:  5624 Bus error               python3 infermomi_nomaf_wgs_g3n10e4_td100l99.py

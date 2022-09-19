@@ -1,0 +1,610 @@
+gzip: /projects/f_mlp195/brendanr/g1_n10e4_td100_l99_n500/bottleneck_recap/vcf/i1_allchr_rad10k_n100_serial_nomaf.recode.vcf.gz already exists;	not overwritten
+*** Error in `/projects/f_mlp195/brendanr/Ne2-1L': free(): invalid pointer: 0x0000000000e3e400 ***
+======= Backtrace: =========
+/lib64/libc.so.6(+0x81329)[0x7f90a7f94329]
+/projects/f_mlp195/brendanr/Ne2-1L[0x4033ee]
+/projects/f_mlp195/brendanr/Ne2-1L[0x429144]
+/projects/f_mlp195/brendanr/Ne2-1L[0x429b81]
+/lib64/libc.so.6(__libc_start_main+0xf5)[0x7f90a7f35555]
+/projects/f_mlp195/brendanr/Ne2-1L[0x4010c9]
+======= Memory map: ========
+00400000-00432000 r-xp 00000000 00:2f 52798237                           /projectsp/f_mlp195/brendanr/Ne2-1L
+00632000-00633000 rw-p 00032000 00:2f 52798237                           /projectsp/f_mlp195/brendanr/Ne2-1L
+00e3e000-00e88000 rw-p 00000000 00:00 0                                  [heap]
+7f90a0000000-7f90a0021000 rw-p 00000000 00:00 0 
+7f90a0021000-7f90a4000000 ---p 00000000 00:00 0 
+7f90a7cfd000-7f90a7d12000 r-xp 00000000 00:13 30409                      /usr/lib64/libgcc_s-4.8.5-20150702.so.1
+7f90a7d12000-7f90a7f11000 ---p 00015000 00:13 30409                      /usr/lib64/libgcc_s-4.8.5-20150702.so.1
+7f90a7f11000-7f90a7f12000 r--p 00014000 00:13 30409                      /usr/lib64/libgcc_s-4.8.5-20150702.so.1
+7f90a7f12000-7f90a7f13000 rw-p 00015000 00:13 30409                      /usr/lib64/libgcc_s-4.8.5-20150702.so.1
+7f90a7f13000-7f90a80d7000 r-xp 00000000 00:13 30929                      /usr/lib64/libc-2.17.so
+7f90a80d7000-7f90a82d6000 ---p 001c4000 00:13 30929                      /usr/lib64/libc-2.17.so
+7f90a82d6000-7f90a82da000 r--p 001c3000 00:13 30929                      /usr/lib64/libc-2.17.so
+7f90a82da000-7f90a82dc000 rw-p 001c7000 00:13 30929                      /usr/lib64/libc-2.17.so
+7f90a82dc000-7f90a82e1000 rw-p 00000000 00:00 0 
+7f90a82e1000-7f90a83e2000 r-xp 00000000 00:13 30419                      /usr/lib64/libm-2.17.so
+7f90a83e2000-7f90a85e1000 ---p 00101000 00:13 30419                      /usr/lib64/libm-2.17.so
+7f90a85e1000-7f90a85e2000 r--p 00100000 00:13 30419                      /usr/lib64/libm-2.17.so
+7f90a85e2000-7f90a85e3000 rw-p 00101000 00:13 30419                      /usr/lib64/libm-2.17.so
+7f90a85e3000-7f90a8605000 r-xp 00000000 00:13 30935                      /usr/lib64/ld-2.17.so
+7f90a87f4000-7f90a87f7000 rw-p 00000000 00:00 0 
+7f90a87fd000-7f90a87ff000 rw-p 00000000 00:00 0 
+7f90a8802000-7f90a8804000 rw-p 00000000 00:00 0 
+7f90a8804000-7f90a8805000 r--p 00021000 00:13 30935                      /usr/lib64/ld-2.17.so
+7f90a8805000-7f90a8806000 rw-p 00022000 00:13 30935                      /usr/lib64/ld-2.17.so
+7f90a8806000-7f90a8807000 rw-p 00000000 00:00 0 
+7ffd1c60d000-7ffd1c62f000 rw-p 00000000 00:00 0                          [stack]
+7ffd1c6de000-7ffd1c6e0000 r-xp 00000000 00:00 0                          [vdso]
+ffffffffff600000-ffffffffff601000 r-xp 00000000 00:00 0                  [vsyscall]
+Number of loci = 4232, 2-digit alleles
+Input file: i1_allchr_rad10k_n100_serial_nomaf_ord.gen - GENEPOP format
+Number of loci = 4232, 2-digit alleles
+Method(s): LD
+Locus names - last 6 characters: (only the last 100 are listed)
+105776 105776 106297 107280 111107 111840 118310 118312 
+119409 119409 121046 123566 124061 125707 129350 131210 133401 133468 
+135817 141435 145083 145083 147664 152367 155903 155903 155904 159608 
+159897 159933 162925 167493 167506 167506 171060 177828 180736 186027 
+186028 188111 189094 189233 194684 194684 194685 195528 195572 195572 
+199199 199396 199844 201482 204857 207267 207268 211553 212214 215574 
+215574 217472 217921 227484 227496 228339 228471 228471 229799 234215 
+234777 235868 236167 236468 236469 238151 249388 253374 256777 257718 
+257719 259783 261689 262628 265559 266954 269982 270034 273302 280864 
+281244 282453 283908 288382 288382 289192 290605 291862 292607 292749 
+298858 299167 
+Outputs are written to file i1_allchr_rad10k_n100_serial_nomaf_LD_bot.txt
+Starting time: Thu Dec 16 10:33:33 2021
+
+Population     1 [time0_ind1]
+Nondigit at locus 4224, sample 1: [time0_ind10,]
+No population is run!
+/var/lib/slurm/slurmd/job17069547/slurm_script: line 179:  4779 Aborted                 ${NeEst} i:${infofile} o:${optionfile}
+gzip: /projects/f_mlp195/brendanr/g1_n10e4_td100_l99_n500/bottleneck_recap/vcf/i2_allchr_rad10k_n100_serial_nomaf.recode.vcf.gz already exists;	not overwritten
+*** Error in `/projects/f_mlp195/brendanr/Ne2-1L': free(): invalid pointer: 0x00000000017a2400 ***
+======= Backtrace: =========
+/lib64/libc.so.6(+0x81329)[0x7fee6805a329]
+/projects/f_mlp195/brendanr/Ne2-1L[0x4033ee]
+/projects/f_mlp195/brendanr/Ne2-1L[0x429144]
+/projects/f_mlp195/brendanr/Ne2-1L[0x429b81]
+/lib64/libc.so.6(__libc_start_main+0xf5)[0x7fee67ffb555]
+/projects/f_mlp195/brendanr/Ne2-1L[0x4010c9]
+======= Memory map: ========
+00400000-00432000 r-xp 00000000 00:2f 52798237                           /projectsp/f_mlp195/brendanr/Ne2-1L
+00632000-00633000 rw-p 00032000 00:2f 52798237                           /projectsp/f_mlp195/brendanr/Ne2-1L
+017a2000-017eb000 rw-p 00000000 00:00 0                                  [heap]
+7fee60000000-7fee60021000 rw-p 00000000 00:00 0 
+7fee60021000-7fee64000000 ---p 00000000 00:00 0 
+7fee67dc3000-7fee67dd8000 r-xp 00000000 00:13 30409                      /usr/lib64/libgcc_s-4.8.5-20150702.so.1
+7fee67dd8000-7fee67fd7000 ---p 00015000 00:13 30409                      /usr/lib64/libgcc_s-4.8.5-20150702.so.1
+7fee67fd7000-7fee67fd8000 r--p 00014000 00:13 30409                      /usr/lib64/libgcc_s-4.8.5-20150702.so.1
+7fee67fd8000-7fee67fd9000 rw-p 00015000 00:13 30409                      /usr/lib64/libgcc_s-4.8.5-20150702.so.1
+7fee67fd9000-7fee6819d000 r-xp 00000000 00:13 30929                      /usr/lib64/libc-2.17.so
+7fee6819d000-7fee6839c000 ---p 001c4000 00:13 30929                      /usr/lib64/libc-2.17.so
+7fee6839c000-7fee683a0000 r--p 001c3000 00:13 30929                      /usr/lib64/libc-2.17.so
+7fee683a0000-7fee683a2000 rw-p 001c7000 00:13 30929                      /usr/lib64/libc-2.17.so
+7fee683a2000-7fee683a7000 rw-p 00000000 00:00 0 
+7fee683a7000-7fee684a8000 r-xp 00000000 00:13 30419                      /usr/lib64/libm-2.17.so
+7fee684a8000-7fee686a7000 ---p 00101000 00:13 30419                      /usr/lib64/libm-2.17.so
+7fee686a7000-7fee686a8000 r--p 00100000 00:13 30419                      /usr/lib64/libm-2.17.so
+7fee686a8000-7fee686a9000 rw-p 00101000 00:13 30419                      /usr/lib64/libm-2.17.so
+7fee686a9000-7fee686cb000 r-xp 00000000 00:13 30935                      /usr/lib64/ld-2.17.so
+7fee688ba000-7fee688bd000 rw-p 00000000 00:00 0 
+7fee688c3000-7fee688c5000 rw-p 00000000 00:00 0 
+7fee688c8000-7fee688ca000 rw-p 00000000 00:00 0 
+7fee688ca000-7fee688cb000 r--p 00021000 00:13 30935                      /usr/lib64/ld-2.17.so
+7fee688cb000-7fee688cc000 rw-p 00022000 00:13 30935                      /usr/lib64/ld-2.17.so
+7fee688cc000-7fee688cd000 rw-p 00000000 00:00 0 
+7ffda690e000-7ffda6930000 rw-p 00000000 00:00 0                          [stack]
+7ffda69a2000-7ffda69a4000 r-xp 00000000 00:00 0                          [vdso]
+ffffffffff600000-ffffffffff601000 r-xp 00000000 00:00 0                  [vsyscall]
+Number of loci = 4153, 2-digit alleles
+Input file: i2_allchr_rad10k_n100_serial_nomaf_ord.gen - GENEPOP format
+Number of loci = 4153, 2-digit alleles
+Method(s): LD
+Locus names - last 6 characters: (only the last 100 are listed)
+863167 888855 911015 970275 102256 102257 110342 
+112282 115928 117898 119079 120736 128074 133504 133731 134180 135711 
+136713 139016 144724 144724 148724 149496 152384 153662 154954 154955 
+155138 161978 162383 162383 163863 164792 168631 169075 172382 176943 
+177090 184546 186331 188066 189699 191623 191761 191762 194159 194640 
+194935 199690 204924 205918 209051 210350 210361 210699 211824 214489 
+217887 219230 221660 223670 223671 224324 224324 227284 227956 228205 
+228689 228910 230260 232512 233237 233237 234935 234992 237762 244505 
+244952 247001 250489 251969 256167 259721 259722 260051 262151 267137 
+274451 276005 277779 279114 280895 283907 284572 285787 286479 288541 
+292031 295506 299903 
+Outputs are written to file i2_allchr_rad10k_n100_serial_nomaf_LD_bot.txt
+Starting time: Thu Dec 16 10:33:35 2021
+
+Population     1 [time0_ind1]
+Nondigit at locus 4145, sample 1: [time0_ind10,]
+No population is run!
+/var/lib/slurm/slurmd/job17069547/slurm_script: line 179:  4908 Aborted                 ${NeEst} i:${infofile} o:${optionfile}
+gzip: /projects/f_mlp195/brendanr/g1_n10e4_td100_l99_n500/bottleneck_recap/vcf/i3_allchr_rad10k_n100_serial_nomaf.recode.vcf.gz already exists;	not overwritten
+*** Error in `/projects/f_mlp195/brendanr/Ne2-1L': free(): invalid pointer: 0x0000000001445400 ***
+======= Backtrace: =========
+/lib64/libc.so.6(+0x81329)[0x7f620a727329]
+/projects/f_mlp195/brendanr/Ne2-1L[0x4033ee]
+/projects/f_mlp195/brendanr/Ne2-1L[0x429144]
+/projects/f_mlp195/brendanr/Ne2-1L[0x429b81]
+/lib64/libc.so.6(__libc_start_main+0xf5)[0x7f620a6c8555]
+/projects/f_mlp195/brendanr/Ne2-1L[0x4010c9]
+======= Memory map: ========
+00400000-00432000 r-xp 00000000 00:2f 52798237                           /projectsp/f_mlp195/brendanr/Ne2-1L
+00632000-00633000 rw-p 00032000 00:2f 52798237                           /projectsp/f_mlp195/brendanr/Ne2-1L
+01445000-0148f000 rw-p 00000000 00:00 0                                  [heap]
+7f6204000000-7f6204021000 rw-p 00000000 00:00 0 
+7f6204021000-7f6208000000 ---p 00000000 00:00 0 
+7f620a490000-7f620a4a5000 r-xp 00000000 00:13 30409                      /usr/lib64/libgcc_s-4.8.5-20150702.so.1
+7f620a4a5000-7f620a6a4000 ---p 00015000 00:13 30409                      /usr/lib64/libgcc_s-4.8.5-20150702.so.1
+7f620a6a4000-7f620a6a5000 r--p 00014000 00:13 30409                      /usr/lib64/libgcc_s-4.8.5-20150702.so.1
+7f620a6a5000-7f620a6a6000 rw-p 00015000 00:13 30409                      /usr/lib64/libgcc_s-4.8.5-20150702.so.1
+7f620a6a6000-7f620a86a000 r-xp 00000000 00:13 30929                      /usr/lib64/libc-2.17.so
+7f620a86a000-7f620aa69000 ---p 001c4000 00:13 30929                      /usr/lib64/libc-2.17.so
+7f620aa69000-7f620aa6d000 r--p 001c3000 00:13 30929                      /usr/lib64/libc-2.17.so
+7f620aa6d000-7f620aa6f000 rw-p 001c7000 00:13 30929                      /usr/lib64/libc-2.17.so
+7f620aa6f000-7f620aa74000 rw-p 00000000 00:00 0 
+7f620aa74000-7f620ab75000 r-xp 00000000 00:13 30419                      /usr/lib64/libm-2.17.so
+7f620ab75000-7f620ad74000 ---p 00101000 00:13 30419                      /usr/lib64/libm-2.17.so
+7f620ad74000-7f620ad75000 r--p 00100000 00:13 30419                      /usr/lib64/libm-2.17.so
+7f620ad75000-7f620ad76000 rw-p 00101000 00:13 30419                      /usr/lib64/libm-2.17.so
+7f620ad76000-7f620ad98000 r-xp 00000000 00:13 30935                      /usr/lib64/ld-2.17.so
+7f620af87000-7f620af8a000 rw-p 00000000 00:00 0 
+7f620af90000-7f620af92000 rw-p 00000000 00:00 0 
+7f620af95000-7f620af97000 rw-p 00000000 00:00 0 
+7f620af97000-7f620af98000 r--p 00021000 00:13 30935                      /usr/lib64/ld-2.17.so
+7f620af98000-7f620af99000 rw-p 00022000 00:13 30935                      /usr/lib64/ld-2.17.so
+7f620af99000-7f620af9a000 rw-p 00000000 00:00 0 
+7ffdbfbad000-7ffdbfbcf000 rw-p 00000000 00:00 0                          [stack]
+7ffdbfbfa000-7ffdbfbfc000 r-xp 00000000 00:00 0                          [vdso]
+ffffffffff600000-ffffffffff601000 r-xp 00000000 00:00 0                  [vsyscall]
+Number of loci = 4177, 2-digit alleles
+Input file: i3_allchr_rad10k_n100_serial_nomaf_ord.gen - GENEPOP format
+Number of loci = 4177, 2-digit alleles
+Method(s): LD
+Locus names - last 6 characters: (only the last 100 are listed)
+136288 136289 137437 
+139518 139519 140264 149038 149990 150936 150936 157778 160274 161159 
+162492 164795 165330 165707 167100 172197 172198 173336 175978 176710 
+176710 176715 178899 184326 184911 185743 187156 187157 187538 188168 
+188168 188801 191240 196144 199079 200325 203680 209172 211681 214784 
+219324 220087 220087 220087 223588 226080 226081 227682 228238 228238 
+233628 233777 240002 240180 240181 240932 240932 241756 241756 242870 
+247481 250736 250736 250737 252856 253697 254313 255089 255089 260660 
+260661 260661 261001 261061 264683 264683 264842 265252 266555 267764 
+267764 268029 268029 268774 270067 270214 270214 275142 283280 283833 
+284030 285536 286621 289382 291293 298228 298229 
+Outputs are written to file i3_allchr_rad10k_n100_serial_nomaf_LD_bot.txt
+Starting time: Thu Dec 16 10:33:36 2021
+
+Population     1 [time0_ind1]
+Nondigit at locus 4169, sample 1: [time0_ind10,]
+No population is run!
+/var/lib/slurm/slurmd/job17069547/slurm_script: line 179:  5046 Aborted                 ${NeEst} i:${infofile} o:${optionfile}
+gzip: /projects/f_mlp195/brendanr/g1_n10e4_td100_l99_n500/bottleneck_recap/vcf/i4_allchr_rad10k_n100_serial_nomaf.recode.vcf.gz already exists;	not overwritten
+*** Error in `/projects/f_mlp195/brendanr/Ne2-1L': free(): invalid pointer: 0x0000000001757400 ***
+======= Backtrace: =========
+/lib64/libc.so.6(+0x81329)[0x7fa270a57329]
+/projects/f_mlp195/brendanr/Ne2-1L[0x4033ee]
+/projects/f_mlp195/brendanr/Ne2-1L[0x429144]
+/projects/f_mlp195/brendanr/Ne2-1L[0x429b81]
+/lib64/libc.so.6(__libc_start_main+0xf5)[0x7fa2709f8555]
+/projects/f_mlp195/brendanr/Ne2-1L[0x4010c9]
+======= Memory map: ========
+00400000-00432000 r-xp 00000000 00:2f 52798237                           /projectsp/f_mlp195/brendanr/Ne2-1L
+00632000-00633000 rw-p 00032000 00:2f 52798237                           /projectsp/f_mlp195/brendanr/Ne2-1L
+01757000-017a0000 rw-p 00000000 00:00 0                                  [heap]
+7fa26c000000-7fa26c021000 rw-p 00000000 00:00 0 
+7fa26c021000-7fa270000000 ---p 00000000 00:00 0 
+7fa2707c0000-7fa2707d5000 r-xp 00000000 00:13 30409                      /usr/lib64/libgcc_s-4.8.5-20150702.so.1
+7fa2707d5000-7fa2709d4000 ---p 00015000 00:13 30409                      /usr/lib64/libgcc_s-4.8.5-20150702.so.1
+7fa2709d4000-7fa2709d5000 r--p 00014000 00:13 30409                      /usr/lib64/libgcc_s-4.8.5-20150702.so.1
+7fa2709d5000-7fa2709d6000 rw-p 00015000 00:13 30409                      /usr/lib64/libgcc_s-4.8.5-20150702.so.1
+7fa2709d6000-7fa270b9a000 r-xp 00000000 00:13 30929                      /usr/lib64/libc-2.17.so
+7fa270b9a000-7fa270d99000 ---p 001c4000 00:13 30929                      /usr/lib64/libc-2.17.so
+7fa270d99000-7fa270d9d000 r--p 001c3000 00:13 30929                      /usr/lib64/libc-2.17.so
+7fa270d9d000-7fa270d9f000 rw-p 001c7000 00:13 30929                      /usr/lib64/libc-2.17.so
+7fa270d9f000-7fa270da4000 rw-p 00000000 00:00 0 
+7fa270da4000-7fa270ea5000 r-xp 00000000 00:13 30419                      /usr/lib64/libm-2.17.so
+7fa270ea5000-7fa2710a4000 ---p 00101000 00:13 30419                      /usr/lib64/libm-2.17.so
+7fa2710a4000-7fa2710a5000 r--p 00100000 00:13 30419                      /usr/lib64/libm-2.17.so
+7fa2710a5000-7fa2710a6000 rw-p 00101000 00:13 30419                      /usr/lib64/libm-2.17.so
+7fa2710a6000-7fa2710c8000 r-xp 00000000 00:13 30935                      /usr/lib64/ld-2.17.so
+7fa2712b7000-7fa2712ba000 rw-p 00000000 00:00 0 
+7fa2712c0000-7fa2712c2000 rw-p 00000000 00:00 0 
+7fa2712c5000-7fa2712c7000 rw-p 00000000 00:00 0 
+7fa2712c7000-7fa2712c8000 r--p 00021000 00:13 30935                      /usr/lib64/ld-2.17.so
+7fa2712c8000-7fa2712c9000 rw-p 00022000 00:13 30935                      /usr/lib64/ld-2.17.so
+7fa2712c9000-7fa2712ca000 rw-p 00000000 00:00 0 
+7fffbf3b7000-7fffbf3d9000 rw-p 00000000 00:00 0                          [stack]
+7fffbf3da000-7fffbf3dc000 r-xp 00000000 00:00 0                          [vdso]
+ffffffffff600000-ffffffffff601000 r-xp 00000000 00:00 0                  [vsyscall]
+Number of loci = 4116, 2-digit alleles
+Input file: i4_allchr_rad10k_n100_serial_nomaf_ord.gen - GENEPOP format
+Number of loci = 4116, 2-digit alleles
+Method(s): LD
+Locus names - last 6 characters: (only the last 100 are listed)
+138275 138888 139342 139343 
+139343 140404 143147 143763 147690 147690 147690 147691 148186 150639 
+151345 151737 153065 158830 159970 159970 164036 167172 167903 172594 
+173842 174014 174109 177354 177941 179824 180635 180635 180648 182128 
+182129 182638 182639 186469 186470 188530 189524 193257 196410 198284 
+201109 204100 208279 208347 215478 215797 216486 218487 220380 223388 
+223389 224979 225842 226120 227689 228678 228707 228707 232261 234414 
+236184 240680 244005 247781 253624 259317 260396 260397 261486 264427 
+266396 266660 266661 268645 268943 269230 269230 270245 272758 272758 
+273549 274082 274475 275202 280203 284832 289220 289221 290676 292387 
+292600 293369 293369 293370 293538 293539 
+Outputs are written to file i4_allchr_rad10k_n100_serial_nomaf_LD_bot.txt
+Starting time: Thu Dec 16 10:33:38 2021
+
+Population     1 [time0_ind1]
+Nondigit at locus 4108, sample 1: [time0_ind10,]
+No population is run!
+/var/lib/slurm/slurmd/job17069547/slurm_script: line 179:  5184 Aborted                 ${NeEst} i:${infofile} o:${optionfile}
+gzip: /projects/f_mlp195/brendanr/g1_n10e4_td100_l99_n500/bottleneck_recap/vcf/i5_allchr_rad10k_n100_serial_nomaf.recode.vcf.gz already exists;	not overwritten
+*** Error in `/projects/f_mlp195/brendanr/Ne2-1L': free(): invalid pointer: 0x00000000010a0400 ***
+======= Backtrace: =========
+/lib64/libc.so.6(+0x81329)[0x7f1ff26d4329]
+/projects/f_mlp195/brendanr/Ne2-1L[0x4033ee]
+/projects/f_mlp195/brendanr/Ne2-1L[0x429144]
+/projects/f_mlp195/brendanr/Ne2-1L[0x429b81]
+/lib64/libc.so.6(__libc_start_main+0xf5)[0x7f1ff2675555]
+/projects/f_mlp195/brendanr/Ne2-1L[0x4010c9]
+======= Memory map: ========
+00400000-00432000 r-xp 00000000 00:2f 52798237                           /projectsp/f_mlp195/brendanr/Ne2-1L
+00632000-00633000 rw-p 00032000 00:2f 52798237                           /projectsp/f_mlp195/brendanr/Ne2-1L
+010a0000-010ea000 rw-p 00000000 00:00 0                                  [heap]
+7f1fec000000-7f1fec021000 rw-p 00000000 00:00 0 
+7f1fec021000-7f1ff0000000 ---p 00000000 00:00 0 
+7f1ff243d000-7f1ff2452000 r-xp 00000000 00:13 30409                      /usr/lib64/libgcc_s-4.8.5-20150702.so.1
+7f1ff2452000-7f1ff2651000 ---p 00015000 00:13 30409                      /usr/lib64/libgcc_s-4.8.5-20150702.so.1
+7f1ff2651000-7f1ff2652000 r--p 00014000 00:13 30409                      /usr/lib64/libgcc_s-4.8.5-20150702.so.1
+7f1ff2652000-7f1ff2653000 rw-p 00015000 00:13 30409                      /usr/lib64/libgcc_s-4.8.5-20150702.so.1
+7f1ff2653000-7f1ff2817000 r-xp 00000000 00:13 30929                      /usr/lib64/libc-2.17.so
+7f1ff2817000-7f1ff2a16000 ---p 001c4000 00:13 30929                      /usr/lib64/libc-2.17.so
+7f1ff2a16000-7f1ff2a1a000 r--p 001c3000 00:13 30929                      /usr/lib64/libc-2.17.so
+7f1ff2a1a000-7f1ff2a1c000 rw-p 001c7000 00:13 30929                      /usr/lib64/libc-2.17.so
+7f1ff2a1c000-7f1ff2a21000 rw-p 00000000 00:00 0 
+7f1ff2a21000-7f1ff2b22000 r-xp 00000000 00:13 30419                      /usr/lib64/libm-2.17.so
+7f1ff2b22000-7f1ff2d21000 ---p 00101000 00:13 30419                      /usr/lib64/libm-2.17.so
+7f1ff2d21000-7f1ff2d22000 r--p 00100000 00:13 30419                      /usr/lib64/libm-2.17.so
+7f1ff2d22000-7f1ff2d23000 rw-p 00101000 00:13 30419                      /usr/lib64/libm-2.17.so
+7f1ff2d23000-7f1ff2d45000 r-xp 00000000 00:13 30935                      /usr/lib64/ld-2.17.so
+7f1ff2f34000-7f1ff2f37000 rw-p 00000000 00:00 0 
+7f1ff2f3d000-7f1ff2f3f000 rw-p 00000000 00:00 0 
+7f1ff2f42000-7f1ff2f44000 rw-p 00000000 00:00 0 
+7f1ff2f44000-7f1ff2f45000 r--p 00021000 00:13 30935                      /usr/lib64/ld-2.17.so
+7f1ff2f45000-7f1ff2f46000 rw-p 00022000 00:13 30935                      /usr/lib64/ld-2.17.so
+7f1ff2f46000-7f1ff2f47000 rw-p 00000000 00:00 0 
+7fff3de56000-7fff3de78000 rw-p 00000000 00:00 0                          [stack]
+7fff3dfb5000-7fff3dfb7000 r-xp 00000000 00:00 0                          [vdso]
+ffffffffff600000-ffffffffff601000 r-xp 00000000 00:00 0                  [vsyscall]
+Number of loci = 4175, 2-digit alleles
+Input file: i5_allchr_rad10k_n100_serial_nomaf_ord.gen - GENEPOP format
+Number of loci = 4175, 2-digit alleles
+Method(s): LD
+Locus names - last 6 characters: (only the last 100 are listed)
+146786 149155 149155 150054 150055 
+150230 150539 153607 157184 158803 158803 164161 167204 168132 168132 
+168916 169657 169657 170392 170547 173059 175718 179032 179278 179279 
+179663 183192 184914 184914 184938 186066 187572 190534 193370 197549 
+197550 197551 199376 201393 201394 201394 201520 203132 207372 210479 
+211402 215396 217071 222870 222871 226285 228189 231663 233410 233605 
+234132 238937 239980 239981 240146 240454 244227 246966 246967 247183 
+249778 249779 249796 251143 251143 251676 251677 252416 252784 255645 
+257343 259514 259515 262475 262892 262892 264185 264703 265666 265667 
+267667 267668 267807 271536 274116 278398 278408 282642 286815 290652 
+291100 293102 296204 296251 296491 
+Outputs are written to file i5_allchr_rad10k_n100_serial_nomaf_LD_bot.txt
+Starting time: Thu Dec 16 10:33:40 2021
+
+Population     1 [time0_ind1]
+Nondigit at locus 4167, sample 1: [time0_ind10,]
+No population is run!
+/var/lib/slurm/slurmd/job17069547/slurm_script: line 179:  5313 Aborted                 ${NeEst} i:${infofile} o:${optionfile}
+gzip: /projects/f_mlp195/brendanr/g1_n10e4_td100_l99_n500/bottleneck_recap/vcf/i1_allchr_rad50k_n100_serial_nomaf.recode.vcf.gz already exists;	not overwritten
+*** Error in `/projects/f_mlp195/brendanr/Ne2-1L': double free or corruption (out): 0x00000000009eb630 ***
+======= Backtrace: =========
+/lib64/libc.so.6(+0x81329)[0x7f159c148329]
+/projects/f_mlp195/brendanr/Ne2-1L[0x4033ee]
+/projects/f_mlp195/brendanr/Ne2-1L[0x429144]
+/projects/f_mlp195/brendanr/Ne2-1L[0x429b81]
+/lib64/libc.so.6(__libc_start_main+0xf5)[0x7f159c0e9555]
+/projects/f_mlp195/brendanr/Ne2-1L[0x4010c9]
+======= Memory map: ========
+00400000-00432000 r-xp 00000000 00:2f 52798237                           /projectsp/f_mlp195/brendanr/Ne2-1L
+00632000-00633000 rw-p 00032000 00:2f 52798237                           /projectsp/f_mlp195/brendanr/Ne2-1L
+009e5000-00a35000 rw-p 00000000 00:00 0                                  [heap]
+7f1597dea000-7f1597dff000 r-xp 00000000 00:13 30409                      /usr/lib64/libgcc_s-4.8.5-20150702.so.1
+7f1597dff000-7f1597ffe000 ---p 00015000 00:13 30409                      /usr/lib64/libgcc_s-4.8.5-20150702.so.1
+7f1597ffe000-7f1597fff000 r--p 00014000 00:13 30409                      /usr/lib64/libgcc_s-4.8.5-20150702.so.1
+7f1597fff000-7f1598000000 rw-p 00015000 00:13 30409                      /usr/lib64/libgcc_s-4.8.5-20150702.so.1
+7f1598000000-7f1598021000 rw-p 00000000 00:00 0 
+7f1598021000-7f159c000000 ---p 00000000 00:00 0 
+7f159c0c7000-7f159c28b000 r-xp 00000000 00:13 30929                      /usr/lib64/libc-2.17.so
+7f159c28b000-7f159c48a000 ---p 001c4000 00:13 30929                      /usr/lib64/libc-2.17.so
+7f159c48a000-7f159c48e000 r--p 001c3000 00:13 30929                      /usr/lib64/libc-2.17.so
+7f159c48e000-7f159c490000 rw-p 001c7000 00:13 30929                      /usr/lib64/libc-2.17.so
+7f159c490000-7f159c495000 rw-p 00000000 00:00 0 
+7f159c495000-7f159c596000 r-xp 00000000 00:13 30419                      /usr/lib64/libm-2.17.so
+7f159c596000-7f159c795000 ---p 00101000 00:13 30419                      /usr/lib64/libm-2.17.so
+7f159c795000-7f159c796000 r--p 00100000 00:13 30419                      /usr/lib64/libm-2.17.so
+7f159c796000-7f159c797000 rw-p 00101000 00:13 30419                      /usr/lib64/libm-2.17.so
+7f159c797000-7f159c7b9000 r-xp 00000000 00:13 30935                      /usr/lib64/ld-2.17.so
+7f159c9a8000-7f159c9ab000 rw-p 00000000 00:00 0 
+7f159c9b1000-7f159c9b3000 rw-p 00000000 00:00 0 
+7f159c9b6000-7f159c9b8000 rw-p 00000000 00:00 0 
+7f159c9b8000-7f159c9b9000 r--p 00021000 00:13 30935                      /usr/lib64/ld-2.17.so
+7f159c9b9000-7f159c9ba000 rw-p 00022000 00:13 30935                      /usr/lib64/ld-2.17.so
+7f159c9ba000-7f159c9bb000 rw-p 00000000 00:00 0 
+7ffe470d7000-7ffe470f9000 rw-p 00000000 00:00 0                          [stack]
+7ffe4716b000-7ffe4716d000 r-xp 00000000 00:00 0                          [vdso]
+ffffffffff600000-ffffffffff601000 r-xp 00000000 00:00 0                  [vsyscall]
+Number of loci = 20796, 2-digit alleles
+Input file: i1_allchr_rad50k_n100_serial_nomaf_ord.gen - GENEPOP format
+Number of loci = 20796, 2-digit alleles
+Method(s): LD
+Locus names - last 6 characters: (only the last 100 are listed)
+259593 259681 259691 259801 
+260118 260118 260193 260968 260968 261119 261317 262184 262900 263288 
+265626 265626 267041 267200 267699 268546 268725 269642 271038 271038 
+272090 273935 274929 275105 275726 275860 276689 276689 277166 277251 
+278227 278282 278282 278500 278500 278753 278764 278765 279464 279465 
+279698 279698 279850 279910 281120 281963 282018 282018 282091 282193 
+282603 282603 283045 283219 283327 284881 285614 285665 286622 286623 
+286629 286996 286996 287521 288453 288455 288931 289993 290452 290670 
+290971 291234 291417 291418 291746 291747 293490 294568 294755 295667 
+296424 296626 296626 296825 296940 296940 297486 297486 297492 297585 
+297928 298464 298928 298928 299033 299193 
+Outputs are written to file i1_allchr_rad50k_n100_serial_nomaf_LD_bot.txt
+Starting time: Thu Dec 16 10:33:46 2021
+
+Population     1 [time0_ind1]
+Nondigit at locus 20788, sample 1: [time0_ind10,]
+No population is run!
+/var/lib/slurm/slurmd/job17069547/slurm_script: line 226:  5447 Aborted                 ${NeEst} i:${infofile} o:${optionfile}
+gzip: /projects/f_mlp195/brendanr/g1_n10e4_td100_l99_n500/bottleneck_recap/vcf/i2_allchr_rad50k_n100_serial_nomaf.recode.vcf.gz already exists;	not overwritten
+*** Error in `/projects/f_mlp195/brendanr/Ne2-1L': double free or corruption (out): 0x00000000015f6650 ***
+======= Backtrace: =========
+/lib64/libc.so.6(+0x81329)[0x7f431f301329]
+/projects/f_mlp195/brendanr/Ne2-1L[0x4033ee]
+/projects/f_mlp195/brendanr/Ne2-1L[0x429144]
+/projects/f_mlp195/brendanr/Ne2-1L[0x429b81]
+/lib64/libc.so.6(__libc_start_main+0xf5)[0x7f431f2a2555]
+/projects/f_mlp195/brendanr/Ne2-1L[0x4010c9]
+======= Memory map: ========
+00400000-00432000 r-xp 00000000 00:2f 52798237                           /projectsp/f_mlp195/brendanr/Ne2-1L
+00632000-00633000 rw-p 00032000 00:2f 52798237                           /projectsp/f_mlp195/brendanr/Ne2-1L
+015f0000-01640000 rw-p 00000000 00:00 0                                  [heap]
+7f4318000000-7f4318021000 rw-p 00000000 00:00 0 
+7f4318021000-7f431c000000 ---p 00000000 00:00 0 
+7f431f06a000-7f431f07f000 r-xp 00000000 00:13 30409                      /usr/lib64/libgcc_s-4.8.5-20150702.so.1
+7f431f07f000-7f431f27e000 ---p 00015000 00:13 30409                      /usr/lib64/libgcc_s-4.8.5-20150702.so.1
+7f431f27e000-7f431f27f000 r--p 00014000 00:13 30409                      /usr/lib64/libgcc_s-4.8.5-20150702.so.1
+7f431f27f000-7f431f280000 rw-p 00015000 00:13 30409                      /usr/lib64/libgcc_s-4.8.5-20150702.so.1
+7f431f280000-7f431f444000 r-xp 00000000 00:13 30929                      /usr/lib64/libc-2.17.so
+7f431f444000-7f431f643000 ---p 001c4000 00:13 30929                      /usr/lib64/libc-2.17.so
+7f431f643000-7f431f647000 r--p 001c3000 00:13 30929                      /usr/lib64/libc-2.17.so
+7f431f647000-7f431f649000 rw-p 001c7000 00:13 30929                      /usr/lib64/libc-2.17.so
+7f431f649000-7f431f64e000 rw-p 00000000 00:00 0 
+7f431f64e000-7f431f74f000 r-xp 00000000 00:13 30419                      /usr/lib64/libm-2.17.so
+7f431f74f000-7f431f94e000 ---p 00101000 00:13 30419                      /usr/lib64/libm-2.17.so
+7f431f94e000-7f431f94f000 r--p 00100000 00:13 30419                      /usr/lib64/libm-2.17.so
+7f431f94f000-7f431f950000 rw-p 00101000 00:13 30419                      /usr/lib64/libm-2.17.so
+7f431f950000-7f431f972000 r-xp 00000000 00:13 30935                      /usr/lib64/ld-2.17.so
+7f431fb61000-7f431fb64000 rw-p 00000000 00:00 0 
+7f431fb6a000-7f431fb6c000 rw-p 00000000 00:00 0 
+7f431fb6f000-7f431fb71000 rw-p 00000000 00:00 0 
+7f431fb71000-7f431fb72000 r--p 00021000 00:13 30935                      /usr/lib64/ld-2.17.so
+7f431fb72000-7f431fb73000 rw-p 00022000 00:13 30935                      /usr/lib64/ld-2.17.so
+7f431fb73000-7f431fb74000 rw-p 00000000 00:00 0 
+7fff87fb4000-7fff87fd6000 rw-p 00000000 00:00 0                          [stack]
+7fff87fdf000-7fff87fe1000 r-xp 00000000 00:00 0                          [vdso]
+ffffffffff600000-ffffffffff601000 r-xp 00000000 00:00 0                  [vsyscall]
+Number of loci = 20834, 2-digit alleles
+Input file: i2_allchr_rad50k_n100_serial_nomaf_ord.gen - GENEPOP format
+Number of loci = 20834, 2-digit alleles
+Method(s): LD
+Locus names - last 6 characters: (only the last 100 are listed)
+260947 261654 261897 261898 262151 262152 
+262847 263705 264064 264064 266067 266304 266306 267139 267485 268387 
+268549 268549 268550 268937 269084 269142 269487 269488 270373 270428 
+270482 270544 270591 270595 270595 271903 271987 271988 271988 272066 
+272088 272246 272246 272396 272523 272524 273394 273594 273767 274371 
+275399 275589 276119 276143 276143 276661 277776 278273 278866 279446 
+280198 280198 280414 280974 281726 282031 282471 283278 284387 284995 
+285540 285690 285745 285846 285848 287434 288260 288753 289022 289022 
+289699 290167 290168 290213 290825 291559 291594 291595 291724 292389 
+293240 293881 293881 294157 294267 295454 295579 295738 296475 297855 
+298246 298649 298649 299917 
+Outputs are written to file i2_allchr_rad50k_n100_serial_nomaf_LD_bot.txt
+Starting time: Thu Dec 16 10:33:52 2021
+
+Population     1 [time0_ind1]
+Nondigit at locus 20826, sample 1: [time0_ind10,]
+No population is run!
+/var/lib/slurm/slurmd/job17069547/slurm_script: line 226:  5585 Aborted                 ${NeEst} i:${infofile} o:${optionfile}
+gzip: /projects/f_mlp195/brendanr/g1_n10e4_td100_l99_n500/bottleneck_recap/vcf/i3_allchr_rad50k_n100_serial_nomaf.recode.vcf.gz already exists;	not overwritten
+*** Error in `/projects/f_mlp195/brendanr/Ne2-1L': double free or corruption (out): 0x0000000000cdb640 ***
+======= Backtrace: =========
+/lib64/libc.so.6(+0x81329)[0x7f814adc6329]
+/projects/f_mlp195/brendanr/Ne2-1L[0x4033ee]
+/projects/f_mlp195/brendanr/Ne2-1L[0x429144]
+/projects/f_mlp195/brendanr/Ne2-1L[0x429b81]
+/lib64/libc.so.6(__libc_start_main+0xf5)[0x7f814ad67555]
+/projects/f_mlp195/brendanr/Ne2-1L[0x4010c9]
+======= Memory map: ========
+00400000-00432000 r-xp 00000000 00:2f 52798237                           /projectsp/f_mlp195/brendanr/Ne2-1L
+00632000-00633000 rw-p 00032000 00:2f 52798237                           /projectsp/f_mlp195/brendanr/Ne2-1L
+00cd5000-00d25000 rw-p 00000000 00:00 0                                  [heap]
+7f8144000000-7f8144021000 rw-p 00000000 00:00 0 
+7f8144021000-7f8148000000 ---p 00000000 00:00 0 
+7f814ab2f000-7f814ab44000 r-xp 00000000 00:13 30409                      /usr/lib64/libgcc_s-4.8.5-20150702.so.1
+7f814ab44000-7f814ad43000 ---p 00015000 00:13 30409                      /usr/lib64/libgcc_s-4.8.5-20150702.so.1
+7f814ad43000-7f814ad44000 r--p 00014000 00:13 30409                      /usr/lib64/libgcc_s-4.8.5-20150702.so.1
+7f814ad44000-7f814ad45000 rw-p 00015000 00:13 30409                      /usr/lib64/libgcc_s-4.8.5-20150702.so.1
+7f814ad45000-7f814af09000 r-xp 00000000 00:13 30929                      /usr/lib64/libc-2.17.so
+7f814af09000-7f814b108000 ---p 001c4000 00:13 30929                      /usr/lib64/libc-2.17.so
+7f814b108000-7f814b10c000 r--p 001c3000 00:13 30929                      /usr/lib64/libc-2.17.so
+7f814b10c000-7f814b10e000 rw-p 001c7000 00:13 30929                      /usr/lib64/libc-2.17.so
+7f814b10e000-7f814b113000 rw-p 00000000 00:00 0 
+7f814b113000-7f814b214000 r-xp 00000000 00:13 30419                      /usr/lib64/libm-2.17.so
+7f814b214000-7f814b413000 ---p 00101000 00:13 30419                      /usr/lib64/libm-2.17.so
+7f814b413000-7f814b414000 r--p 00100000 00:13 30419                      /usr/lib64/libm-2.17.so
+7f814b414000-7f814b415000 rw-p 00101000 00:13 30419                      /usr/lib64/libm-2.17.so
+7f814b415000-7f814b437000 r-xp 00000000 00:13 30935                      /usr/lib64/ld-2.17.so
+7f814b626000-7f814b629000 rw-p 00000000 00:00 0 
+7f814b62f000-7f814b631000 rw-p 00000000 00:00 0 
+7f814b634000-7f814b636000 rw-p 00000000 00:00 0 
+7f814b636000-7f814b637000 r--p 00021000 00:13 30935                      /usr/lib64/ld-2.17.so
+7f814b637000-7f814b638000 rw-p 00022000 00:13 30935                      /usr/lib64/ld-2.17.so
+7f814b638000-7f814b639000 rw-p 00000000 00:00 0 
+7fffd7e39000-7fffd7e5b000 rw-p 00000000 00:00 0                          [stack]
+7fffd7fc5000-7fffd7fc7000 r-xp 00000000 00:00 0                          [vdso]
+ffffffffff600000-ffffffffff601000 r-xp 00000000 00:00 0                  [vsyscall]
+Number of loci = 20816, 2-digit alleles
+Input file: i3_allchr_rad50k_n100_serial_nomaf_ord.gen - GENEPOP format
+Number of loci = 20816, 2-digit alleles
+Method(s): LD
+Locus names - last 6 characters: (only the last 100 are listed)
+265780 265781 265839 266280 
+266447 266464 266653 267006 267323 268279 269384 269935 271109 271411 
+272477 272509 272509 272637 272637 273472 273917 273918 274021 274642 
+275642 275744 275873 276766 276869 276870 277450 277456 277960 279490 
+279931 279963 279963 280676 280803 280803 281202 281203 281413 281414 
+281723 282037 282266 283574 283950 283951 283975 284021 284813 284982 
+284983 285104 285105 285947 286399 286925 287014 287533 287932 288590 
+288590 288907 288907 288996 289629 289833 289928 289992 290555 290652 
+290774 290798 290949 291270 291362 291362 291362 291946 292430 292724 
+293642 293904 293929 293930 294496 295017 295018 295324 295767 295768 
+296599 297060 298615 299478 299478 299963 
+Outputs are written to file i3_allchr_rad50k_n100_serial_nomaf_LD_bot.txt
+Starting time: Thu Dec 16 10:33:57 2021
+
+Population     1 [time0_ind1]
+Nondigit at locus 20808, sample 1: [time0_ind10,]
+No population is run!
+/var/lib/slurm/slurmd/job17069547/slurm_script: line 226:  5724 Aborted                 ${NeEst} i:${infofile} o:${optionfile}
+gzip: /projects/f_mlp195/brendanr/g1_n10e4_td100_l99_n500/bottleneck_recap/vcf/i4_allchr_rad50k_n100_serial_nomaf.recode.vcf.gz already exists;	not overwritten
+*** Error in `/projects/f_mlp195/brendanr/Ne2-1L': double free or corruption (out): 0x00000000011ed550 ***
+======= Backtrace: =========
+/lib64/libc.so.6(+0x81329)[0x7f51fa15e329]
+/projects/f_mlp195/brendanr/Ne2-1L[0x4033ee]
+/projects/f_mlp195/brendanr/Ne2-1L[0x429144]
+/projects/f_mlp195/brendanr/Ne2-1L[0x429b81]
+/lib64/libc.so.6(__libc_start_main+0xf5)[0x7f51fa0ff555]
+/projects/f_mlp195/brendanr/Ne2-1L[0x4010c9]
+======= Memory map: ========
+00400000-00432000 r-xp 00000000 00:2f 52798237                           /projectsp/f_mlp195/brendanr/Ne2-1L
+00632000-00633000 rw-p 00032000 00:2f 52798237                           /projectsp/f_mlp195/brendanr/Ne2-1L
+011e7000-01236000 rw-p 00000000 00:00 0                                  [heap]
+7f51f4000000-7f51f4021000 rw-p 00000000 00:00 0 
+7f51f4021000-7f51f8000000 ---p 00000000 00:00 0 
+7f51f9ec7000-7f51f9edc000 r-xp 00000000 00:13 30409                      /usr/lib64/libgcc_s-4.8.5-20150702.so.1
+7f51f9edc000-7f51fa0db000 ---p 00015000 00:13 30409                      /usr/lib64/libgcc_s-4.8.5-20150702.so.1
+7f51fa0db000-7f51fa0dc000 r--p 00014000 00:13 30409                      /usr/lib64/libgcc_s-4.8.5-20150702.so.1
+7f51fa0dc000-7f51fa0dd000 rw-p 00015000 00:13 30409                      /usr/lib64/libgcc_s-4.8.5-20150702.so.1
+7f51fa0dd000-7f51fa2a1000 r-xp 00000000 00:13 30929                      /usr/lib64/libc-2.17.so
+7f51fa2a1000-7f51fa4a0000 ---p 001c4000 00:13 30929                      /usr/lib64/libc-2.17.so
+7f51fa4a0000-7f51fa4a4000 r--p 001c3000 00:13 30929                      /usr/lib64/libc-2.17.so
+7f51fa4a4000-7f51fa4a6000 rw-p 001c7000 00:13 30929                      /usr/lib64/libc-2.17.so
+7f51fa4a6000-7f51fa4ab000 rw-p 00000000 00:00 0 
+7f51fa4ab000-7f51fa5ac000 r-xp 00000000 00:13 30419                      /usr/lib64/libm-2.17.so
+7f51fa5ac000-7f51fa7ab000 ---p 00101000 00:13 30419                      /usr/lib64/libm-2.17.so
+7f51fa7ab000-7f51fa7ac000 r--p 00100000 00:13 30419                      /usr/lib64/libm-2.17.so
+7f51fa7ac000-7f51fa7ad000 rw-p 00101000 00:13 30419                      /usr/lib64/libm-2.17.so
+7f51fa7ad000-7f51fa7cf000 r-xp 00000000 00:13 30935                      /usr/lib64/ld-2.17.so
+7f51fa9be000-7f51fa9c1000 rw-p 00000000 00:00 0 
+7f51fa9c7000-7f51fa9c9000 rw-p 00000000 00:00 0 
+7f51fa9cc000-7f51fa9ce000 rw-p 00000000 00:00 0 
+7f51fa9ce000-7f51fa9cf000 r--p 00021000 00:13 30935                      /usr/lib64/ld-2.17.so
+7f51fa9cf000-7f51fa9d0000 rw-p 00022000 00:13 30935                      /usr/lib64/ld-2.17.so
+7f51fa9d0000-7f51fa9d1000 rw-p 00000000 00:00 0 
+7ffc83f81000-7ffc83fa3000 rw-p 00000000 00:00 0                          [stack]
+7ffc83fc1000-7ffc83fc3000 r-xp 00000000 00:00 0                          [vdso]
+ffffffffff600000-ffffffffff601000 r-xp 00000000 00:00 0                  [vsyscall]
+Number of loci = 20574, 2-digit alleles
+Input file: i4_allchr_rad50k_n100_serial_nomaf_ord.gen - GENEPOP format
+Number of loci = 20574, 2-digit alleles
+Method(s): LD
+Locus names - last 6 characters: (only the last 100 are listed)
+262809 262809 262867 263224 263540 263757 
+264397 264524 264579 265356 265357 265936 266123 266282 266759 266959 
+267151 267255 267422 267579 267962 268098 268098 268651 269470 269800 
+269880 269881 270373 270400 270634 270996 271326 271448 271520 272964 
+272965 273251 273442 273442 273443 274045 274047 274048 274421 276084 
+276387 276880 276881 277456 278571 278631 278921 279267 279361 279362 
+279405 279607 282071 282071 282919 282969 283437 283603 284113 284458 
+284663 284873 284873 285133 285388 285640 286530 286530 286921 288084 
+288084 288386 288617 289414 289888 290076 290226 290483 290514 290770 
+291154 292178 292463 292939 293070 293729 293936 295247 295247 295501 
+295519 296931 298016 298365 
+Outputs are written to file i4_allchr_rad50k_n100_serial_nomaf_LD_bot.txt
+Starting time: Thu Dec 16 10:34:03 2021
+
+Population     1 [time0_ind1]
+Nondigit at locus 20566, sample 1: [time0_ind10,]
+No population is run!
+/var/lib/slurm/slurmd/job17069547/slurm_script: line 226:  5856 Aborted                 ${NeEst} i:${infofile} o:${optionfile}
+gzip: /projects/f_mlp195/brendanr/g1_n10e4_td100_l99_n500/bottleneck_recap/vcf/i5_allchr_rad50k_n100_serial_nomaf.recode.vcf.gz already exists;	not overwritten
+*** Error in `/projects/f_mlp195/brendanr/Ne2-1L': double free or corruption (out): 0x00000000025b3750 ***
+======= Backtrace: =========
+/lib64/libc.so.6(+0x81329)[0x7fdd1d602329]
+/projects/f_mlp195/brendanr/Ne2-1L[0x4033ee]
+/projects/f_mlp195/brendanr/Ne2-1L[0x429144]
+/projects/f_mlp195/brendanr/Ne2-1L[0x429b81]
+/lib64/libc.so.6(__libc_start_main+0xf5)[0x7fdd1d5a3555]
+/projects/f_mlp195/brendanr/Ne2-1L[0x4010c9]
+======= Memory map: ========
+00400000-00432000 r-xp 00000000 00:2f 52798237                           /projectsp/f_mlp195/brendanr/Ne2-1L
+00632000-00633000 rw-p 00032000 00:2f 52798237                           /projectsp/f_mlp195/brendanr/Ne2-1L
+025ad000-025fd000 rw-p 00000000 00:00 0                                  [heap]
+7fdd18000000-7fdd18021000 rw-p 00000000 00:00 0 
+7fdd18021000-7fdd1c000000 ---p 00000000 00:00 0 
+7fdd1d36b000-7fdd1d380000 r-xp 00000000 00:13 30409                      /usr/lib64/libgcc_s-4.8.5-20150702.so.1
+7fdd1d380000-7fdd1d57f000 ---p 00015000 00:13 30409                      /usr/lib64/libgcc_s-4.8.5-20150702.so.1
+7fdd1d57f000-7fdd1d580000 r--p 00014000 00:13 30409                      /usr/lib64/libgcc_s-4.8.5-20150702.so.1
+7fdd1d580000-7fdd1d581000 rw-p 00015000 00:13 30409                      /usr/lib64/libgcc_s-4.8.5-20150702.so.1
+7fdd1d581000-7fdd1d745000 r-xp 00000000 00:13 30929                      /usr/lib64/libc-2.17.so
+7fdd1d745000-7fdd1d944000 ---p 001c4000 00:13 30929                      /usr/lib64/libc-2.17.so
+7fdd1d944000-7fdd1d948000 r--p 001c3000 00:13 30929                      /usr/lib64/libc-2.17.so
+7fdd1d948000-7fdd1d94a000 rw-p 001c7000 00:13 30929                      /usr/lib64/libc-2.17.so
+7fdd1d94a000-7fdd1d94f000 rw-p 00000000 00:00 0 
+7fdd1d94f000-7fdd1da50000 r-xp 00000000 00:13 30419                      /usr/lib64/libm-2.17.so
+7fdd1da50000-7fdd1dc4f000 ---p 00101000 00:13 30419                      /usr/lib64/libm-2.17.so
+7fdd1dc4f000-7fdd1dc50000 r--p 00100000 00:13 30419                      /usr/lib64/libm-2.17.so
+7fdd1dc50000-7fdd1dc51000 rw-p 00101000 00:13 30419                      /usr/lib64/libm-2.17.so
+7fdd1dc51000-7fdd1dc73000 r-xp 00000000 00:13 30935                      /usr/lib64/ld-2.17.so
+7fdd1de62000-7fdd1de65000 rw-p 00000000 00:00 0 
+7fdd1de6b000-7fdd1de6d000 rw-p 00000000 00:00 0 
+7fdd1de70000-7fdd1de72000 rw-p 00000000 00:00 0 
+7fdd1de72000-7fdd1de73000 r--p 00021000 00:13 30935                      /usr/lib64/ld-2.17.so
+7fdd1de73000-7fdd1de74000 rw-p 00022000 00:13 30935                      /usr/lib64/ld-2.17.so
+7fdd1de74000-7fdd1de75000 rw-p 00000000 00:00 0 
+7ffd92248000-7ffd9226a000 rw-p 00000000 00:00 0                          [stack]
+7ffd922ab000-7ffd922ad000 r-xp 00000000 00:00 0                          [vdso]
+ffffffffff600000-ffffffffff601000 r-xp 00000000 00:00 0                  [vsyscall]
+Number of loci = 21092, 2-digit alleles
+Input file: i5_allchr_rad50k_n100_serial_nomaf_ord.gen - GENEPOP format
+Number of loci = 21092, 2-digit alleles
+Method(s): LD
+Locus names - last 6 characters: (only the last 100 are listed)
+262876 263151 263432 264270 264271 264544 264544 264549 
+264819 265054 265490 265703 266809 266809 268160 269148 269306 269320 
+269508 269592 269593 269661 270194 270249 270250 270470 270470 270500 
+270586 271275 272496 273666 273772 274205 274577 274578 276537 276537 
+276970 276971 276971 277777 278157 278370 278421 279020 279346 279346 
+279530 279531 279674 279913 280379 280380 280380 281245 281453 281961 
+282157 282157 282158 282203 282310 282867 285466 285976 285976 286666 
+287795 287930 288546 289260 289741 289741 289745 290026 290027 290104 
+290336 290507 290752 290896 291149 291302 291691 292735 293123 293500 
+294729 295364 295580 295765 296142 296518 297765 299461 299656 299812 
+299812 299813 
+Outputs are written to file i5_allchr_rad50k_n100_serial_nomaf_LD_bot.txt
+Starting time: Thu Dec 16 10:34:10 2021
+
+Population     1 [time0_ind1]
+Nondigit at locus 21084, sample 1: [time0_ind10,]
+No population is run!
+/var/lib/slurm/slurmd/job17069547/slurm_script: line 226:  6030 Aborted                 ${NeEst} i:${infofile} o:${optionfile}

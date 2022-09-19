@@ -1,0 +1,58 @@
+gzip: /projects/f_mlp195/brendanr/g1_n10e3_td190_l95_n500/constant_recap/vcf/i3_allchr_rad10k_n50_2samp_nomaf.recode.vcf.gz already exists;	not overwritten
+Number of loci = 579, 2-digit alleles
+Input file: i3_allchr_rad10k_n50_2samp_nomaf.gen - GENEPOP format
+Number of loci = 579, 2-digit alleles
+Method(s): LD
+Locus names - last 6 characters: (only the last 100 are listed)
+674708 
+953994 140272 158897 179074 179315 189739 192695 217636 246572 249864 
+257659 265839 271969 292300 292301 292909 296525 297098 684855 244121 
+385593 467433 737184 809361 103228 114513 120279 149746 165158 212861 
+232716 283635 285246 294699 681805 136109 227296 229116 349536 372452 
+399244 512731 588385 771762 837969 922526 962925 108540 114895 128707 
+147500 153210 153451 159948 160003 160558 173536 185885 188909 199156 
+199156 216331 218976 232330 233892 254877 256223 276258 291220 291269 
+293818 143361 143361 275513 338932 356089 470781 492286 516830 872797 
+993306 102622 120578 124300 124928 133827 140005 157059 170800 180732 
+180732 181367 224949 231084 248457 256973 256973 275880 284928 
+Outputs are written to file i3_allchr_rad10k_n50_2samp_nomaf_LD.txt
+Starting time: Sat Jul 30 10:18:04 2022
+Each pair of loci are taken in distinct chromosomes.
+Maximum number of locus pairs = 160408
+
+
+Population     1 [time0_ind1]
+-> Total samples = 25
+   * For lowest freq: 0.050
+       Loci are paired across chromosomes
+       Estimate of Ne:               -899.0
+     Parameter CI:           385.1        infinite
+     Jackknife CI:           264.8        infinite
+   * For lowest freq: 0.010
+       Loci are paired across chromosomes
+       Estimate of Ne:               7380.7
+     Parameter CI:           370.7        infinite
+     Jackknife CI:           209.9        infinite
+   * For lowest freq:    0+
+       Loci are paired across chromosomes
+       Estimate of Ne:               7380.7
+     Parameter CI:           370.7        infinite
+     Jackknife CI:           209.9        infinite
+
+Population     2 [time120_ind1]
+-> Total samples = 25
+   * For lowest freq: 0.050
+       Loci are paired across chromosomes
+       Estimate of Ne:                842.5
+     Parameter CI:           189.6        infinite
+     Jackknife CI:           156.5        infinite
+   * For lowest freq: 0.010
+       Loci are paired across chromosomes
+       Estimate of Ne:                620.6
+     Parameter CI:           241.7        infinite
+     Jackknife CI:           213.9        infinite
+   * For lowest freq:    0+
+       Loci are paired across chromosomes
+       Estimate of Ne:                620.6
+     Parameter CI:           241.7        infinite
+     Jackknife CI:           213.9        infinite

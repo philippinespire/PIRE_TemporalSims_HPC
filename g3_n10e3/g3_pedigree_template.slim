@@ -1,0 +1,120 @@
+// Keywords: nonWF, non-Wright-Fisher, Wright-Fisher, non-overlapping generations, discrete generations, random mating, population decline, pedigree
+// This is just a skeleton model for generating a pedigree and recording demographic information for a dioecious population with a given initial population size and timing of decline.
+// We will use this pedigree in subsequent steps to generate tree sequences for each chromosome
+
+initialize() {
+// Initialize model type (non-Wright-Fisher, although this has many aspects of a Wright-Fisher model 
+	initializeSLiMModelType("nonWF");
+// Use tree sequence recording
+	initializeTreeSeq();
+// Two differentiated sexes
+	initializeSex("A");
+// Life table and stable age distribution	
+	defineConstant("L",c(0.733,0.2,0.2,0.2,0.2,0.36,0.6,0.8,1));
+	defineConstant("a1",asInteger((1-L[0])*Nhistoric));
+	defineConstant("a2",asInteger((1-L[1])*a1));
+	defineConstant("a3",asInteger((1-L[2])*a2));
+	defineConstant("a4",asInteger((1-L[3])*a3));
+	defineConstant("a5",asInteger((1-L[4])*a4));
+	defineConstant("a6",asInteger((1-L[5])*a5));
+	defineConstant("a7",asInteger((1-L[6])*a6));
+	defineConstant("Ninit", Nhistoric+a1+a2+a3+a4+a5+a6+a7);
+// This will just be a single short homogenous chromosome with no mutation or recombination for now - we will generate realistic chromosomes according to the pedigree using separate simulations 
+	initializeMutationType("m1", 0.5, "f", 0.0);
+	initializeMutationRate(0);
+	initializeGenomicElementType("g1", m1, 1.0);
+	initializeGenomicElement(g1, 0, 9999);
+	initializeRecombinationRate(0);
+// delete any existing pedigree log files - change these to variables later
+	deleteFile(matingfile);
+	deleteFile(deathfile);
+}
+
+
+// Random mating with a specified # of offspring. For each offspring randomly choose one male and one female parent. Recording parent IDs in order to output distribution of reproductive success later. In this reproduction call I am also outputting some info about # of breeding-age individuals and distribution of parentage.
+
+reproduction(p1,"F") {
+	K = sim.getValue("K");
+	femalelist=NULL;
+	malelist=NULL;
+	for (i in seqLen(asInteger(K)))
+	{
+		female = p1.sampleIndividuals(1,sex="F",minAge=1);
+		male = p1.sampleIndividuals(1,sex="M",minAge=1);
+		child = p1.addCrossed(female, male);
+		child.tag = sim.tag;
+		sim.tag = sim.tag + 1;
+		matingline = paste(c(sim.generation, female.tag, male.tag, child.tag));
+		writeFile(matingfile, matingline, append=T);
+	}
+	breederdat=c("generation:",sim.generation,"num_breedingage_males:",sum(p1.individuals.sex == "M"),"num_breedingage_females:",sum(p1.individuals.sex == "F"));
+	breedline=paste(breederdat,sep=" ");
+	writeFile(breederfile,breedline,append=T);
+	self.active = 0;
+}
+
+// here come some vars
+1 early() {
+	sim.setValue("breederfile", breederfile);
+	sim.setValue("matingfile", matingfile);
+	sim.setValue("deathfile",deathfile);
+	sim.setValue("t120sampfile", t120sampfile);
+	sim.setValue("t90sampfile", t90sampfile);
+	sim.setValue("t60sampfile", t60sampfile);
+	sim.setValue("t30sampfile", t30sampfile);
+	sim.setValue("t0sampfile", t0sampfile);
+}
+
+// First generation: set # of offspring and K to Nhistoric
+1 early() {
+	sim.setValue("K", Nhistoric);
+	sim.addSubpop("p1", Ninit);
+	p1.individuals.age=sample(c(rep(0,Ninit),rep(1,a1),rep(2,a2),rep(3,a3),rep(4,a4),rep(5,a5),rep(6,a6),rep(7,a7)),Ninit);
+	// provide initial tags and remember the next tag value
+	p1.individuals.tag = 1:Ninit;
+	sim.tag = Ninit+1;
+}
+
+// Population decline: if simulation time is greater than or equal to Tdecline, exponential reduction in # of offspring. Can have a stable population if Tdecline is set to > 220.
+early(){
+	if (sim.generation > Tdecline) {
+		sim.setValue("K",round(sim.getValue("K")*lambda));
+		}
+}
+
+// Survival for overlapping generations based on life table 
+early()
+{		
+	inds = p1.individuals;
+	ages = inds.age;
+	mortality = L[ages];
+	survival = 1 - mortality;
+	inds.fitnessScaling = survival;
+	sim.setValue("extant", sim.subpopulations.individuals.tag);
+}
+
+late() {
+	// log out the individuals that died
+	oldExtant = sim.getValue("extant");
+	newExtant = sim.subpopulations.individuals.tag;
+	survived = (match(oldExtant, newExtant) >= 0);
+	died = oldExtant[!survived];
+	
+	for (indTag in died)
+	{
+		line = sim.generation + " " + indTag;
+		writeFile(deathfile, line, append=T);
+	}
+}
+
+100 late() { t120samp=paste(sample(p1.individuals.tag,min(100,length(p1.individuals))),sep="\n");writeFile(t120sampfile,t120samp); }
+
+130 late() { t90samp=paste(sample(p1.individuals.tag,min(100,length(p1.individuals))),sep="\n");writeFile(t90sampfile,t90samp); }
+
+160 late() { t60samp=paste(sample(p1.individuals.tag,min(100,length(p1.individuals))),sep="\n");writeFile(t60sampfile,t60samp); }
+
+190 late() { t30samp=paste(sample(p1.individuals.tag,min(100,length(p1.individuals))),sep="\n");writeFile(t30sampfile,t30samp); }
+
+220 late() { t0samp=paste(sample(p1.individuals.tag,min(100,length(p1.individuals))),sep="\n");writeFile(t0sampfile,t0samp); }
+
+220 late() { sim.simulationFinished(); }

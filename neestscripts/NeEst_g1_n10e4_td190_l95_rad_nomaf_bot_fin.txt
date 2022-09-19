@@ -1,0 +1,993 @@
+Number of loci = 4401, 2-digit alleles
+Input file: i1_allchr_rad10k_n50_contemp_nomaf.gen - GENEPOP format
+Number of loci = 4401, 2-digit alleles
+Method(s): LD
+Locus names - last 6 characters: (only the last 100 are listed)
+124441 127144 130766 135092 135093 141268 142790 143537 144571 
+147301 147302 154105 159888 159915 161157 161686 162889 162889 168567 
+168567 168567 169872 171367 175682 177030 177219 177910 180326 182686 
+183648 186854 190168 192674 192826 192827 193759 195027 195170 195274 
+201108 202078 204457 206559 207120 209355 211183 211874 215864 218575 
+218680 223016 225464 230284 230627 234470 234470 237274 237274 239116 
+240611 242399 242399 242399 242980 242981 244588 246619 246620 252000 
+252001 252510 253900 257437 257815 258444 258795 258808 261062 261062 
+266334 268648 269993 270264 270265 270265 272175 272919 278767 280527 
+280527 283730 288968 289651 289651 291084 292413 295191 296536 297661 
+298797 
+Outputs are written to file i1_allchr_rad10k_n50_contemp_nomaf_LD_bot.txt
+Starting time: Thu Dec 16 09:53:40 2021
+Each pair of loci are taken in distinct chromosomes.
+Maximum number of locus pairs = 9294621
+
+
+Population     1 [time0_ind1]
+-> Total samples = 50
+   * For lowest freq: 0.050
+       Loci are paired across chromosomes
+       Estimate of Ne:               1240.0
+     Parameter CI:           923.3          1879.9
+     Jackknife CI:           513.5        infinite
+   * For lowest freq: 0.010
+     Calculating r^2:
+       Loci are paired across chromosomes
+           1000000 done, at loc. pair (1143, 4274)
+     Actual number of r^2-values evaluated = 1971151
+       Estimate of Ne:               5096.8
+     Parameter CI:          3096.7         14305.3
+     Jackknife CI:          1070.1        infinite
+   * For lowest freq:    0+
+     Calculating r^2:
+       Loci are paired across chromosomes
+           1000000 done, at loc. pair (1143, 4274)
+     Actual number of r^2-values evaluated = 1971151
+       Estimate of Ne:               5096.8
+     Parameter CI:          3096.7         14305.3
+     Jackknife CI:          1070.1        infinite
+Number of loci = 4300, 2-digit alleles
+Input file: i2_allchr_rad10k_n50_contemp_nomaf.gen - GENEPOP format
+Number of loci = 4300, 2-digit alleles
+Method(s): LD
+Locus names - last 6 characters: (only the last 100 are listed)
+151365 158697 161445 168112 171496 173729 173729 173929 175429 175663 
+176641 176642 178343 178859 182123 183077 186335 188928 189726 190221 
+193258 193328 194975 195786 195787 195787 200233 200364 200979 201935 
+202509 202870 205138 207015 208142 208143 208143 208606 212098 218187 
+218932 219717 222553 222554 223025 224563 225455 228778 230125 230932 
+231707 234000 234184 234185 234658 236321 236321 238335 241192 242278 
+243520 243521 243521 244136 247454 248831 250414 250499 251078 251818 
+252493 253797 255472 257104 257104 259952 264032 267466 275040 275041 
+276925 277801 278138 278414 285410 286494 286680 286680 288148 288914 
+290216 290216 290216 290217 294930 295174 295686 296384 296384 296384 
+Outputs are written to file i2_allchr_rad10k_n50_contemp_nomaf_LD_bot.txt
+Starting time: Thu Dec 16 09:53:53 2021
+Each pair of loci are taken in distinct chromosomes.
+Maximum number of locus pairs = 8873258
+
+
+Population     1 [time0_ind1]
+-> Total samples = 50
+   * For lowest freq: 0.050
+       Loci are paired across chromosomes
+       Estimate of Ne:               1277.8
+     Parameter CI:           931.7          2023.2
+     Jackknife CI:           621.7        infinite
+   * For lowest freq: 0.010
+     Calculating r^2:
+       Loci are paired across chromosomes
+           1000000 done, at loc. pair (1242, 3238)
+     Actual number of r^2-values evaluated = 1892451
+       Estimate of Ne:               2449.3
+     Parameter CI:          1858.2          3585.8
+     Jackknife CI:          1045.3        infinite
+   * For lowest freq:    0+
+     Calculating r^2:
+       Loci are paired across chromosomes
+           1000000 done, at loc. pair (1242, 3238)
+     Actual number of r^2-values evaluated = 1892451
+       Estimate of Ne:               2449.3
+     Parameter CI:          1858.2          3585.8
+     Jackknife CI:          1045.3        infinite
+Number of loci = 4285, 2-digit alleles
+Input file: i3_allchr_rad10k_n50_contemp_nomaf.gen - GENEPOP format
+Number of loci = 4285, 2-digit alleles
+Method(s): LD
+Locus names - last 6 characters: (only the last 100 are listed)
+130068 130921 132452 133359 136334 
+137030 138870 139705 140664 143325 144172 145851 146123 154734 154918 
+157838 160162 160984 166296 166410 171078 171992 172344 176109 178496 
+178613 179485 181404 182796 183920 185472 186837 188208 188501 188871 
+188872 191427 192771 193195 193438 194385 194728 199282 202103 204153 
+205269 205269 207522 207522 210875 214597 223813 224452 224937 224937 
+225260 228469 228492 229868 230236 236715 236715 236716 242237 244032 
+246356 246358 247106 248883 249471 249960 252211 252440 252518 252518 
+253917 255506 258603 259010 260037 260056 262107 263712 265162 268389 
+273961 274812 277004 278084 278216 278216 282888 285866 285866 286645 
+288075 288077 294365 294522 295694 
+Outputs are written to file i3_allchr_rad10k_n50_contemp_nomaf_LD_bot.txt
+Starting time: Thu Dec 16 09:54:04 2021
+Each pair of loci are taken in distinct chromosomes.
+Maximum number of locus pairs = 8810439
+
+
+Population     1 [time0_ind1]
+-> Total samples = 50
+   * For lowest freq: 0.050
+       Loci are paired across chromosomes
+       Estimate of Ne:               2243.4
+     Parameter CI:          1323.0          7232.9
+     Jackknife CI:           967.9        infinite
+   * For lowest freq: 0.010
+     Calculating r^2:
+       Loci are paired across chromosomes
+           1000000 done, at loc. pair (1406, 1674)
+     Actual number of r^2-values evaluated = 1823984
+       Estimate of Ne:             -12896.8
+     Parameter CI:         18691.9        infinite
+     Jackknife CI:          2409.2        infinite
+   * For lowest freq:    0+
+     Calculating r^2:
+       Loci are paired across chromosomes
+           1000000 done, at loc. pair (1406, 1674)
+     Actual number of r^2-values evaluated = 1823984
+       Estimate of Ne:             -12896.8
+     Parameter CI:         18691.9        infinite
+     Jackknife CI:          2409.2        infinite
+Number of loci = 4181, 2-digit alleles
+Input file: i4_allchr_rad10k_n50_contemp_nomaf.gen - GENEPOP format
+Number of loci = 4181, 2-digit alleles
+Method(s): LD
+Locus names - last 6 characters: (only the last 100 are listed)
+116941 118584 120162 120895 121287 121455 124994 128463 130758 
+135375 138133 139362 139362 139454 139454 141840 143036 143570 148656 
+149610 152203 153872 153873 153873 156316 157324 157561 157561 159351 
+161280 165800 166719 166720 168435 180658 180908 181160 181160 181315 
+181732 182826 182826 183517 184288 185278 191977 193402 193402 193641 
+193943 194730 195278 199181 199182 201782 203199 204068 210761 211414 
+211414 212158 213232 214487 215438 215998 217152 217152 219576 219595 
+221335 223291 223291 224360 226714 229531 229532 233662 237307 237586 
+238129 240085 240332 247634 248126 248127 248516 252163 259619 260550 
+263257 270909 271405 273217 280466 280467 284682 285549 286201 294895 
+296014 
+Outputs are written to file i4_allchr_rad10k_n50_contemp_nomaf_LD_bot.txt
+Starting time: Thu Dec 16 09:54:15 2021
+Each pair of loci are taken in distinct chromosomes.
+Maximum number of locus pairs = 8388908
+
+
+Population     1 [time0_ind1]
+-> Total samples = 50
+   * For lowest freq: 0.050
+       Loci are paired across chromosomes
+       Estimate of Ne:               1522.0
+     Parameter CI:          1051.7          2735.5
+     Jackknife CI:           740.3        infinite
+   * For lowest freq: 0.010
+     Calculating r^2:
+       Loci are paired across chromosomes
+           1000000 done, at loc. pair (1368, 2020)
+     Actual number of r^2-values evaluated = 1844491
+       Estimate of Ne:               2542.7
+     Parameter CI:          1905.4          3813.4
+     Jackknife CI:          1144.8        infinite
+   * For lowest freq:    0+
+     Calculating r^2:
+       Loci are paired across chromosomes
+           1000000 done, at loc. pair (1368, 2020)
+     Actual number of r^2-values evaluated = 1844491
+       Estimate of Ne:               2542.7
+     Parameter CI:          1905.4          3813.4
+     Jackknife CI:          1144.8        infinite
+Number of loci = 4339, 2-digit alleles
+Input file: i5_allchr_rad10k_n50_contemp_nomaf.gen - GENEPOP format
+Number of loci = 4339, 2-digit alleles
+Method(s): LD
+Locus names - last 6 characters: (only the last 100 are listed)
+139499 
+141262 141602 146904 148451 151672 151806 152459 152461 153863 156180 
+156233 157670 157961 157962 159526 159689 159830 161815 165435 165436 
+165942 165943 167311 168358 169042 169043 170965 171071 173667 176681 
+178842 180421 180422 181815 185338 187929 188300 188537 192038 193632 
+194663 194989 196061 196999 197391 197734 197734 197947 198981 204767 
+217594 217636 217975 224068 225555 232886 234510 234981 238072 239537 
+241018 244767 245036 245247 247088 247496 248989 250194 250194 257899 
+259265 259265 265498 265619 265619 272646 276557 277029 278321 278756 
+278756 282024 283840 283841 283841 284951 285135 287032 287494 289083 
+291033 294704 294704 295979 295979 295980 296604 296878 298995 
+Outputs are written to file i5_allchr_rad10k_n50_contemp_nomaf_LD_bot.txt
+Starting time: Thu Dec 16 09:54:27 2021
+Each pair of loci are taken in distinct chromosomes.
+Maximum number of locus pairs = 9035487
+
+
+Population     1 [time0_ind1]
+-> Total samples = 50
+   * For lowest freq: 0.050
+       Loci are paired across chromosomes
+       Estimate of Ne:               2223.3
+     Parameter CI:          1352.2          6160.6
+     Jackknife CI:          1117.8         97098.8
+   * For lowest freq: 0.010
+     Calculating r^2:
+       Loci are paired across chromosomes
+           1000000 done, at loc. pair (1345, 1471)
+     Actual number of r^2-values evaluated = 1998689
+       Estimate of Ne:              -6567.5
+     Parameter CI:        infinite        infinite
+     Jackknife CI:         11838.4        infinite
+   * For lowest freq:    0+
+     Calculating r^2:
+       Loci are paired across chromosomes
+           1000000 done, at loc. pair (1345, 1471)
+     Actual number of r^2-values evaluated = 1998689
+       Estimate of Ne:              -6567.5
+     Parameter CI:        infinite        infinite
+     Jackknife CI:         11838.4        infinite
+Number of loci = 21858, 2-digit alleles
+Input file: i1_allchr_rad50k_n50_contemp_nomaf.gen - GENEPOP format
+Number of loci = 21858, 2-digit alleles
+Method(s): LD
+Locus names - last 6 characters: (only the last 100 are listed)
+266609 266610 
+266863 266969 267707 267707 267902 268026 268337 268837 268837 268934 
+269556 269556 269557 269788 269936 269936 269936 270581 270702 270736 
+271754 271978 272149 272689 272689 273331 273446 273554 273914 273961 
+275336 276158 276158 276551 276730 276731 276738 276739 277676 277765 
+277766 278012 278349 278665 279284 279284 279500 279500 279500 280923 
+280944 281008 282269 283383 283724 284659 285794 286200 286408 286418 
+286672 287277 287715 288005 289424 289733 289930 289947 290401 291302 
+292214 292286 292286 292287 292462 292464 292589 292882 292993 293235 
+293469 294576 294666 294666 295604 296471 296472 296638 297100 297100 
+297101 297752 297913 297946 297946 299209 299366 299663 
+Outputs are written to file i1_allchr_rad50k_n50_contemp_nomaf_LD_bot.txt
+Starting time: Thu Dec 16 09:54:43 2021
+Each pair of loci are taken in distinct chromosomes.
+Maximum number of locus pairs = 229321156
+
+
+Population     1 [time0_ind1]
+-> Total samples = 50
+   * For lowest freq: 0.050
+     Calculating r^2:
+       Loci are paired across chromosomes
+           1000000 done, at loc. pair (1432, 9894)
+           2000000 done, at loc. pair (2511, 16240)
+           3000000 done, at loc. pair (4326, 5874)
+           4000000 done, at loc. pair (4738, 14639)
+           5000000 done, at loc. pair (6385, 8971)
+           6000000 done, at loc. pair (7917, 21032)
+           7000000 done, at loc. pair (9794, 10556)
+           8000000 done, at loc. pair (11683, 17701)
+           9000000 done, at loc. pair (14194, 20208)
+          10000000 done, at loc. pair (20208, 21224)
+     Actual number of r^2-values evaluated = 10031032
+       Estimate of Ne:               1260.4
+     Parameter CI:          1176.2          1357.4
+     Jackknife CI:           520.2        infinite
+   * For lowest freq: 0.010
+     Calculating r^2:
+       Loci are paired across chromosomes
+           1000000 done, at loc. pair (117, 6423)
+           2000000 done, at loc. pair (375, 11522)
+           3000000 done, at loc. pair (698, 16662)
+           4000000 done, at loc. pair (835, 2672)
+           5000000 done, at loc. pair (1086, 8012)
+           6000000 done, at loc. pair (1446, 13800)
+           7000000 done, at loc. pair (905, 19604)
+           8000000 done, at loc. pair (1720, 5354)
+           9000000 done, at loc. pair (1660, 10579)
+          10000000 done, at loc. pair (2491, 15592)
+          11000000 done, at loc. pair (2323, 20445)
+          12000000 done, at loc. pair (2989, 7662)
+          13000000 done, at loc. pair (2920, 12489)
+          14000000 done, at loc. pair (2841, 17923)
+          15000000 done, at loc. pair (3477, 6093)
+          16000000 done, at loc. pair (4237, 10445)
+          17000000 done, at loc. pair (4067, 15401)
+          18000000 done, at loc. pair (3806, 20154)
+          19000000 done, at loc. pair (4733, 9611)
+          20000000 done, at loc. pair (4820, 14219)
+          21000000 done, at loc. pair (4833, 19934)
+          22000000 done, at loc. pair (5889, 9617)
+          23000000 done, at loc. pair (6089, 14509)
+          24000000 done, at loc. pair (5363, 20409)
+          25000000 done, at loc. pair (6349, 11233)
+          26000000 done, at loc. pair (6408, 16387)
+          27000000 done, at loc. pair (6388, 21252)
+          28000000 done, at loc. pair (7814, 12521)
+          29000000 done, at loc. pair (7553, 18973)
+          30000000 done, at loc. pair (7938, 11572)
+          31000000 done, at loc. pair (8288, 17261)
+          32000000 done, at loc. pair (9383, 10510)
+          33000000 done, at loc. pair (9389, 15312)
+          34000000 done, at loc. pair (9314, 20398)
+          35000000 done, at loc. pair (10381, 14119)
+          36000000 done, at loc. pair (9821, 20447)
+          37000000 done, at loc. pair (10726, 15330)
+          38000000 done, at loc. pair (10615, 20390)
+          39000000 done, at loc. pair (11671, 15941)
+          40000000 done, at loc. pair (11914, 21236)
+          41000000 done, at loc. pair (12283, 18970)
+          42000000 done, at loc. pair (13407, 15843)
+          43000000 done, at loc. pair (13515, 21083)
+          44000000 done, at loc. pair (14351, 19961)
+          45000000 done, at loc. pair (15420, 18686)
+          46000000 done, at loc. pair (16499, 19088)
+          47000000 done, at loc. pair (17456, 19717)
+          48000000 done, at loc. pair (18316, 21583)
+          49000000 done, at loc. pair (20901, 20982)
+     Actual number of r^2-values evaluated = 49010163
+       Estimate of Ne:               6123.5
+     Parameter CI:          5300.4          7248.1
+     Jackknife CI:          1341.4        infinite
+   * For lowest freq:    0+
+     Calculating r^2:
+       Loci are paired across chromosomes
+           1000000 done, at loc. pair (117, 6423)
+           2000000 done, at loc. pair (375, 11522)
+           3000000 done, at loc. pair (698, 16662)
+           4000000 done, at loc. pair (835, 2672)
+           5000000 done, at loc. pair (1086, 8012)
+           6000000 done, at loc. pair (1446, 13800)
+           7000000 done, at loc. pair (905, 19604)
+           8000000 done, at loc. pair (1720, 5354)
+           9000000 done, at loc. pair (1660, 10579)
+          10000000 done, at loc. pair (2491, 15592)
+          11000000 done, at loc. pair (2323, 20445)
+          12000000 done, at loc. pair (2989, 7662)
+          13000000 done, at loc. pair (2920, 12489)
+          14000000 done, at loc. pair (2841, 17923)
+          15000000 done, at loc. pair (3477, 6093)
+          16000000 done, at loc. pair (4237, 10445)
+          17000000 done, at loc. pair (4067, 15401)
+          18000000 done, at loc. pair (3806, 20154)
+          19000000 done, at loc. pair (4733, 9611)
+          20000000 done, at loc. pair (4820, 14219)
+          21000000 done, at loc. pair (4833, 19934)
+          22000000 done, at loc. pair (5889, 9617)
+          23000000 done, at loc. pair (6089, 14509)
+          24000000 done, at loc. pair (5363, 20409)
+          25000000 done, at loc. pair (6349, 11233)
+          26000000 done, at loc. pair (6408, 16387)
+          27000000 done, at loc. pair (6388, 21252)
+          28000000 done, at loc. pair (7814, 12521)
+          29000000 done, at loc. pair (7553, 18973)
+          30000000 done, at loc. pair (7938, 11572)
+          31000000 done, at loc. pair (8288, 17261)
+          32000000 done, at loc. pair (9383, 10510)
+          33000000 done, at loc. pair (9389, 15312)
+          34000000 done, at loc. pair (9314, 20398)
+          35000000 done, at loc. pair (10381, 14119)
+          36000000 done, at loc. pair (9821, 20447)
+          37000000 done, at loc. pair (10726, 15330)
+          38000000 done, at loc. pair (10615, 20390)
+          39000000 done, at loc. pair (11671, 15941)
+          40000000 done, at loc. pair (11914, 21236)
+          41000000 done, at loc. pair (12283, 18970)
+          42000000 done, at loc. pair (13407, 15843)
+          43000000 done, at loc. pair (13515, 21083)
+          44000000 done, at loc. pair (14351, 19961)
+          45000000 done, at loc. pair (15420, 18686)
+          46000000 done, at loc. pair (16499, 19088)
+          47000000 done, at loc. pair (17456, 19717)
+          48000000 done, at loc. pair (18316, 21583)
+          49000000 done, at loc. pair (20901, 20982)
+     Actual number of r^2-values evaluated = 49010163
+       Estimate of Ne:               6123.5
+     Parameter CI:          5300.4          7248.1
+     Jackknife CI:          1341.4        infinite
+Number of loci = 21800, 2-digit alleles
+Input file: i2_allchr_rad50k_n50_contemp_nomaf.gen - GENEPOP format
+Number of loci = 21800, 2-digit alleles
+Method(s): LD
+Locus names - last 6 characters: (only the last 100 are listed)
+262267 264328 264359 264521 264787 266292 267778 267779 268248 268250 
+268352 268676 270170 270671 270909 271427 271427 271433 271792 271935 
+272321 272321 272431 272487 272503 273062 273476 273681 274860 274991 
+275075 276302 276515 277151 277257 277388 277712 277713 277810 278108 
+278216 278484 279235 279537 279825 279926 280166 280805 280805 280805 
+280806 280806 281086 281086 281349 281413 281414 281723 282363 282625 
+282644 283509 283713 283902 283902 283903 285067 285454 285458 285458 
+287233 287234 288038 288395 288936 290083 291421 291422 291711 292373 
+292907 293188 293189 293578 293947 294058 294766 295332 295332 295413 
+295601 295790 296308 296309 296403 296591 296951 297266 297266 298508 
+Outputs are written to file i2_allchr_rad50k_n50_contemp_nomaf_LD_bot.txt
+Starting time: Thu Dec 16 09:59:25 2021
+Each pair of loci are taken in distinct chromosomes.
+Maximum number of locus pairs = 228106767
+
+
+Population     1 [time0_ind1]
+-> Total samples = 50
+   * For lowest freq: 0.050
+     Calculating r^2:
+       Loci are paired across chromosomes
+           1000000 done, at loc. pair (1102, 4756)
+           2000000 done, at loc. pair (1891, 10831)
+           3000000 done, at loc. pair (2942, 17799)
+           4000000 done, at loc. pair (5126, 7993)
+           5000000 done, at loc. pair (5334, 18351)
+           6000000 done, at loc. pair (7788, 14374)
+           7000000 done, at loc. pair (9533, 14634)
+           8000000 done, at loc. pair (10742, 18377)
+           9000000 done, at loc. pair (13514, 19104)
+          10000000 done, at loc. pair (18035, 19079)
+     Actual number of r^2-values evaluated = 10301458
+       Estimate of Ne:               2377.5
+     Parameter CI:          2099.8          2739.3
+     Jackknife CI:           906.9        infinite
+   * For lowest freq: 0.010
+     Calculating r^2:
+       Loci are paired across chromosomes
+           1000000 done, at loc. pair (594, 5860)
+           2000000 done, at loc. pair (273, 10584)
+           3000000 done, at loc. pair (831, 14937)
+           4000000 done, at loc. pair (388, 20359)
+           5000000 done, at loc. pair (1298, 5813)
+           6000000 done, at loc. pair (1203, 10620)
+           7000000 done, at loc. pair (1116, 16489)
+           8000000 done, at loc. pair (949, 20954)
+           9000000 done, at loc. pair (2088, 7808)
+          10000000 done, at loc. pair (2338, 12377)
+          11000000 done, at loc. pair (2464, 17501)
+          12000000 done, at loc. pair (2677, 5503)
+          13000000 done, at loc. pair (2663, 11190)
+          14000000 done, at loc. pair (2677, 16426)
+          15000000 done, at loc. pair (3459, 20666)
+          16000000 done, at loc. pair (3582, 9166)
+          17000000 done, at loc. pair (3752, 14449)
+          18000000 done, at loc. pair (3661, 19797)
+          19000000 done, at loc. pair (4615, 8097)
+          20000000 done, at loc. pair (4813, 13136)
+          21000000 done, at loc. pair (4777, 18592)
+          22000000 done, at loc. pair (5708, 8444)
+          23000000 done, at loc. pair (5746, 13235)
+          24000000 done, at loc. pair (5551, 18941)
+          25000000 done, at loc. pair (6497, 9549)
+          26000000 done, at loc. pair (6578, 14493)
+          27000000 done, at loc. pair (6504, 19273)
+          28000000 done, at loc. pair (7353, 11029)
+          29000000 done, at loc. pair (7132, 15624)
+          30000000 done, at loc. pair (7691, 20669)
+          31000000 done, at loc. pair (7883, 13360)
+          32000000 done, at loc. pair (7879, 18768)
+          33000000 done, at loc. pair (8984, 11467)
+          34000000 done, at loc. pair (9230, 17150)
+          35000000 done, at loc. pair (10402, 11011)
+          36000000 done, at loc. pair (10137, 16335)
+          37000000 done, at loc. pair (9855, 21483)
+          38000000 done, at loc. pair (10963, 15764)
+          39000000 done, at loc. pair (11228, 21627)
+          40000000 done, at loc. pair (12123, 16889)
+          41000000 done, at loc. pair (12218, 14152)
+          42000000 done, at loc. pair (12908, 18820)
+          43000000 done, at loc. pair (13021, 17105)
+          44000000 done, at loc. pair (14023, 14797)
+          45000000 done, at loc. pair (14404, 19847)
+          46000000 done, at loc. pair (15083, 18714)
+          47000000 done, at loc. pair (15941, 18629)
+          48000000 done, at loc. pair (16791, 19612)
+          49000000 done, at loc. pair (17545, 21176)
+          50000000 done, at loc. pair (20371, 20998)
+     Actual number of r^2-values evaluated = 50102653
+       Estimate of Ne:               4871.4
+     Parameter CI:          4340.6          5549.7
+     Jackknife CI:          1571.0        infinite
+   * For lowest freq:    0+
+     Calculating r^2:
+       Loci are paired across chromosomes
+           1000000 done, at loc. pair (594, 5860)
+           2000000 done, at loc. pair (273, 10584)
+           3000000 done, at loc. pair (831, 14937)
+           4000000 done, at loc. pair (388, 20359)
+           5000000 done, at loc. pair (1298, 5813)
+           6000000 done, at loc. pair (1203, 10620)
+           7000000 done, at loc. pair (1116, 16489)
+           8000000 done, at loc. pair (949, 20954)
+           9000000 done, at loc. pair (2088, 7808)
+          10000000 done, at loc. pair (2338, 12377)
+          11000000 done, at loc. pair (2464, 17501)
+          12000000 done, at loc. pair (2677, 5503)
+          13000000 done, at loc. pair (2663, 11190)
+          14000000 done, at loc. pair (2677, 16426)
+          15000000 done, at loc. pair (3459, 20666)
+          16000000 done, at loc. pair (3582, 9166)
+          17000000 done, at loc. pair (3752, 14449)
+          18000000 done, at loc. pair (3661, 19797)
+          19000000 done, at loc. pair (4615, 8097)
+          20000000 done, at loc. pair (4813, 13136)
+          21000000 done, at loc. pair (4777, 18592)
+          22000000 done, at loc. pair (5708, 8444)
+          23000000 done, at loc. pair (5746, 13235)
+          24000000 done, at loc. pair (5551, 18941)
+          25000000 done, at loc. pair (6497, 9549)
+          26000000 done, at loc. pair (6578, 14493)
+          27000000 done, at loc. pair (6504, 19273)
+          28000000 done, at loc. pair (7353, 11029)
+          29000000 done, at loc. pair (7132, 15624)
+          30000000 done, at loc. pair (7691, 20669)
+          31000000 done, at loc. pair (7883, 13360)
+          32000000 done, at loc. pair (7879, 18768)
+          33000000 done, at loc. pair (8984, 11467)
+          34000000 done, at loc. pair (9230, 17150)
+          35000000 done, at loc. pair (10402, 11011)
+          36000000 done, at loc. pair (10137, 16335)
+          37000000 done, at loc. pair (9855, 21483)
+          38000000 done, at loc. pair (10963, 15764)
+          39000000 done, at loc. pair (11228, 21627)
+          40000000 done, at loc. pair (12123, 16889)
+          41000000 done, at loc. pair (12218, 14152)
+          42000000 done, at loc. pair (12908, 18820)
+          43000000 done, at loc. pair (13021, 17105)
+          44000000 done, at loc. pair (14023, 14797)
+          45000000 done, at loc. pair (14404, 19847)
+          46000000 done, at loc. pair (15083, 18714)
+          47000000 done, at loc. pair (15941, 18629)
+          48000000 done, at loc. pair (16791, 19612)
+          49000000 done, at loc. pair (17545, 21176)
+          50000000 done, at loc. pair (20371, 20998)
+     Actual number of r^2-values evaluated = 50102653
+       Estimate of Ne:               4871.4
+     Parameter CI:          4340.6          5549.7
+     Jackknife CI:          1571.0        infinite
+Number of loci = 21900, 2-digit alleles
+Input file: i3_allchr_rad50k_n50_contemp_nomaf.gen - GENEPOP format
+Number of loci = 21900, 2-digit alleles
+Method(s): LD
+Locus names - last 6 characters: (only the last 100 are listed)
+264820 265172 265173 265254 265307 265307 265609 266504 267160 267689 
+269324 269439 269439 269822 270102 270303 270432 271176 271177 271384 
+271385 271401 271402 271414 271678 271828 273351 273396 273498 273618 
+273679 273941 273941 274281 275225 275810 275989 276062 276618 277136 
+277141 277195 277607 277608 278081 278709 279241 279715 279715 280203 
+280803 280843 281187 281420 281714 281715 281715 281757 282164 282640 
+284150 284150 284468 284733 285542 285665 285665 285797 286496 287197 
+287486 287551 287690 287900 288582 289528 289701 290025 290026 290687 
+291774 291774 292138 292215 292359 292404 292646 292680 292715 292928 
+293583 294964 295259 296598 297316 297322 297934 298668 299200 299569 
+Outputs are written to file i3_allchr_rad50k_n50_contemp_nomaf_LD_bot.txt
+Starting time: Thu Dec 16 10:04:25 2021
+Each pair of loci are taken in distinct chromosomes.
+Maximum number of locus pairs = 230202508
+
+
+Population     1 [time0_ind1]
+-> Total samples = 50
+   * For lowest freq: 0.050
+     Calculating r^2:
+       Loci are paired across chromosomes
+           1000000 done, at loc. pair (989, 6472)
+           2000000 done, at loc. pair (1921, 13584)
+           3000000 done, at loc. pair (3424, 19187)
+           4000000 done, at loc. pair (4965, 10303)
+           5000000 done, at loc. pair (5644, 20636)
+           6000000 done, at loc. pair (7592, 17664)
+           7000000 done, at loc. pair (9373, 17540)
+           8000000 done, at loc. pair (11093, 21455)
+           9000000 done, at loc. pair (13341, 20850)
+          10000000 done, at loc. pair (17971, 20633)
+     Actual number of r^2-values evaluated = 10252576
+       Estimate of Ne:               3583.3
+     Parameter CI:          2988.0          4473.4
+     Jackknife CI:          1423.9        infinite
+   * For lowest freq: 0.010
+     Calculating r^2:
+       Loci are paired across chromosomes
+           1000000 done, at loc. pair (667, 5571)
+           2000000 done, at loc. pair (603, 10535)
+           3000000 done, at loc. pair (365, 16341)
+           4000000 done, at loc. pair (163, 21742)
+           5000000 done, at loc. pair (940, 6836)
+           6000000 done, at loc. pair (968, 11819)
+           7000000 done, at loc. pair (1726, 16559)
+           8000000 done, at loc. pair (1654, 21428)
+           9000000 done, at loc. pair (2282, 7729)
+          10000000 done, at loc. pair (2114, 12902)
+          11000000 done, at loc. pair (1886, 18000)
+          12000000 done, at loc. pair (3390, 4051)
+          13000000 done, at loc. pair (3192, 9214)
+          14000000 done, at loc. pair (2844, 14775)
+          15000000 done, at loc. pair (3405, 18537)
+          16000000 done, at loc. pair (4135, 6852)
+          17000000 done, at loc. pair (4136, 11740)
+          18000000 done, at loc. pair (4065, 16990)
+          19000000 done, at loc. pair (4911, 5441)
+          20000000 done, at loc. pair (4691, 11191)
+          21000000 done, at loc. pair (5227, 15624)
+          22000000 done, at loc. pair (4960, 20253)
+          23000000 done, at loc. pair (6030, 10379)
+          24000000 done, at loc. pair (6194, 15701)
+          25000000 done, at loc. pair (5563, 21077)
+          26000000 done, at loc. pair (6409, 12003)
+          27000000 done, at loc. pair (7025, 15923)
+          28000000 done, at loc. pair (6812, 21205)
+          29000000 done, at loc. pair (7153, 13681)
+          30000000 done, at loc. pair (7432, 19059)
+          31000000 done, at loc. pair (8516, 10980)
+          32000000 done, at loc. pair (8681, 15805)
+          33000000 done, at loc. pair (8905, 10342)
+          34000000 done, at loc. pair (8875, 14959)
+          35000000 done, at loc. pair (8883, 20832)
+          36000000 done, at loc. pair (9623, 14358)
+          37000000 done, at loc. pair (10248, 19096)
+          38000000 done, at loc. pair (10991, 13169)
+          39000000 done, at loc. pair (11021, 18477)
+          40000000 done, at loc. pair (11801, 14298)
+          41000000 done, at loc. pair (11411, 19706)
+          42000000 done, at loc. pair (12216, 15835)
+          43000000 done, at loc. pair (12512, 21217)
+          44000000 done, at loc. pair (13080, 19226)
+          45000000 done, at loc. pair (14589, 16139)
+          46000000 done, at loc. pair (14476, 21576)
+          47000000 done, at loc. pair (15196, 21033)
+          48000000 done, at loc. pair (16139, 20722)
+          49000000 done, at loc. pair (17158, 21084)
+          50000000 done, at loc. pair (18799, 20867)
+     Actual number of r^2-values evaluated = 50751776
+       Estimate of Ne:             -28840.6
+     Parameter CI:        infinite        infinite
+     Jackknife CI:          4691.4        infinite
+   * For lowest freq:    0+
+     Calculating r^2:
+       Loci are paired across chromosomes
+           1000000 done, at loc. pair (667, 5571)
+           2000000 done, at loc. pair (603, 10535)
+           3000000 done, at loc. pair (365, 16341)
+           4000000 done, at loc. pair (163, 21742)
+           5000000 done, at loc. pair (940, 6836)
+           6000000 done, at loc. pair (968, 11819)
+           7000000 done, at loc. pair (1726, 16559)
+           8000000 done, at loc. pair (1654, 21428)
+           9000000 done, at loc. pair (2282, 7729)
+          10000000 done, at loc. pair (2114, 12902)
+          11000000 done, at loc. pair (1886, 18000)
+          12000000 done, at loc. pair (3390, 4051)
+          13000000 done, at loc. pair (3192, 9214)
+          14000000 done, at loc. pair (2844, 14775)
+          15000000 done, at loc. pair (3405, 18537)
+          16000000 done, at loc. pair (4135, 6852)
+          17000000 done, at loc. pair (4136, 11740)
+          18000000 done, at loc. pair (4065, 16990)
+          19000000 done, at loc. pair (4911, 5441)
+          20000000 done, at loc. pair (4691, 11191)
+          21000000 done, at loc. pair (5227, 15624)
+          22000000 done, at loc. pair (4960, 20253)
+          23000000 done, at loc. pair (6030, 10379)
+          24000000 done, at loc. pair (6194, 15701)
+          25000000 done, at loc. pair (5563, 21077)
+          26000000 done, at loc. pair (6409, 12003)
+          27000000 done, at loc. pair (7025, 15923)
+          28000000 done, at loc. pair (6812, 21205)
+          29000000 done, at loc. pair (7153, 13681)
+          30000000 done, at loc. pair (7432, 19059)
+          31000000 done, at loc. pair (8516, 10980)
+          32000000 done, at loc. pair (8681, 15805)
+          33000000 done, at loc. pair (8905, 10342)
+          34000000 done, at loc. pair (8875, 14959)
+          35000000 done, at loc. pair (8883, 20832)
+          36000000 done, at loc. pair (9623, 14358)
+          37000000 done, at loc. pair (10248, 19096)
+          38000000 done, at loc. pair (10991, 13169)
+          39000000 done, at loc. pair (11021, 18477)
+          40000000 done, at loc. pair (11801, 14298)
+          41000000 done, at loc. pair (11411, 19706)
+          42000000 done, at loc. pair (12216, 15835)
+          43000000 done, at loc. pair (12512, 21217)
+          44000000 done, at loc. pair (13080, 19226)
+          45000000 done, at loc. pair (14589, 16139)
+          46000000 done, at loc. pair (14476, 21576)
+          47000000 done, at loc. pair (15196, 21033)
+          48000000 done, at loc. pair (16139, 20722)
+          49000000 done, at loc. pair (17158, 21084)
+          50000000 done, at loc. pair (18799, 20867)
+     Actual number of r^2-values evaluated = 50751776
+       Estimate of Ne:             -28840.6
+     Parameter CI:        infinite        infinite
+     Jackknife CI:          4691.4        infinite
+Number of loci = 22037, 2-digit alleles
+Input file: i4_allchr_rad50k_n50_contemp_nomaf.gen - GENEPOP format
+Number of loci = 22037, 2-digit alleles
+Method(s): LD
+Locus names - last 6 characters: (only the last 100 are listed)
+265584 266366 266565 
+267307 268008 268009 268455 268502 269351 269352 269352 269460 269514 
+270379 270473 270474 270618 270749 271000 271795 272279 272489 273614 
+273734 274157 274167 274269 274561 274562 275220 275374 275585 275656 
+275759 275958 276579 277616 277676 278399 279146 279462 279867 279967 
+280194 280683 280732 280787 280787 281046 281267 281358 281557 282061 
+282316 283020 283021 284033 284034 284919 284920 285780 285946 285946 
+286301 286688 286751 287358 287953 289240 289241 289245 289357 289447 
+289447 289710 289711 289947 291787 291788 291805 291937 292137 292932 
+292946 293011 293597 293597 294770 294770 294780 296215 296540 296540 
+296920 296921 298032 298033 298863 298863 298864 
+Outputs are written to file i4_allchr_rad50k_n50_contemp_nomaf_LD_bot.txt
+Starting time: Thu Dec 16 10:09:26 2021
+Each pair of loci are taken in distinct chromosomes.
+Maximum number of locus pairs = 233092245
+
+
+Population     1 [time0_ind1]
+-> Total samples = 50
+   * For lowest freq: 0.050
+     Calculating r^2:
+       Loci are paired across chromosomes
+           1000000 done, at loc. pair (1267, 6739)
+           2000000 done, at loc. pair (2535, 10940)
+           3000000 done, at loc. pair (3533, 17947)
+           4000000 done, at loc. pair (4473, 9580)
+           5000000 done, at loc. pair (5886, 15991)
+           6000000 done, at loc. pair (7754, 12802)
+           7000000 done, at loc. pair (9586, 14222)
+           8000000 done, at loc. pair (11028, 18346)
+           9000000 done, at loc. pair (13548, 19775)
+          10000000 done, at loc. pair (18428, 21068)
+     Actual number of r^2-values evaluated = 10230213
+       Estimate of Ne:               1802.5
+     Parameter CI:          1637.3          2004.4
+     Jackknife CI:           790.4        infinite
+   * For lowest freq: 0.010
+     Calculating r^2:
+       Loci are paired across chromosomes
+           1000000 done, at loc. pair (221, 7066)
+           2000000 done, at loc. pair (444, 11585)
+           3000000 done, at loc. pair (31, 17686)
+           4000000 done, at loc. pair (1180, 2833)
+           5000000 done, at loc. pair (994, 8701)
+           6000000 done, at loc. pair (1076, 13984)
+           7000000 done, at loc. pair (1197, 19006)
+           8000000 done, at loc. pair (2128, 4459)
+           9000000 done, at loc. pair (1991, 9927)
+          10000000 done, at loc. pair (2115, 15113)
+          11000000 done, at loc. pair (2279, 20253)
+          12000000 done, at loc. pair (3006, 7612)
+          13000000 done, at loc. pair (3093, 12633)
+          14000000 done, at loc. pair (3295, 17784)
+          15000000 done, at loc. pair (4234, 5519)
+          16000000 done, at loc. pair (4319, 11180)
+          17000000 done, at loc. pair (3767, 17586)
+          18000000 done, at loc. pair (4876, 5506)
+          19000000 done, at loc. pair (4708, 10989)
+          20000000 done, at loc. pair (4813, 15955)
+          21000000 done, at loc. pair (4876, 22035)
+          22000000 done, at loc. pair (5372, 10741)
+          23000000 done, at loc. pair (6108, 15130)
+          24000000 done, at loc. pair (5967, 21076)
+          25000000 done, at loc. pair (6355, 11177)
+          26000000 done, at loc. pair (6873, 15328)
+          27000000 done, at loc. pair (6521, 21081)
+          28000000 done, at loc. pair (7920, 11340)
+          29000000 done, at loc. pair (7806, 16285)
+          30000000 done, at loc. pair (7658, 22000)
+          31000000 done, at loc. pair (8629, 13965)
+          32000000 done, at loc. pair (8737, 18819)
+          33000000 done, at loc. pair (9719, 11992)
+          34000000 done, at loc. pair (9111, 18392)
+          35000000 done, at loc. pair (10174, 11941)
+          36000000 done, at loc. pair (10473, 17403)
+          37000000 done, at loc. pair (10654, 12449)
+          38000000 done, at loc. pair (10680, 17857)
+          39000000 done, at loc. pair (11642, 13909)
+          40000000 done, at loc. pair (11760, 19157)
+          41000000 done, at loc. pair (12858, 15498)
+          42000000 done, at loc. pair (12641, 21874)
+          43000000 done, at loc. pair (13772, 18658)
+          44000000 done, at loc. pair (14765, 16908)
+          45000000 done, at loc. pair (15684, 16751)
+          46000000 done, at loc. pair (16072, 17185)
+          47000000 done, at loc. pair (16992, 17947)
+          48000000 done, at loc. pair (18101, 19963)
+          49000000 done, at loc. pair (19944, 20724)
+     Actual number of r^2-values evaluated = 49397526
+       Estimate of Ne:               6725.6
+     Parameter CI:          5749.0          8100.7
+     Jackknife CI:          1866.0        infinite
+   * For lowest freq:    0+
+     Calculating r^2:
+       Loci are paired across chromosomes
+           1000000 done, at loc. pair (221, 7066)
+           2000000 done, at loc. pair (444, 11585)
+           3000000 done, at loc. pair (31, 17686)
+           4000000 done, at loc. pair (1180, 2833)
+           5000000 done, at loc. pair (994, 8701)
+           6000000 done, at loc. pair (1076, 13984)
+           7000000 done, at loc. pair (1197, 19006)
+           8000000 done, at loc. pair (2128, 4459)
+           9000000 done, at loc. pair (1991, 9927)
+          10000000 done, at loc. pair (2115, 15113)
+          11000000 done, at loc. pair (2279, 20253)
+          12000000 done, at loc. pair (3006, 7612)
+          13000000 done, at loc. pair (3093, 12633)
+          14000000 done, at loc. pair (3295, 17784)
+          15000000 done, at loc. pair (4234, 5519)
+          16000000 done, at loc. pair (4319, 11180)
+          17000000 done, at loc. pair (3767, 17586)
+          18000000 done, at loc. pair (4876, 5506)
+          19000000 done, at loc. pair (4708, 10989)
+          20000000 done, at loc. pair (4813, 15955)
+          21000000 done, at loc. pair (4876, 22035)
+          22000000 done, at loc. pair (5372, 10741)
+          23000000 done, at loc. pair (6108, 15130)
+          24000000 done, at loc. pair (5967, 21076)
+          25000000 done, at loc. pair (6355, 11177)
+          26000000 done, at loc. pair (6873, 15328)
+          27000000 done, at loc. pair (6521, 21081)
+          28000000 done, at loc. pair (7920, 11340)
+          29000000 done, at loc. pair (7806, 16285)
+          30000000 done, at loc. pair (7658, 22000)
+          31000000 done, at loc. pair (8629, 13965)
+          32000000 done, at loc. pair (8737, 18819)
+          33000000 done, at loc. pair (9719, 11992)
+          34000000 done, at loc. pair (9111, 18392)
+          35000000 done, at loc. pair (10174, 11941)
+          36000000 done, at loc. pair (10473, 17403)
+          37000000 done, at loc. pair (10654, 12449)
+          38000000 done, at loc. pair (10680, 17857)
+          39000000 done, at loc. pair (11642, 13909)
+          40000000 done, at loc. pair (11760, 19157)
+          41000000 done, at loc. pair (12858, 15498)
+          42000000 done, at loc. pair (12641, 21874)
+          43000000 done, at loc. pair (13772, 18658)
+          44000000 done, at loc. pair (14765, 16908)
+          45000000 done, at loc. pair (15684, 16751)
+          46000000 done, at loc. pair (16072, 17185)
+          47000000 done, at loc. pair (16992, 17947)
+          48000000 done, at loc. pair (18101, 19963)
+          49000000 done, at loc. pair (19944, 20724)
+     Actual number of r^2-values evaluated = 49397526
+       Estimate of Ne:               6725.6
+     Parameter CI:          5749.0          8100.7
+     Jackknife CI:          1866.0        infinite
+Number of loci = 21687, 2-digit alleles
+Input file: i5_allchr_rad50k_n50_contemp_nomaf.gen - GENEPOP format
+Number of loci = 21687, 2-digit alleles
+Method(s): LD
+Locus names - last 6 characters: (only the last 100 are listed)
+268513 269178 269508 
+269724 269900 270021 270530 271068 271068 271363 271502 271502 272116 
+272335 272630 272630 272809 272965 272965 273879 274351 274710 275128 
+275381 276044 276377 276450 277004 277836 278608 279869 280123 280123 
+280344 280676 280800 280800 280991 281083 281584 282014 282519 282545 
+283278 283298 283517 283944 283945 284340 284691 284918 285148 285612 
+285873 285874 285969 285976 286181 286182 286493 287460 288677 288678 
+288681 289166 289514 289725 291360 291995 292363 292603 292604 292604 
+293065 294439 294538 294674 294854 295166 295434 295496 295820 296165 
+296165 296571 296972 297124 297157 297157 297163 297164 297413 298129 
+298324 299233 299789 299837 299837 299837 299865 
+Outputs are written to file i5_allchr_rad50k_n50_contemp_nomaf_LD_bot.txt
+Starting time: Thu Dec 16 10:14:19 2021
+Each pair of loci are taken in distinct chromosomes.
+Maximum number of locus pairs = 225745167
+
+
+Population     1 [time0_ind1]
+-> Total samples = 50
+   * For lowest freq: 0.050
+     Calculating r^2:
+       Loci are paired across chromosomes
+           1000000 done, at loc. pair (1190, 3799)
+           2000000 done, at loc. pair (1986, 9390)
+           3000000 done, at loc. pair (2584, 18277)
+           4000000 done, at loc. pair (4931, 8987)
+           5000000 done, at loc. pair (5246, 17579)
+           6000000 done, at loc. pair (7682, 13752)
+           7000000 done, at loc. pair (8988, 13361)
+           8000000 done, at loc. pair (11036, 16624)
+           9000000 done, at loc. pair (13222, 16490)
+          10000000 done, at loc. pair (16261, 21512)
+     Actual number of r^2-values evaluated = 10524265
+       Estimate of Ne:              28372.6
+     Parameter CI:         11129.2        infinite
+     Jackknife CI:          6772.0        infinite
+   * For lowest freq: 0.010
+     Calculating r^2:
+       Loci are paired across chromosomes
+           1000000 done, at loc. pair (678, 5790)
+           2000000 done, at loc. pair (427, 10852)
+           3000000 done, at loc. pair (270, 15979)
+           4000000 done, at loc. pair (774, 20164)
+           5000000 done, at loc. pair (1368, 5321)
+           6000000 done, at loc. pair (1060, 10402)
+           7000000 done, at loc. pair (1714, 14716)
+           8000000 done, at loc. pair (1258, 20294)
+           9000000 done, at loc. pair (2418, 6148)
+          10000000 done, at loc. pair (2004, 12094)
+          11000000 done, at loc. pair (2442, 17438)
+          12000000 done, at loc. pair (2697, 5475)
+          13000000 done, at loc. pair (2865, 10784)
+          14000000 done, at loc. pair (3137, 16146)
+          15000000 done, at loc. pair (3254, 21290)
+          16000000 done, at loc. pair (4120, 9009)
+          17000000 done, at loc. pair (4181, 14487)
+          18000000 done, at loc. pair (4102, 19391)
+          19000000 done, at loc. pair (4825, 8539)
+          20000000 done, at loc. pair (4614, 13084)
+          21000000 done, at loc. pair (5159, 18050)
+          22000000 done, at loc. pair (5786, 7404)
+          23000000 done, at loc. pair (5843, 12804)
+          24000000 done, at loc. pair (5834, 17525)
+          25000000 done, at loc. pair (6658, 8290)
+          26000000 done, at loc. pair (6225, 14075)
+          27000000 done, at loc. pair (6380, 19479)
+          28000000 done, at loc. pair (7043, 11117)
+          29000000 done, at loc. pair (7633, 15199)
+          30000000 done, at loc. pair (7157, 19971)
+          31000000 done, at loc. pair (7836, 12492)
+          32000000 done, at loc. pair (8569, 17339)
+          33000000 done, at loc. pair (9275, 9546)
+          34000000 done, at loc. pair (8719, 15751)
+          35000000 done, at loc. pair (8827, 21098)
+          36000000 done, at loc. pair (9460, 14816)
+          37000000 done, at loc. pair (9889, 19146)
+          38000000 done, at loc. pair (10604, 13947)
+          39000000 done, at loc. pair (11023, 18345)
+          40000000 done, at loc. pair (11866, 14248)
+          41000000 done, at loc. pair (12059, 19752)
+          42000000 done, at loc. pair (12295, 16802)
+          43000000 done, at loc. pair (13426, 14198)
+          44000000 done, at loc. pair (13671, 19150)
+          45000000 done, at loc. pair (14340, 17491)
+          46000000 done, at loc. pair (14823, 16421)
+          47000000 done, at loc. pair (15519, 20877)
+          48000000 done, at loc. pair (15984, 20904)
+          49000000 done, at loc. pair (17523, 18339)
+          50000000 done, at loc. pair (18230, 21629)
+     Actual number of r^2-values evaluated = 50690918
+       Estimate of Ne:              -4204.1
+     Parameter CI:        infinite        infinite
+     Jackknife CI:        infinite        infinite
+   * For lowest freq:    0+
+     Calculating r^2:
+       Loci are paired across chromosomes
+           1000000 done, at loc. pair (678, 5790)
+           2000000 done, at loc. pair (427, 10852)
+           3000000 done, at loc. pair (270, 15979)
+           4000000 done, at loc. pair (774, 20164)
+           5000000 done, at loc. pair (1368, 5321)
+           6000000 done, at loc. pair (1060, 10402)
+           7000000 done, at loc. pair (1714, 14716)
+           8000000 done, at loc. pair (1258, 20294)
+           9000000 done, at loc. pair (2418, 6148)
+          10000000 done, at loc. pair (2004, 12094)
+          11000000 done, at loc. pair (2442, 17438)
+          12000000 done, at loc. pair (2697, 5475)
+          13000000 done, at loc. pair (2865, 10784)
+          14000000 done, at loc. pair (3137, 16146)
+          15000000 done, at loc. pair (3254, 21290)
+          16000000 done, at loc. pair (4120, 9009)
+          17000000 done, at loc. pair (4181, 14487)
+          18000000 done, at loc. pair (4102, 19391)
+          19000000 done, at loc. pair (4825, 8539)
+          20000000 done, at loc. pair (4614, 13084)
+          21000000 done, at loc. pair (5159, 18050)
+          22000000 done, at loc. pair (5786, 7404)
+          23000000 done, at loc. pair (5843, 12804)
+          24000000 done, at loc. pair (5834, 17525)
+          25000000 done, at loc. pair (6658, 8290)
+          26000000 done, at loc. pair (6225, 14075)
+          27000000 done, at loc. pair (6380, 19479)
+          28000000 done, at loc. pair (7043, 11117)
+          29000000 done, at loc. pair (7633, 15199)
+          30000000 done, at loc. pair (7157, 19971)
+          31000000 done, at loc. pair (7836, 12492)
+          32000000 done, at loc. pair (8569, 17339)
+          33000000 done, at loc. pair (9275, 9546)
+          34000000 done, at loc. pair (8719, 15751)
+          35000000 done, at loc. pair (8827, 21098)
+          36000000 done, at loc. pair (9460, 14816)
+          37000000 done, at loc. pair (9889, 19146)
+          38000000 done, at loc. pair (10604, 13947)
+          39000000 done, at loc. pair (11023, 18345)
+          40000000 done, at loc. pair (11866, 14248)
+          41000000 done, at loc. pair (12059, 19752)
+          42000000 done, at loc. pair (12295, 16802)
+          43000000 done, at loc. pair (13426, 14198)
+          44000000 done, at loc. pair (13671, 19150)
+          45000000 done, at loc. pair (14340, 17491)
+          46000000 done, at loc. pair (14823, 16421)
+          47000000 done, at loc. pair (15519, 20877)
+          48000000 done, at loc. pair (15984, 20904)
+          49000000 done, at loc. pair (17523, 18339)
+          50000000 done, at loc. pair (18230, 21629)
+     Actual number of r^2-values evaluated = 50690918
+       Estimate of Ne:              -4204.1
+     Parameter CI:        infinite        infinite
+     Jackknife CI:        infinite        infinite

@@ -1,0 +1,214 @@
+#!/bin/bash
+#SBATCH --partition=p_deenr_1
+#SBATCH --nodes 1
+#SBATCH --ntasks-per-node 1
+#SBATCH --exclusive
+#SBATCH --time 2:00:00
+#SBATCH --mem-per-cpu 1000
+#SBATCH --job-name g1_n10e4e4_extractsfsall
+#SBATCH --output g1_n10e4e4_extractsfsall.txt
+
+source ~/anaconda3/etc/profile.d/conda.sh
+
+conda activate momi-env
+
+
+
+for it in  $(seq 1 5);
+do
+	python -m momi.extract_sfs /scratch/br450/SLiM_ped_g1/g1_n10e4_td190_l99_maf/constant_recap/vcf/i${it}_n10_wgs_maf1.sfs.gz 100 /scratch/br450/SLiM_ped_g1/g1_n10e4_td190_l99_maf/constant_recap/vcf/i${it}_n10_wgs_chr*_maf1.snpAlleleCounts.gz
+done
+
+for it in  $(seq 1 5);
+do
+	python -m momi.extract_sfs /scratch/br450/SLiM_ped_g1/g1_n10e4_td190_l99_maf/constant_recap/vcf/i${it}_n25_wgs_maf1.sfs.gz 100 /scratch/br450/SLiM_ped_g1/g1_n10e4_td190_l99_maf/constant_recap/vcf/i${it}_n25_wgs_chr*_maf1.snpAlleleCounts.gz
+done
+
+for it in  $(seq 1 5);
+do
+	python -m momi.extract_sfs /scratch/br450/SLiM_ped_g1/g1_n10e4_td190_l99_maf/constant_recap/vcf/i${it}_n25_rad10k_maf1.sfs.gz 100 /scratch/br450/SLiM_ped_g1/g1_n10e4_td190_l99_maf/constant_recap/vcf/i${it}_n25_rad10k_chr*_maf1.snpAlleleCounts.gz
+done
+
+for it in  $(seq 1 5);
+do
+	python -m momi.extract_sfs /scratch/br450/SLiM_ped_g1/g1_n10e4_td190_l99_maf/constant_recap/vcf/i${it}_n25_rad50k_maf1.sfs.gz 100 /scratch/br450/SLiM_ped_g1/g1_n10e4_td190_l99_maf/constant_recap/vcf/i${it}_n25_rad50k_chr*_maf1.snpAlleleCounts.gz
+done
+
+for it in  $(seq 1 5);
+do
+	python -m momi.extract_sfs /scratch/br450/SLiM_ped_g1/g1_n10e4_td190_l99_maf/constant_recap/vcf/i${it}_n100_rad10k_maf1.sfs.gz 100 /scratch/br450/SLiM_ped_g1/g1_n10e4_td190_l99_maf/constant_recap/vcf/i${it}_n100_rad10k_chr*_maf1.snpAlleleCounts.gz
+done
+
+for it in  $(seq 1 5);
+do
+	python -m momi.extract_sfs /scratch/br450/SLiM_ped_g1/g1_n10e4_td190_l99_maf/constant_recap/vcf/i${it}_n100_rad50k_maf1.sfs.gz 100 /scratch/br450/SLiM_ped_g1/g1_n10e4_td190_l99_maf/constant_recap/vcf/i${it}_n100_rad50k_chr*_maf1.snpAlleleCounts.gz
+done
+
+
+
+
+for it in  $(seq 1 5);
+do
+	python -m momi.extract_sfs /scratch/br450/SLiM_ped_g1/g1_n10e4_td190_l95_maf/constant_recap/vcf/i${it}_n10_wgs_maf1.sfs.gz 100 /scratch/br450/SLiM_ped_g1/g1_n10e4_td190_l95_maf/constant_recap/vcf/i${it}_n10_wgs_chr*_maf1.snpAlleleCounts.gz
+done
+
+for it in  $(seq 1 5);
+do
+	python -m momi.extract_sfs /scratch/br450/SLiM_ped_g1/g1_n10e4_td190_l95_maf/constant_recap/vcf/i${it}_n25_wgs_maf1.sfs.gz 100 /scratch/br450/SLiM_ped_g1/g1_n10e4_td190_l95_maf/constant_recap/vcf/i${it}_n25_wgs_chr*_maf1.snpAlleleCounts.gz
+done
+
+for it in  $(seq 1 5);
+do
+	python -m momi.extract_sfs /scratch/br450/SLiM_ped_g1/g1_n10e4_td190_l95_maf/constant_recap/vcf/i${it}_n25_rad10k_maf1.sfs.gz 100 /scratch/br450/SLiM_ped_g1/g1_n10e4_td190_l95_maf/constant_recap/vcf/i${it}_n25_rad10k_chr*_maf1.snpAlleleCounts.gz
+done
+
+for it in  $(seq 1 5);
+do
+	python -m momi.extract_sfs /scratch/br450/SLiM_ped_g1/g1_n10e4_td190_l95_maf/constant_recap/vcf/i${it}_n25_rad50k_maf1.sfs.gz 100 /scratch/br450/SLiM_ped_g1/g1_n10e4_td190_l95_maf/constant_recap/vcf/i${it}_n25_rad50k_chr*_maf1.snpAlleleCounts.gz
+done
+
+for it in  $(seq 1 5);
+do
+	python -m momi.extract_sfs /scratch/br450/SLiM_ped_g1/g1_n10e4_td190_l95_maf/constant_recap/vcf/i${it}_n100_rad10k_maf1.sfs.gz 100 /scratch/br450/SLiM_ped_g1/g1_n10e4_td190_l95_maf/constant_recap/vcf/i${it}_n100_rad10k_chr*_maf1.snpAlleleCounts.gz
+done
+
+for it in  $(seq 1 5);
+do
+	python -m momi.extract_sfs /scratch/br450/SLiM_ped_g1/g1_n10e4_td190_l95_maf/constant_recap/vcf/i${it}_n100_rad50k_maf1.sfs.gz 100 /scratch/br450/SLiM_ped_g1/g1_n10e4_td190_l95_maf/constant_recap/vcf/i${it}_n100_rad50k_chr*_maf1.snpAlleleCounts.gz
+done
+
+
+
+
+for it in  $(seq 1 5);
+do
+	python -m momi.extract_sfs /scratch/br450/SLiM_ped_g1/g1_n10e4_constant_maf/constant_recap/vcf/i${it}_n10_wgs_maf1.sfs.gz 100 /scratch/br450/SLiM_ped_g1/g1_n10e4_constant_maf/constant_recap/vcf/i${it}_n10_wgs_chr*_maf1.snpAlleleCounts.gz
+done
+
+for it in  $(seq 1 5);
+do
+	python -m momi.extract_sfs /scratch/br450/SLiM_ped_g1/g1_n10e4_constant_maf/constant_recap/vcf/i${it}_n25_wgs_maf1.sfs.gz 100 /scratch/br450/SLiM_ped_g1/g1_n10e4_constant_maf/constant_recap/vcf/i${it}_n25_wgs_chr*_maf1.snpAlleleCounts.gz
+done
+
+for it in  $(seq 1 5);
+do
+	python -m momi.extract_sfs /scratch/br450/SLiM_ped_g1/g1_n10e4_constant_maf/constant_recap/vcf/i${it}_n25_rad10k_maf1.sfs.gz 100 /scratch/br450/SLiM_ped_g1/g1_n10e4_constant_maf/constant_recap/vcf/i${it}_n25_rad10k_chr*_maf1.snpAlleleCounts.gz
+done
+
+for it in  $(seq 1 5);
+do
+	python -m momi.extract_sfs /scratch/br450/SLiM_ped_g1/g1_n10e4_constant_maf/constant_recap/vcf/i${it}_n25_rad50k_maf1.sfs.gz 100 /scratch/br450/SLiM_ped_g1/g1_n10e4_constant_maf/constant_recap/vcf/i${it}_n25_rad50k_chr*_maf1.snpAlleleCounts.gz
+done
+
+for it in  $(seq 1 5);
+do
+	python -m momi.extract_sfs /scratch/br450/SLiM_ped_g1/g1_n10e4_constant_maf/constant_recap/vcf/i${it}_n100_rad10k_maf1.sfs.gz 100 /scratch/br450/SLiM_ped_g1/g1_n10e4_constant_maf/constant_recap/vcf/i${it}_n100_rad10k_chr*_maf1.snpAlleleCounts.gz
+done
+
+for it in  $(seq 1 5);
+do
+	python -m momi.extract_sfs /scratch/br450/SLiM_ped_g1/g1_n10e4_constant_maf/constant_recap/vcf/i${it}_n100_rad50k_maf1.sfs.gz 100 /scratch/br450/SLiM_ped_g1/g1_n10e4_constant_maf/constant_recap/vcf/i${it}_n100_rad50k_chr*_maf1.snpAlleleCounts.gz
+done
+
+
+
+
+
+
+
+
+for it in  $(seq 1 5);
+do
+	python -m momi.extract_sfs /scratch/br450/SLiM_ped_g1/g1_n10e4_td190_l99_maf/constant_recap/vcf/i${it}_n10_wgs_nomaf.sfs.gz 100 /scratch/br450/SLiM_ped_g1/g1_n10e4_td190_l99_maf/constant_recap/vcf/i${it}_n10_wgs_chr*_nomaf.snpAlleleCounts.gz
+done
+
+for it in  $(seq 1 5);
+do
+	python -m momi.extract_sfs /scratch/br450/SLiM_ped_g1/g1_n10e4_td190_l99_maf/constant_recap/vcf/i${it}_n25_wgs_nomaf.sfs.gz 100 /scratch/br450/SLiM_ped_g1/g1_n10e4_td190_l99_maf/constant_recap/vcf/i${it}_n25_wgs_chr*_nomaf.snpAlleleCounts.gz
+done
+
+for it in  $(seq 1 5);
+do
+	python -m momi.extract_sfs /scratch/br450/SLiM_ped_g1/g1_n10e4_td190_l99_maf/constant_recap/vcf/i${it}_n25_rad10k_nomaf.sfs.gz 100 /scratch/br450/SLiM_ped_g1/g1_n10e4_td190_l99_maf/constant_recap/vcf/i${it}_n25_rad10k_chr*_nomaf.snpAlleleCounts.gz
+done
+
+for it in  $(seq 1 5);
+do
+	python -m momi.extract_sfs /scratch/br450/SLiM_ped_g1/g1_n10e4_td190_l99_maf/constant_recap/vcf/i${it}_n25_rad50k_nomaf.sfs.gz 100 /scratch/br450/SLiM_ped_g1/g1_n10e4_td190_l99_maf/constant_recap/vcf/i${it}_n25_rad50k_chr*_nomaf.snpAlleleCounts.gz
+done
+
+for it in  $(seq 1 5);
+do
+	python -m momi.extract_sfs /scratch/br450/SLiM_ped_g1/g1_n10e4_td190_l99_maf/constant_recap/vcf/i${it}_n100_rad10k_nomaf.sfs.gz 100 /scratch/br450/SLiM_ped_g1/g1_n10e4_td190_l99_maf/constant_recap/vcf/i${it}_n100_rad10k_chr*_nomaf.snpAlleleCounts.gz
+done
+
+for it in  $(seq 1 5);
+do
+	python -m momi.extract_sfs /scratch/br450/SLiM_ped_g1/g1_n10e4_td190_l99_maf/constant_recap/vcf/i${it}_n100_rad50k_nomaf.sfs.gz 100 /scratch/br450/SLiM_ped_g1/g1_n10e4_td190_l99_maf/constant_recap/vcf/i${it}_n100_rad50k_chr*_nomaf.snpAlleleCounts.gz
+done
+
+
+
+
+for it in  $(seq 1 5);
+do
+	python -m momi.extract_sfs /scratch/br450/SLiM_ped_g1/g1_n10e4_td190_l95_maf/constant_recap/vcf/i${it}_n10_wgs_nomaf.sfs.gz 100 /scratch/br450/SLiM_ped_g1/g1_n10e4_td190_l95_maf/constant_recap/vcf/i${it}_n10_wgs_chr*_nomaf.snpAlleleCounts.gz
+done
+
+for it in  $(seq 1 5);
+do
+	python -m momi.extract_sfs /scratch/br450/SLiM_ped_g1/g1_n10e4_td190_l95_maf/constant_recap/vcf/i${it}_n25_wgs_nomaf.sfs.gz 100 /scratch/br450/SLiM_ped_g1/g1_n10e4_td190_l95_maf/constant_recap/vcf/i${it}_n25_wgs_chr*_nomaf.snpAlleleCounts.gz
+done
+
+for it in  $(seq 1 5);
+do
+	python -m momi.extract_sfs /scratch/br450/SLiM_ped_g1/g1_n10e4_td190_l95_maf/constant_recap/vcf/i${it}_n25_rad10k_nomaf.sfs.gz 100 /scratch/br450/SLiM_ped_g1/g1_n10e4_td190_l95_maf/constant_recap/vcf/i${it}_n25_rad10k_chr*_nomaf.snpAlleleCounts.gz
+done
+
+for it in  $(seq 1 5);
+do
+	python -m momi.extract_sfs /scratch/br450/SLiM_ped_g1/g1_n10e4_td190_l95_maf/constant_recap/vcf/i${it}_n25_rad50k_nomaf.sfs.gz 100 /scratch/br450/SLiM_ped_g1/g1_n10e4_td190_l95_maf/constant_recap/vcf/i${it}_n25_rad50k_chr*_nomaf.snpAlleleCounts.gz
+done
+
+for it in  $(seq 1 5);
+do
+	python -m momi.extract_sfs /scratch/br450/SLiM_ped_g1/g1_n10e4_td190_l95_maf/constant_recap/vcf/i${it}_n100_rad10k_nomaf.sfs.gz 100 /scratch/br450/SLiM_ped_g1/g1_n10e4_td190_l95_maf/constant_recap/vcf/i${it}_n100_rad10k_chr*_nomaf.snpAlleleCounts.gz
+done
+
+for it in  $(seq 1 5);
+do
+	python -m momi.extract_sfs /scratch/br450/SLiM_ped_g1/g1_n10e4_td190_l95_maf/constant_recap/vcf/i${it}_n100_rad50k_nomaf.sfs.gz 100 /scratch/br450/SLiM_ped_g1/g1_n10e4_td190_l95_maf/constant_recap/vcf/i${it}_n100_rad50k_chr*_nomaf.snpAlleleCounts.gz
+done
+
+
+
+
+for it in  $(seq 1 5);
+do
+	python -m momi.extract_sfs /scratch/br450/SLiM_ped_g1/g1_n10e4_constant_maf/constant_recap/vcf/i${it}_n10_wgs_nomaf.sfs.gz 100 /scratch/br450/SLiM_ped_g1/g1_n10e4_constant_maf/constant_recap/vcf/i${it}_n10_wgs_chr*_nomaf.snpAlleleCounts.gz
+done
+
+for it in  $(seq 1 5);
+do
+	python -m momi.extract_sfs /scratch/br450/SLiM_ped_g1/g1_n10e4_constant_maf/constant_recap/vcf/i${it}_n25_wgs_nomaf.sfs.gz 100 /scratch/br450/SLiM_ped_g1/g1_n10e4_constant_maf/constant_recap/vcf/i${it}_n25_wgs_chr*_nomaf.snpAlleleCounts.gz
+done
+
+for it in  $(seq 1 5);
+do
+	python -m momi.extract_sfs /scratch/br450/SLiM_ped_g1/g1_n10e4_constant_maf/constant_recap/vcf/i${it}_n25_rad10k_nomaf.sfs.gz 100 /scratch/br450/SLiM_ped_g1/g1_n10e4_constant_maf/constant_recap/vcf/i${it}_n25_rad10k_chr*_nomaf.snpAlleleCounts.gz
+done
+
+for it in  $(seq 1 5);
+do
+	python -m momi.extract_sfs /scratch/br450/SLiM_ped_g1/g1_n10e4_constant_maf/constant_recap/vcf/i${it}_n25_rad50k_nomaf.sfs.gz 100 /scratch/br450/SLiM_ped_g1/g1_n10e4_constant_maf/constant_recap/vcf/i${it}_n25_rad50k_chr*_nomaf.snpAlleleCounts.gz
+done
+
+for it in  $(seq 1 5);
+do
+	python -m momi.extract_sfs /scratch/br450/SLiM_ped_g1/g1_n10e4_constant_maf/constant_recap/vcf/i${it}_n100_rad10k_nomaf.sfs.gz 100 /scratch/br450/SLiM_ped_g1/g1_n10e4_constant_maf/constant_recap/vcf/i${it}_n100_rad10k_chr*_nomaf.snpAlleleCounts.gz
+done
+
+for it in  $(seq 1 5);
+do
+	python -m momi.extract_sfs /scratch/br450/SLiM_ped_g1/g1_n10e4_constant_maf/constant_recap/vcf/i${it}_n100_rad50k_nomaf.sfs.gz 100 /scratch/br450/SLiM_ped_g1/g1_n10e4_constant_maf/constant_recap/vcf/i${it}_n100_rad50k_chr*_nomaf.snpAlleleCounts.gz
+done

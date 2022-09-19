@@ -1,0 +1,1000 @@
+DIVIDE .ped AND .map FILES IN CHROMOSOMES
+RUNNING ANALYSIS OF CHROMOSOMES ...
+CHROMOSOME ANALYSES took 387 seconds
+Running GONE
+  Start of processing: outfileLD_TEMP/outfileLD_2
+  Start of processing: outfileLD_TEMP/outfileLD_6
+  Start of processing: outfileLD_TEMP/outfileLD_3
+  Start of processing: outfileLD_TEMP/outfileLD_4
+  Start of processing: outfileLD_TEMP/outfileLD_10
+  Start of processing: outfileLD_TEMP/outfileLD_8
+  Start of processing: outfileLD_TEMP/outfileLD_9
+  Start of processing: outfileLD_TEMP/outfileLD_1
+  Start of processing: outfileLD_TEMP/outfileLD_5
+  Start of processing: outfileLD_TEMP/outfileLD_7
+  Start of processing: outfileLD_TEMP/outfileLD_11
+  Start of processing: outfileLD_TEMP/outfileLD_12
+  Start of processing: outfileLD_TEMP/outfileLD_13
+  Start of processing: outfileLD_TEMP/outfileLD_14
+  Start of processing: outfileLD_TEMP/outfileLD_15
+  Start of processing: outfileLD_TEMP/outfileLD_16
+  Start of processing: outfileLD_TEMP/outfileLD_17
+  Start of processing: outfileLD_TEMP/outfileLD_18
+  Start of processing: outfileLD_TEMP/outfileLD_19
+  Start of processing: outfileLD_TEMP/outfileLD_20
+  Start of processing: outfileLD_TEMP/outfileLD_21
+  Start of processing: outfileLD_TEMP/outfileLD_22
+  Start of processing: outfileLD_TEMP/outfileLD_23
+  Start of processing: outfileLD_TEMP/outfileLD_24
+  Start of processing: outfileLD_TEMP/outfileLD_25
+  Start of processing: outfileLD_TEMP/outfileLD_26
+  Start of processing: outfileLD_TEMP/outfileLD_27
+  Start of processing: outfileLD_TEMP/outfileLD_28
+  Start of processing: outfileLD_TEMP/outfileLD_29
+  Start of processing: outfileLD_TEMP/outfileLD_30
+  Start of processing: outfileLD_TEMP/outfileLD_31
+  Start of processing: outfileLD_TEMP/outfileLD_32
+  Start of processing: outfileLD_TEMP/outfileLD_33
+  Start of processing: outfileLD_TEMP/outfileLD_34
+  Start of processing: outfileLD_TEMP/outfileLD_35
+  Start of processing: outfileLD_TEMP/outfileLD_36
+  Start of processing: outfileLD_TEMP/outfileLD_37
+  Start of processing: outfileLD_TEMP/outfileLD_38
+  Start of processing: outfileLD_TEMP/outfileLD_39
+  Start of processing: outfileLD_TEMP/outfileLD_40
+  End of processing: outfileLD_TEMP/outfileLD_9
+  End of processing: outfileLD_TEMP/outfileLD_3
+  End of processing: outfileLD_TEMP/outfileLD_2
+  End of processing: outfileLD_TEMP/outfileLD_15
+  End of processing: outfileLD_TEMP/outfileLD_20
+  End of processing: outfileLD_TEMP/outfileLD_29
+  End of processing: outfileLD_TEMP/outfileLD_11
+  End of processing: outfileLD_TEMP/outfileLD_6
+  End of processing: outfileLD_TEMP/outfileLD_8
+  End of processing: outfileLD_TEMP/outfileLD_10
+  End of processing: outfileLD_TEMP/outfileLD_26
+  End of processing: outfileLD_TEMP/outfileLD_16
+  End of processing: outfileLD_TEMP/outfileLD_28
+  End of processing: outfileLD_TEMP/outfileLD_36
+  End of processing: outfileLD_TEMP/outfileLD_32
+  End of processing: outfileLD_TEMP/outfileLD_33
+  End of processing: outfileLD_TEMP/outfileLD_24
+  End of processing: outfileLD_TEMP/outfileLD_37
+  End of processing: outfileLD_TEMP/outfileLD_1
+  End of processing: outfileLD_TEMP/outfileLD_12
+  End of processing: outfileLD_TEMP/outfileLD_22
+  End of processing: outfileLD_TEMP/outfileLD_34
+  End of processing: outfileLD_TEMP/outfileLD_14
+  End of processing: outfileLD_TEMP/outfileLD_31
+  End of processing: outfileLD_TEMP/outfileLD_40
+  End of processing: outfileLD_TEMP/outfileLD_30
+  End of processing: outfileLD_TEMP/outfileLD_17
+  End of processing: outfileLD_TEMP/outfileLD_7
+  End of processing: outfileLD_TEMP/outfileLD_19
+  End of processing: outfileLD_TEMP/outfileLD_4
+  End of processing: outfileLD_TEMP/outfileLD_5
+  End of processing: outfileLD_TEMP/outfileLD_35
+  End of processing: outfileLD_TEMP/outfileLD_38
+  End of processing: outfileLD_TEMP/outfileLD_18
+  End of processing: outfileLD_TEMP/outfileLD_27
+  End of processing: outfileLD_TEMP/outfileLD_13
+  End of processing: outfileLD_TEMP/outfileLD_23
+  End of processing: outfileLD_TEMP/outfileLD_39
+  End of processing: outfileLD_TEMP/outfileLD_21
+  End of processing: outfileLD_TEMP/outfileLD_25
+ END OF ALL PROCESSES
+GONE run took 321 seconds
+END OF ANALYSES
+PLINK v1.90b6.21 64-bit (19 Oct 2020)          www.cog-genomics.org/plink/1.9/
+(C) 2005-2020 Shaun Purcell, Christopher Chang   GNU General Public License v3
+Logging to i1_split2_wgs_n100_c200.log.
+Options in effect:
+  --allow-extra-chr
+  --chr contig4, contig5, contig7, contig10, contig13, contig14, contig15, contig17, contig29, contig32, contig36, contig54, contig57, contig59, contig61, contig63, contig69, contig72, contig73, contig77, contig78, contig80, contig82, contig86, contig88, contig91, contig92, contig99, contig105, contig106, contig108, contig110, contig111, contig123, contig124, contig126, contig127, contig128, contig129, contig132, contig138, contig139, contig151, contig160, contig162, contig164, contig166, contig169, contig182, contig187, contig188, contig190, contig191, contig197, contig199, contig200, contig210, contig213, contig218, contig220, contig226, contig227, contig228, contig229, contig231, contig236, contig242, contig243, contig245, contig246, contig250, contig253, contig255, contig256, contig257, contig259, contig263, contig268, contig276, contig283, contig285, contig286, contig287, contig292, contig296, contig303, contig305, contig308, contig309, contig314, contig318, contig329, contig333, contig340, contig347, contig348, contig350, contig352, contig353, contig358, contig359, contig362, contig367, contig369, contig371, contig374, contig379, contig383, contig394, contig396, contig398, contig399, contig405, contig422, contig425, contig427, contig437, contig440, contig443, contig445, contig454, contig455, contig458, contig469, contig472, contig473, contig474, contig475, contig480, contig484, contig493, contig508, contig512, contig516, contig520, contig521, contig524, contig525, contig528, contig531, contig536, contig539, contig551, contig552, contig557, contig559, contig560, contig564, contig580, contig581, contig584, contig587, contig589, contig590, contig591, contig595, contig596, contig597, contig598, contig599, contig604, contig606, contig607, contig608, contig609, contig616, contig617, contig635, contig643, contig647, contig659, contig661, contig665, contig667, contig668, contig669, contig671, contig677, contig682, contig683, contig687, contig688, contig693, contig694, contig695, contig697, contig698, contig706, contig710, contig711, contig716, contig723, contig725, contig727, contig728, contig729, contig733, contig740, contig741,
+  --file i1_split2_wgs_n100_c_nomaf
+  --out i1_split2_wgs_n100_c200
+  --recode
+
+193099 MB RAM detected; reserving 96549 MB for main workspace.
+Scanning .ped file... 0%0%1%2%3%4%5%6%7%8%9%10%11%12%13%14%15%16%17%18%19%20%21%22%23%24%25%26%27%28%29%30%31%32%33%34%35%36%37%38%39%40%41%42%43%44%45%46%47%48%49%50%51%52%53%54%55%56%57%58%59%60%61%62%63%64%65%66%67%68%69%70%71%72%73%74%75%76%77%78%79%80%81%82%83%84%85%86%87%88%89%90%91%92%93%94%95%96%97%98%100%.ped scan complete (for binary autoconversion).
+Performing single-pass .bed write (82624 variants, 100 people).
+0%1%2%3%4%5%6%7%8%9%10%11%12%13%14%15%16%17%18%19%20%21%22%23%24%25%26%27%28%29%30%31%32%33%34%35%36%37%38%39%40%41%42%43%44%45%46%47%48%49%50%51%52%53%54%55%56%57%58%59%60%61%62%63%64%65%66%67%68%69%70%71%72%73%74%75%76%77%78%79%80%81%82%83%84%85%86%87%88%89%90%91%92%93%94%--file: i1_split2_wgs_n100_c200-temporary.bed +
+i1_split2_wgs_n100_c200-temporary.bim + i1_split2_wgs_n100_c200-temporary.fam
+written.
+82624 variants loaded from .bim file.
+100 people (0 males, 0 females, 100 ambiguous) loaded from .fam.
+Ambiguous sex IDs written to i1_split2_wgs_n100_c200.nosex .
+Using 1 thread (no multithreaded calculations invoked).
+Before main variant filters, 100 founders and 0 nonfounders present.
+Calculating allele frequencies... 0%1%2%3%4%5%6%7%8%9%10%11%12%13%14%15%16%17%18%19%20%21%22%23%24%25%26%27%28%29%30%31%32%33%34%35%36%37%38%39%40%41%42%43%44%45%46%47%48%49%50%51%52%53%54%55%56%57%58%59%60%61%62%63%64%65%66%67%68%69%70%71%72%73%74%75%76%77%78%79%80%81%82%83%84%85%86%87%88%89%90%91%92%93%94%95%96%97%98%99% done.
+82624 variants and 100 people pass filters and QC.
+Note: No phenotypes present.
+--recode ped to i1_split2_wgs_n100_c200.ped + i1_split2_wgs_n100_c200.map ...
+0%1%2%3%4%5%6%7%8%9%10%11%12%13%14%15%16%17%18%19%20%21%22%23%24%25%26%27%28%29%30%31%32%33%34%35%36%37%38%39%40%41%42%43%44%45%46%47%48%49%50%51%52%53%54%55%56%57%58%59%60%61%62%63%64%65%66%67%68%69%70%71%72%73%74%75%76%77%78%79%80%81%82%83%84%85%86%87%88%89%90%91%92%93%94%95%96%97%98%99%done.
+DIVIDE .ped AND .map FILES IN CHROMOSOMES
+RUNNING ANALYSIS OF CHROMOSOMES ...
+CHROMOSOME ANALYSES took 25 seconds
+Running GONE
+  Start of processing: outfileLD_TEMP/outfileLD_1
+  Start of processing: outfileLD_TEMP/outfileLD_2
+  Start of processing: outfileLD_TEMP/outfileLD_3
+  Start of processing: outfileLD_TEMP/outfileLD_4
+  Start of processing: outfileLD_TEMP/outfileLD_5
+  Start of processing: outfileLD_TEMP/outfileLD_6
+  Start of processing: outfileLD_TEMP/outfileLD_7
+  Start of processing: outfileLD_TEMP/outfileLD_8
+  Start of processing: outfileLD_TEMP/outfileLD_9
+  Start of processing: outfileLD_TEMP/outfileLD_10
+  Start of processing: outfileLD_TEMP/outfileLD_11
+  Start of processing: outfileLD_TEMP/outfileLD_12
+  Start of processing: outfileLD_TEMP/outfileLD_13
+  Start of processing: outfileLD_TEMP/outfileLD_14
+  Start of processing: outfileLD_TEMP/outfileLD_15
+  Start of processing: outfileLD_TEMP/outfileLD_16
+  Start of processing: outfileLD_TEMP/outfileLD_17
+  Start of processing: outfileLD_TEMP/outfileLD_18
+  Start of processing: outfileLD_TEMP/outfileLD_19
+  Start of processing: outfileLD_TEMP/outfileLD_20
+  Start of processing: outfileLD_TEMP/outfileLD_21
+  Start of processing: outfileLD_TEMP/outfileLD_22
+  Start of processing: outfileLD_TEMP/outfileLD_23
+  Start of processing: outfileLD_TEMP/outfileLD_24
+  Start of processing: outfileLD_TEMP/outfileLD_25
+  Start of processing: outfileLD_TEMP/outfileLD_26
+  Start of processing: outfileLD_TEMP/outfileLD_27
+  Start of processing: outfileLD_TEMP/outfileLD_28
+  Start of processing: outfileLD_TEMP/outfileLD_29
+  Start of processing: outfileLD_TEMP/outfileLD_30
+  Start of processing: outfileLD_TEMP/outfileLD_31
+  Start of processing: outfileLD_TEMP/outfileLD_32
+  Start of processing: outfileLD_TEMP/outfileLD_33
+  Start of processing: outfileLD_TEMP/outfileLD_34
+  Start of processing: outfileLD_TEMP/outfileLD_35
+  Start of processing: outfileLD_TEMP/outfileLD_36
+  Start of processing: outfileLD_TEMP/outfileLD_37
+  Start of processing: outfileLD_TEMP/outfileLD_38
+  Start of processing: outfileLD_TEMP/outfileLD_39
+  Start of processing: outfileLD_TEMP/outfileLD_40
+  End of processing: outfileLD_TEMP/outfileLD_2
+  End of processing: outfileLD_TEMP/outfileLD_28
+  End of processing: outfileLD_TEMP/outfileLD_29
+  End of processing: outfileLD_TEMP/outfileLD_35
+  End of processing: outfileLD_TEMP/outfileLD_22
+  End of processing: outfileLD_TEMP/outfileLD_18
+  End of processing: outfileLD_TEMP/outfileLD_30
+  End of processing: outfileLD_TEMP/outfileLD_38
+  End of processing: outfileLD_TEMP/outfileLD_33
+  End of processing: outfileLD_TEMP/outfileLD_39
+  End of processing: outfileLD_TEMP/outfileLD_15
+  End of processing: outfileLD_TEMP/outfileLD_27
+  End of processing: outfileLD_TEMP/outfileLD_11
+  End of processing: outfileLD_TEMP/outfileLD_19
+  End of processing: outfileLD_TEMP/outfileLD_40
+  End of processing: outfileLD_TEMP/outfileLD_9
+  End of processing: outfileLD_TEMP/outfileLD_26
+  End of processing: outfileLD_TEMP/outfileLD_23
+  End of processing: outfileLD_TEMP/outfileLD_8
+  End of processing: outfileLD_TEMP/outfileLD_4
+  End of processing: outfileLD_TEMP/outfileLD_34
+  End of processing: outfileLD_TEMP/outfileLD_32
+  End of processing: outfileLD_TEMP/outfileLD_6
+  End of processing: outfileLD_TEMP/outfileLD_14
+  End of processing: outfileLD_TEMP/outfileLD_7
+  End of processing: outfileLD_TEMP/outfileLD_10
+  End of processing: outfileLD_TEMP/outfileLD_36
+  End of processing: outfileLD_TEMP/outfileLD_12
+  End of processing: outfileLD_TEMP/outfileLD_31
+  End of processing: outfileLD_TEMP/outfileLD_5
+  End of processing: outfileLD_TEMP/outfileLD_25
+  End of processing: outfileLD_TEMP/outfileLD_16
+  End of processing: outfileLD_TEMP/outfileLD_17
+  End of processing: outfileLD_TEMP/outfileLD_24
+  End of processing: outfileLD_TEMP/outfileLD_37
+  End of processing: outfileLD_TEMP/outfileLD_13
+  End of processing: outfileLD_TEMP/outfileLD_20
+  End of processing: outfileLD_TEMP/outfileLD_1
+  End of processing: outfileLD_TEMP/outfileLD_3
+  End of processing: outfileLD_TEMP/outfileLD_21
+ END OF ALL PROCESSES
+GONE run took 387 seconds
+END OF ANALYSES
+DIVIDE .ped AND .map FILES IN CHROMOSOMES
+RUNNING ANALYSIS OF CHROMOSOMES ...
+CHROMOSOME ANALYSES took 384 seconds
+Running GONE
+  Start of processing: outfileLD_TEMP/outfileLD_2
+  Start of processing: outfileLD_TEMP/outfileLD_4
+  Start of processing: outfileLD_TEMP/outfileLD_6
+  Start of processing: outfileLD_TEMP/outfileLD_3
+  Start of processing: outfileLD_TEMP/outfileLD_1
+  Start of processing: outfileLD_TEMP/outfileLD_5
+  Start of processing: outfileLD_TEMP/outfileLD_7
+  Start of processing: outfileLD_TEMP/outfileLD_8
+  Start of processing: outfileLD_TEMP/outfileLD_9
+  Start of processing: outfileLD_TEMP/outfileLD_10
+  Start of processing: outfileLD_TEMP/outfileLD_11
+  Start of processing: outfileLD_TEMP/outfileLD_12
+  Start of processing: outfileLD_TEMP/outfileLD_13
+  Start of processing: outfileLD_TEMP/outfileLD_14
+  Start of processing: outfileLD_TEMP/outfileLD_15
+  Start of processing: outfileLD_TEMP/outfileLD_16
+  Start of processing: outfileLD_TEMP/outfileLD_17
+  Start of processing: outfileLD_TEMP/outfileLD_18
+  Start of processing: outfileLD_TEMP/outfileLD_19
+  Start of processing: outfileLD_TEMP/outfileLD_20
+  Start of processing: outfileLD_TEMP/outfileLD_21
+  Start of processing: outfileLD_TEMP/outfileLD_22
+  Start of processing: outfileLD_TEMP/outfileLD_23
+  Start of processing: outfileLD_TEMP/outfileLD_24
+  Start of processing: outfileLD_TEMP/outfileLD_25
+  Start of processing: outfileLD_TEMP/outfileLD_26
+  Start of processing: outfileLD_TEMP/outfileLD_27
+  Start of processing: outfileLD_TEMP/outfileLD_28
+  Start of processing: outfileLD_TEMP/outfileLD_29
+  Start of processing: outfileLD_TEMP/outfileLD_30
+  Start of processing: outfileLD_TEMP/outfileLD_31
+  Start of processing: outfileLD_TEMP/outfileLD_32
+  Start of processing: outfileLD_TEMP/outfileLD_33
+  Start of processing: outfileLD_TEMP/outfileLD_34
+  Start of processing: outfileLD_TEMP/outfileLD_35
+  Start of processing: outfileLD_TEMP/outfileLD_36
+  Start of processing: outfileLD_TEMP/outfileLD_37
+  Start of processing: outfileLD_TEMP/outfileLD_38
+  Start of processing: outfileLD_TEMP/outfileLD_39
+  Start of processing: outfileLD_TEMP/outfileLD_40
+  End of processing: outfileLD_TEMP/outfileLD_17
+  End of processing: outfileLD_TEMP/outfileLD_1
+  End of processing: outfileLD_TEMP/outfileLD_9
+  End of processing: outfileLD_TEMP/outfileLD_27
+  End of processing: outfileLD_TEMP/outfileLD_21
+  End of processing: outfileLD_TEMP/outfileLD_10
+  End of processing: outfileLD_TEMP/outfileLD_35
+  End of processing: outfileLD_TEMP/outfileLD_28
+  End of processing: outfileLD_TEMP/outfileLD_40
+  End of processing: outfileLD_TEMP/outfileLD_29
+  End of processing: outfileLD_TEMP/outfileLD_24
+  End of processing: outfileLD_TEMP/outfileLD_7
+  End of processing: outfileLD_TEMP/outfileLD_4
+  End of processing: outfileLD_TEMP/outfileLD_2
+  End of processing: outfileLD_TEMP/outfileLD_18
+  End of processing: outfileLD_TEMP/outfileLD_6
+  End of processing: outfileLD_TEMP/outfileLD_39
+  End of processing: outfileLD_TEMP/outfileLD_14
+  End of processing: outfileLD_TEMP/outfileLD_37
+  End of processing: outfileLD_TEMP/outfileLD_5
+  End of processing: outfileLD_TEMP/outfileLD_3
+  End of processing: outfileLD_TEMP/outfileLD_26
+  End of processing: outfileLD_TEMP/outfileLD_38
+  End of processing: outfileLD_TEMP/outfileLD_11
+  End of processing: outfileLD_TEMP/outfileLD_20
+  End of processing: outfileLD_TEMP/outfileLD_13
+  End of processing: outfileLD_TEMP/outfileLD_30
+  End of processing: outfileLD_TEMP/outfileLD_15
+  End of processing: outfileLD_TEMP/outfileLD_12
+  End of processing: outfileLD_TEMP/outfileLD_34
+  End of processing: outfileLD_TEMP/outfileLD_16
+  End of processing: outfileLD_TEMP/outfileLD_25
+  End of processing: outfileLD_TEMP/outfileLD_19
+  End of processing: outfileLD_TEMP/outfileLD_23
+  End of processing: outfileLD_TEMP/outfileLD_8
+  End of processing: outfileLD_TEMP/outfileLD_33
+  End of processing: outfileLD_TEMP/outfileLD_22
+  End of processing: outfileLD_TEMP/outfileLD_31
+  End of processing: outfileLD_TEMP/outfileLD_32
+  End of processing: outfileLD_TEMP/outfileLD_36
+ END OF ALL PROCESSES
+GONE run took 379 seconds
+END OF ANALYSES
+PLINK v1.90b6.21 64-bit (19 Oct 2020)          www.cog-genomics.org/plink/1.9/
+(C) 2005-2020 Shaun Purcell, Christopher Chang   GNU General Public License v3
+Logging to i2_split2_wgs_n100_c200.log.
+Options in effect:
+  --allow-extra-chr
+  --chr contig23, contig24, contig25, contig30, contig32, contig35, contig38, contig45, contig48, contig54, contig59, contig60, contig62, contig67, contig74, contig79, contig81, contig84, contig88, contig92, contig95, contig99, contig102, contig105, contig106, contig111, contig112, contig115, contig116, contig117, contig118, contig125, contig127, contig129, contig145, contig151, contig152, contig160, contig161, contig164, contig166, contig171, contig174, contig179, contig195, contig196, contig198, contig204, contig205, contig209, contig213, contig217, contig218, contig219, contig224, contig235, contig237, contig239, contig240, contig259, contig260, contig265, contig269, contig270, contig271, contig275, contig277, contig278, contig285, contig286, contig287, contig288, contig290, contig293, contig305, contig307, contig309, contig313, contig316, contig319, contig323, contig332, contig335, contig343, contig350, contig354, contig358, contig365, contig366, contig367, contig370, contig371, contig373, contig381, contig383, contig384, contig385, contig387, contig388, contig394, contig398, contig399, contig403, contig409, contig411, contig412, contig414, contig418, contig420, contig421, contig432, contig437, contig450, contig451, contig452, contig454, contig458, contig461, contig462, contig464, contig465, contig470, contig473, contig476, contig478, contig481, contig493, contig494, contig495, contig507, contig514, contig517, contig525, contig529, contig531, contig533, contig540, contig541, contig542, contig545, contig547, contig553, contig562, contig563, contig570, contig573, contig576, contig578, contig591, contig595, contig604, contig605, contig612, contig614, contig615, contig617, contig628, contig631, contig633, contig635, contig636, contig637, contig643, contig645, contig649, contig651, contig652, contig656, contig662, contig665, contig668, contig670, contig671, contig683, contig685, contig687, contig691, contig692, contig693, contig695, contig696, contig697, contig699, contig703, contig709, contig712, contig713, contig715, contig716, contig717, contig718, contig722, contig727, contig734, contig735, contig737, contig741, contig747, contig749,
+  --file i2_split2_wgs_n100_c_nomaf
+  --out i2_split2_wgs_n100_c200
+  --recode
+
+193099 MB RAM detected; reserving 96549 MB for main workspace.
+Scanning .ped file... 0%0%1%2%3%4%5%6%7%8%9%10%11%12%13%14%15%16%17%18%19%20%21%22%23%24%25%26%27%28%29%30%31%32%33%34%35%36%37%38%39%40%41%42%43%44%45%46%47%48%49%50%51%52%53%54%55%56%57%58%59%60%61%62%63%64%65%66%67%68%69%70%71%72%73%74%75%76%77%78%79%80%81%82%83%84%85%86%87%88%89%90%91%92%93%94%95%96%97%98%100%.ped scan complete (for binary autoconversion).
+Performing single-pass .bed write (82859 variants, 100 people).
+0%1%2%3%4%5%6%7%8%9%10%11%12%13%14%15%16%17%18%19%20%21%22%23%24%25%26%27%28%29%30%31%32%33%34%35%36%37%38%39%40%41%42%43%44%45%46%47%48%49%50%51%52%53%54%55%56%57%58%59%60%61%62%63%64%65%66%67%68%69%70%71%72%73%74%75%76%77%78%79%80%81%82%83%84%85%86%87%88%89%90%91%92%93%94%--file: i2_split2_wgs_n100_c200-temporary.bed +
+i2_split2_wgs_n100_c200-temporary.bim + i2_split2_wgs_n100_c200-temporary.fam
+written.
+82859 variants loaded from .bim file.
+100 people (0 males, 0 females, 100 ambiguous) loaded from .fam.
+Ambiguous sex IDs written to i2_split2_wgs_n100_c200.nosex .
+Using 1 thread (no multithreaded calculations invoked).
+Before main variant filters, 100 founders and 0 nonfounders present.
+Calculating allele frequencies... 0%1%2%3%4%5%6%7%8%9%10%11%12%13%14%15%16%17%18%19%20%21%22%23%24%25%26%27%28%29%30%31%32%33%34%35%36%37%38%39%40%41%42%43%44%45%46%47%48%49%50%51%52%53%54%55%56%57%58%59%60%61%62%63%64%65%66%67%68%69%70%71%72%73%74%75%76%77%78%79%80%81%82%83%84%85%86%87%88%89%90%91%92%93%94%95%96%97%98%99% done.
+82859 variants and 100 people pass filters and QC.
+Note: No phenotypes present.
+--recode ped to i2_split2_wgs_n100_c200.ped + i2_split2_wgs_n100_c200.map ...
+0%1%2%3%4%5%6%7%8%9%10%11%12%13%14%15%16%17%18%19%20%21%22%23%24%25%26%27%28%29%30%31%32%33%34%35%36%37%38%39%40%41%42%43%44%45%46%47%48%49%50%51%52%53%54%55%56%57%58%59%60%61%62%63%64%65%66%67%68%69%70%71%72%73%74%75%76%77%78%79%80%81%82%83%84%85%86%87%88%89%90%91%92%93%94%95%96%97%98%99%done.
+DIVIDE .ped AND .map FILES IN CHROMOSOMES
+RUNNING ANALYSIS OF CHROMOSOMES ...
+CHROMOSOME ANALYSES took 25 seconds
+Running GONE
+  Start of processing: outfileLD_TEMP/outfileLD_1
+  Start of processing: outfileLD_TEMP/outfileLD_2
+  Start of processing: outfileLD_TEMP/outfileLD_3
+  Start of processing: outfileLD_TEMP/outfileLD_4
+  Start of processing: outfileLD_TEMP/outfileLD_5
+  Start of processing: outfileLD_TEMP/outfileLD_6
+  Start of processing: outfileLD_TEMP/outfileLD_7
+  Start of processing: outfileLD_TEMP/outfileLD_8
+  Start of processing: outfileLD_TEMP/outfileLD_9
+  Start of processing: outfileLD_TEMP/outfileLD_10
+  Start of processing: outfileLD_TEMP/outfileLD_11
+  Start of processing: outfileLD_TEMP/outfileLD_12
+  Start of processing: outfileLD_TEMP/outfileLD_13
+  Start of processing: outfileLD_TEMP/outfileLD_14
+  Start of processing: outfileLD_TEMP/outfileLD_15
+  Start of processing: outfileLD_TEMP/outfileLD_16
+  Start of processing: outfileLD_TEMP/outfileLD_17
+  Start of processing: outfileLD_TEMP/outfileLD_18
+  Start of processing: outfileLD_TEMP/outfileLD_19
+  Start of processing: outfileLD_TEMP/outfileLD_20
+  Start of processing: outfileLD_TEMP/outfileLD_21
+  Start of processing: outfileLD_TEMP/outfileLD_22
+  Start of processing: outfileLD_TEMP/outfileLD_23
+  Start of processing: outfileLD_TEMP/outfileLD_24
+  Start of processing: outfileLD_TEMP/outfileLD_25
+  Start of processing: outfileLD_TEMP/outfileLD_26
+  Start of processing: outfileLD_TEMP/outfileLD_27
+  Start of processing: outfileLD_TEMP/outfileLD_28
+  Start of processing: outfileLD_TEMP/outfileLD_29
+  Start of processing: outfileLD_TEMP/outfileLD_30
+  Start of processing: outfileLD_TEMP/outfileLD_31
+  Start of processing: outfileLD_TEMP/outfileLD_32
+  Start of processing: outfileLD_TEMP/outfileLD_33
+  Start of processing: outfileLD_TEMP/outfileLD_34
+  Start of processing: outfileLD_TEMP/outfileLD_35
+  Start of processing: outfileLD_TEMP/outfileLD_36
+  Start of processing: outfileLD_TEMP/outfileLD_37
+  Start of processing: outfileLD_TEMP/outfileLD_38
+  Start of processing: outfileLD_TEMP/outfileLD_39
+  Start of processing: outfileLD_TEMP/outfileLD_40
+  End of processing: outfileLD_TEMP/outfileLD_18
+  End of processing: outfileLD_TEMP/outfileLD_28
+  End of processing: outfileLD_TEMP/outfileLD_9
+  End of processing: outfileLD_TEMP/outfileLD_20
+  End of processing: outfileLD_TEMP/outfileLD_39
+  End of processing: outfileLD_TEMP/outfileLD_10
+  End of processing: outfileLD_TEMP/outfileLD_40
+  End of processing: outfileLD_TEMP/outfileLD_32
+  End of processing: outfileLD_TEMP/outfileLD_24
+  End of processing: outfileLD_TEMP/outfileLD_17
+  End of processing: outfileLD_TEMP/outfileLD_11
+  End of processing: outfileLD_TEMP/outfileLD_8
+  End of processing: outfileLD_TEMP/outfileLD_36
+  End of processing: outfileLD_TEMP/outfileLD_19
+  End of processing: outfileLD_TEMP/outfileLD_13
+  End of processing: outfileLD_TEMP/outfileLD_16
+  End of processing: outfileLD_TEMP/outfileLD_30
+  End of processing: outfileLD_TEMP/outfileLD_12
+  End of processing: outfileLD_TEMP/outfileLD_21
+  End of processing: outfileLD_TEMP/outfileLD_31
+  End of processing: outfileLD_TEMP/outfileLD_34
+  End of processing: outfileLD_TEMP/outfileLD_35
+  End of processing: outfileLD_TEMP/outfileLD_29
+  End of processing: outfileLD_TEMP/outfileLD_27
+  End of processing: outfileLD_TEMP/outfileLD_14
+  End of processing: outfileLD_TEMP/outfileLD_33
+  End of processing: outfileLD_TEMP/outfileLD_25
+  End of processing: outfileLD_TEMP/outfileLD_4
+  End of processing: outfileLD_TEMP/outfileLD_7
+  End of processing: outfileLD_TEMP/outfileLD_22
+  End of processing: outfileLD_TEMP/outfileLD_15
+  End of processing: outfileLD_TEMP/outfileLD_38
+  End of processing: outfileLD_TEMP/outfileLD_3
+  End of processing: outfileLD_TEMP/outfileLD_2
+  End of processing: outfileLD_TEMP/outfileLD_1
+  End of processing: outfileLD_TEMP/outfileLD_5
+  End of processing: outfileLD_TEMP/outfileLD_37
+  End of processing: outfileLD_TEMP/outfileLD_26
+  End of processing: outfileLD_TEMP/outfileLD_6
+  End of processing: outfileLD_TEMP/outfileLD_23
+ END OF ALL PROCESSES
+GONE run took 335 seconds
+END OF ANALYSES
+DIVIDE .ped AND .map FILES IN CHROMOSOMES
+RUNNING ANALYSIS OF CHROMOSOMES ...
+CHROMOSOME ANALYSES took 388 seconds
+Running GONE
+  Start of processing: outfileLD_TEMP/outfileLD_10
+  Start of processing: outfileLD_TEMP/outfileLD_4
+  Start of processing: outfileLD_TEMP/outfileLD_14
+  Start of processing: outfileLD_TEMP/outfileLD_12
+  Start of processing: outfileLD_TEMP/outfileLD_9
+  Start of processing: outfileLD_TEMP/outfileLD_15
+  Start of processing: outfileLD_TEMP/outfileLD_7
+  Start of processing: outfileLD_TEMP/outfileLD_11
+  Start of processing: outfileLD_TEMP/outfileLD_8
+  Start of processing: outfileLD_TEMP/outfileLD_1
+  Start of processing: outfileLD_TEMP/outfileLD_2
+  Start of processing: outfileLD_TEMP/outfileLD_5
+  Start of processing: outfileLD_TEMP/outfileLD_6
+  Start of processing: outfileLD_TEMP/outfileLD_3
+  Start of processing: outfileLD_TEMP/outfileLD_13
+  Start of processing: outfileLD_TEMP/outfileLD_16
+  Start of processing: outfileLD_TEMP/outfileLD_17
+  Start of processing: outfileLD_TEMP/outfileLD_18
+  Start of processing: outfileLD_TEMP/outfileLD_19
+  Start of processing: outfileLD_TEMP/outfileLD_20
+  Start of processing: outfileLD_TEMP/outfileLD_21
+  Start of processing: outfileLD_TEMP/outfileLD_22
+  Start of processing: outfileLD_TEMP/outfileLD_23
+  Start of processing: outfileLD_TEMP/outfileLD_24
+  Start of processing: outfileLD_TEMP/outfileLD_25
+  Start of processing: outfileLD_TEMP/outfileLD_26
+  Start of processing: outfileLD_TEMP/outfileLD_27
+  Start of processing: outfileLD_TEMP/outfileLD_28
+  Start of processing: outfileLD_TEMP/outfileLD_29
+  Start of processing: outfileLD_TEMP/outfileLD_30
+  Start of processing: outfileLD_TEMP/outfileLD_31
+  Start of processing: outfileLD_TEMP/outfileLD_32
+  Start of processing: outfileLD_TEMP/outfileLD_33
+  Start of processing: outfileLD_TEMP/outfileLD_34
+  Start of processing: outfileLD_TEMP/outfileLD_35
+  Start of processing: outfileLD_TEMP/outfileLD_36
+  Start of processing: outfileLD_TEMP/outfileLD_37
+  Start of processing: outfileLD_TEMP/outfileLD_38
+  Start of processing: outfileLD_TEMP/outfileLD_39
+  Start of processing: outfileLD_TEMP/outfileLD_40
+  End of processing: outfileLD_TEMP/outfileLD_10
+  End of processing: outfileLD_TEMP/outfileLD_17
+  End of processing: outfileLD_TEMP/outfileLD_8
+  End of processing: outfileLD_TEMP/outfileLD_4
+  End of processing: outfileLD_TEMP/outfileLD_19
+  End of processing: outfileLD_TEMP/outfileLD_16
+  End of processing: outfileLD_TEMP/outfileLD_40
+  End of processing: outfileLD_TEMP/outfileLD_28
+  End of processing: outfileLD_TEMP/outfileLD_34
+  End of processing: outfileLD_TEMP/outfileLD_35
+  End of processing: outfileLD_TEMP/outfileLD_33
+  End of processing: outfileLD_TEMP/outfileLD_31
+  End of processing: outfileLD_TEMP/outfileLD_5
+  End of processing: outfileLD_TEMP/outfileLD_14
+  End of processing: outfileLD_TEMP/outfileLD_13
+  End of processing: outfileLD_TEMP/outfileLD_26
+  End of processing: outfileLD_TEMP/outfileLD_9
+  End of processing: outfileLD_TEMP/outfileLD_27
+  End of processing: outfileLD_TEMP/outfileLD_23
+  End of processing: outfileLD_TEMP/outfileLD_6
+  End of processing: outfileLD_TEMP/outfileLD_12
+  End of processing: outfileLD_TEMP/outfileLD_30
+  End of processing: outfileLD_TEMP/outfileLD_1
+  End of processing: outfileLD_TEMP/outfileLD_39
+  End of processing: outfileLD_TEMP/outfileLD_36
+  End of processing: outfileLD_TEMP/outfileLD_3
+  End of processing: outfileLD_TEMP/outfileLD_20
+  End of processing: outfileLD_TEMP/outfileLD_32
+  End of processing: outfileLD_TEMP/outfileLD_2
+  End of processing: outfileLD_TEMP/outfileLD_29
+  End of processing: outfileLD_TEMP/outfileLD_38
+  End of processing: outfileLD_TEMP/outfileLD_25
+  End of processing: outfileLD_TEMP/outfileLD_24
+  End of processing: outfileLD_TEMP/outfileLD_11
+  End of processing: outfileLD_TEMP/outfileLD_7
+  End of processing: outfileLD_TEMP/outfileLD_37
+  End of processing: outfileLD_TEMP/outfileLD_21
+  End of processing: outfileLD_TEMP/outfileLD_15
+  End of processing: outfileLD_TEMP/outfileLD_18
+  End of processing: outfileLD_TEMP/outfileLD_22
+ END OF ALL PROCESSES
+GONE run took 406 seconds
+END OF ANALYSES
+PLINK v1.90b6.21 64-bit (19 Oct 2020)          www.cog-genomics.org/plink/1.9/
+(C) 2005-2020 Shaun Purcell, Christopher Chang   GNU General Public License v3
+Logging to i3_split2_wgs_n100_c200.log.
+Options in effect:
+  --allow-extra-chr
+  --chr contig1, contig5, contig14, contig26, contig32, contig37, contig40, contig41, contig42, contig44, contig46, contig48, contig53, contig56, contig66, contig68, contig72, contig81, contig86, contig89, contig91, contig96, contig97, contig108, contig110, contig111, contig112, contig113, contig115, contig119, contig121, contig132, contig134, contig142, contig147, contig151, contig156, contig163, contig171, contig172, contig173, contig174, contig177, contig178, contig180, contig182, contig188, contig193, contig195, contig198, contig202, contig203, contig208, contig210, contig213, contig215, contig216, contig221, contig222, contig227, contig229, contig236, contig239, contig240, contig241, contig243, contig245, contig246, contig250, contig252, contig255, contig258, contig262, contig263, contig265, contig267, contig269, contig277, contig279, contig284, contig287, contig288, contig294, contig296, contig299, contig302, contig306, contig308, contig315, contig319, contig322, contig325, contig330, contig337, contig345, contig350, contig357, contig359, contig360, contig365, contig368, contig371, contig372, contig382, contig383, contig387, contig393, contig394, contig396, contig399, contig400, contig403, contig408, contig413, contig419, contig420, contig433, contig436, contig440, contig446, contig447, contig454, contig455, contig461, contig462, contig463, contig466, contig469, contig473, contig480, contig482, contig493, contig501, contig514, contig516, contig522, contig523, contig527, contig528, contig531, contig532, contig539, contig540, contig541, contig545, contig550, contig555, contig560, contig565, contig566, contig570, contig576, contig580, contig582, contig583, contig588, contig589, contig591, contig594, contig595, contig598, contig607, contig617, contig618, contig619, contig620, contig624, contig625, contig634, contig641, contig642, contig644, contig645, contig651, contig653, contig661, contig665, contig675, contig678, contig683, contig687, contig688, contig689, contig691, contig693, contig694, contig699, contig703, contig704, contig706, contig711, contig712, contig722, contig730, contig736, contig740, contig741, contig743, contig748,
+  --file i3_split2_wgs_n100_c_nomaf
+  --out i3_split2_wgs_n100_c200
+  --recode
+
+193099 MB RAM detected; reserving 96549 MB for main workspace.
+Scanning .ped file... 0%0%1%2%3%4%5%6%7%8%9%10%11%12%13%14%15%16%17%18%19%20%21%22%23%24%25%26%27%28%29%30%31%32%33%34%35%36%37%38%39%40%41%42%43%44%45%46%47%48%49%50%51%52%53%54%55%56%57%58%59%60%61%62%63%64%65%66%67%68%69%70%71%72%73%74%75%76%77%78%79%80%81%82%83%84%85%86%87%88%89%90%91%92%93%94%95%96%97%98%100%.ped scan complete (for binary autoconversion).
+Performing single-pass .bed write (82381 variants, 100 people).
+0%1%2%3%4%5%6%7%8%9%10%11%12%13%14%15%16%17%18%19%20%21%22%23%24%25%26%27%28%29%30%31%32%33%34%35%36%37%38%39%40%41%42%43%44%45%46%47%48%49%50%51%52%53%54%55%56%57%58%59%60%61%62%63%64%65%66%67%68%69%70%71%72%73%74%75%76%77%78%79%80%81%82%83%84%85%86%87%88%89%90%91%92%93%94%--file: i3_split2_wgs_n100_c200-temporary.bed +
+i3_split2_wgs_n100_c200-temporary.bim + i3_split2_wgs_n100_c200-temporary.fam
+written.
+82381 variants loaded from .bim file.
+100 people (0 males, 0 females, 100 ambiguous) loaded from .fam.
+Ambiguous sex IDs written to i3_split2_wgs_n100_c200.nosex .
+Using 1 thread (no multithreaded calculations invoked).
+Before main variant filters, 100 founders and 0 nonfounders present.
+Calculating allele frequencies... 0%1%2%3%4%5%6%7%8%9%10%11%12%13%14%15%16%17%18%19%20%21%22%23%24%25%26%27%28%29%30%31%32%33%34%35%36%37%38%39%40%41%42%43%44%45%46%47%48%49%50%51%52%53%54%55%56%57%58%59%60%61%62%63%64%65%66%67%68%69%70%71%72%73%74%75%76%77%78%79%80%81%82%83%84%85%86%87%88%89%90%91%92%93%94%95%96%97%98%99% done.
+82381 variants and 100 people pass filters and QC.
+Note: No phenotypes present.
+--recode ped to i3_split2_wgs_n100_c200.ped + i3_split2_wgs_n100_c200.map ...
+0%1%2%3%4%5%6%7%8%9%10%11%12%13%14%15%16%17%18%19%20%21%22%23%24%25%26%27%28%29%30%31%32%33%34%35%36%37%38%39%40%41%42%43%44%45%46%47%48%49%50%51%52%53%54%55%56%57%58%59%60%61%62%63%64%65%66%67%68%69%70%71%72%73%74%75%76%77%78%79%80%81%82%83%84%85%86%87%88%89%90%91%92%93%94%95%96%97%98%99%done.
+DIVIDE .ped AND .map FILES IN CHROMOSOMES
+RUNNING ANALYSIS OF CHROMOSOMES ...
+CHROMOSOME ANALYSES took 26 seconds
+Running GONE
+  Start of processing: outfileLD_TEMP/outfileLD_1
+  Start of processing: outfileLD_TEMP/outfileLD_2
+  Start of processing: outfileLD_TEMP/outfileLD_3
+  Start of processing: outfileLD_TEMP/outfileLD_4
+  Start of processing: outfileLD_TEMP/outfileLD_5
+  Start of processing: outfileLD_TEMP/outfileLD_6
+  Start of processing: outfileLD_TEMP/outfileLD_7
+  Start of processing: outfileLD_TEMP/outfileLD_8
+  Start of processing: outfileLD_TEMP/outfileLD_9
+  Start of processing: outfileLD_TEMP/outfileLD_10
+  Start of processing: outfileLD_TEMP/outfileLD_11
+  Start of processing: outfileLD_TEMP/outfileLD_12
+  Start of processing: outfileLD_TEMP/outfileLD_13
+  Start of processing: outfileLD_TEMP/outfileLD_14
+  Start of processing: outfileLD_TEMP/outfileLD_15
+  Start of processing: outfileLD_TEMP/outfileLD_16
+  Start of processing: outfileLD_TEMP/outfileLD_17
+  Start of processing: outfileLD_TEMP/outfileLD_18
+  Start of processing: outfileLD_TEMP/outfileLD_19
+  Start of processing: outfileLD_TEMP/outfileLD_20
+  Start of processing: outfileLD_TEMP/outfileLD_21
+  Start of processing: outfileLD_TEMP/outfileLD_22
+  Start of processing: outfileLD_TEMP/outfileLD_23
+  Start of processing: outfileLD_TEMP/outfileLD_24
+  Start of processing: outfileLD_TEMP/outfileLD_25
+  Start of processing: outfileLD_TEMP/outfileLD_26
+  Start of processing: outfileLD_TEMP/outfileLD_27
+  Start of processing: outfileLD_TEMP/outfileLD_28
+  Start of processing: outfileLD_TEMP/outfileLD_29
+  Start of processing: outfileLD_TEMP/outfileLD_30
+  Start of processing: outfileLD_TEMP/outfileLD_31
+  Start of processing: outfileLD_TEMP/outfileLD_32
+  Start of processing: outfileLD_TEMP/outfileLD_33
+  Start of processing: outfileLD_TEMP/outfileLD_34
+  Start of processing: outfileLD_TEMP/outfileLD_35
+  Start of processing: outfileLD_TEMP/outfileLD_36
+  Start of processing: outfileLD_TEMP/outfileLD_37
+  Start of processing: outfileLD_TEMP/outfileLD_38
+  Start of processing: outfileLD_TEMP/outfileLD_39
+  Start of processing: outfileLD_TEMP/outfileLD_40
+  End of processing: outfileLD_TEMP/outfileLD_13
+  End of processing: outfileLD_TEMP/outfileLD_15
+  End of processing: outfileLD_TEMP/outfileLD_40
+  End of processing: outfileLD_TEMP/outfileLD_17
+  End of processing: outfileLD_TEMP/outfileLD_30
+  End of processing: outfileLD_TEMP/outfileLD_39
+  End of processing: outfileLD_TEMP/outfileLD_37
+  End of processing: outfileLD_TEMP/outfileLD_14
+  End of processing: outfileLD_TEMP/outfileLD_31
+  End of processing: outfileLD_TEMP/outfileLD_7
+  End of processing: outfileLD_TEMP/outfileLD_38
+  End of processing: outfileLD_TEMP/outfileLD_33
+  End of processing: outfileLD_TEMP/outfileLD_32
+  End of processing: outfileLD_TEMP/outfileLD_11
+  End of processing: outfileLD_TEMP/outfileLD_6
+  End of processing: outfileLD_TEMP/outfileLD_12
+  End of processing: outfileLD_TEMP/outfileLD_2
+  End of processing: outfileLD_TEMP/outfileLD_4
+  End of processing: outfileLD_TEMP/outfileLD_9
+  End of processing: outfileLD_TEMP/outfileLD_25
+  End of processing: outfileLD_TEMP/outfileLD_5
+  End of processing: outfileLD_TEMP/outfileLD_35
+  End of processing: outfileLD_TEMP/outfileLD_22
+  End of processing: outfileLD_TEMP/outfileLD_23
+  End of processing: outfileLD_TEMP/outfileLD_3
+  End of processing: outfileLD_TEMP/outfileLD_24
+  End of processing: outfileLD_TEMP/outfileLD_10
+  End of processing: outfileLD_TEMP/outfileLD_21
+  End of processing: outfileLD_TEMP/outfileLD_26
+  End of processing: outfileLD_TEMP/outfileLD_18
+  End of processing: outfileLD_TEMP/outfileLD_20
+  End of processing: outfileLD_TEMP/outfileLD_1
+  End of processing: outfileLD_TEMP/outfileLD_27
+  End of processing: outfileLD_TEMP/outfileLD_16
+  End of processing: outfileLD_TEMP/outfileLD_8
+  End of processing: outfileLD_TEMP/outfileLD_19
+  End of processing: outfileLD_TEMP/outfileLD_29
+  End of processing: outfileLD_TEMP/outfileLD_36
+  End of processing: outfileLD_TEMP/outfileLD_34
+  End of processing: outfileLD_TEMP/outfileLD_28
+ END OF ALL PROCESSES
+GONE run took 391 seconds
+END OF ANALYSES
+DIVIDE .ped AND .map FILES IN CHROMOSOMES
+RUNNING ANALYSIS OF CHROMOSOMES ...
+CHROMOSOME ANALYSES took 383 seconds
+Running GONE
+  Start of processing: outfileLD_TEMP/outfileLD_2
+  Start of processing: outfileLD_TEMP/outfileLD_7
+  Start of processing: outfileLD_TEMP/outfileLD_4
+  Start of processing: outfileLD_TEMP/outfileLD_5
+  Start of processing: outfileLD_TEMP/outfileLD_9
+  Start of processing: outfileLD_TEMP/outfileLD_6
+  Start of processing: outfileLD_TEMP/outfileLD_1
+  Start of processing: outfileLD_TEMP/outfileLD_8
+  Start of processing: outfileLD_TEMP/outfileLD_3
+  Start of processing: outfileLD_TEMP/outfileLD_10
+  Start of processing: outfileLD_TEMP/outfileLD_11
+  Start of processing: outfileLD_TEMP/outfileLD_12
+  Start of processing: outfileLD_TEMP/outfileLD_13
+  Start of processing: outfileLD_TEMP/outfileLD_14
+  Start of processing: outfileLD_TEMP/outfileLD_15
+  Start of processing: outfileLD_TEMP/outfileLD_16
+  Start of processing: outfileLD_TEMP/outfileLD_17
+  Start of processing: outfileLD_TEMP/outfileLD_18
+  Start of processing: outfileLD_TEMP/outfileLD_19
+  Start of processing: outfileLD_TEMP/outfileLD_20
+  Start of processing: outfileLD_TEMP/outfileLD_21
+  Start of processing: outfileLD_TEMP/outfileLD_22
+  Start of processing: outfileLD_TEMP/outfileLD_23
+  Start of processing: outfileLD_TEMP/outfileLD_24
+  Start of processing: outfileLD_TEMP/outfileLD_25
+  Start of processing: outfileLD_TEMP/outfileLD_26
+  Start of processing: outfileLD_TEMP/outfileLD_27
+  Start of processing: outfileLD_TEMP/outfileLD_28
+  Start of processing: outfileLD_TEMP/outfileLD_29
+  Start of processing: outfileLD_TEMP/outfileLD_30
+  Start of processing: outfileLD_TEMP/outfileLD_31
+  Start of processing: outfileLD_TEMP/outfileLD_32
+  Start of processing: outfileLD_TEMP/outfileLD_33
+  Start of processing: outfileLD_TEMP/outfileLD_34
+  Start of processing: outfileLD_TEMP/outfileLD_35
+  Start of processing: outfileLD_TEMP/outfileLD_36
+  Start of processing: outfileLD_TEMP/outfileLD_37
+  Start of processing: outfileLD_TEMP/outfileLD_38
+  Start of processing: outfileLD_TEMP/outfileLD_39
+  Start of processing: outfileLD_TEMP/outfileLD_40
+  End of processing: outfileLD_TEMP/outfileLD_9
+  End of processing: outfileLD_TEMP/outfileLD_8
+  End of processing: outfileLD_TEMP/outfileLD_26
+  End of processing: outfileLD_TEMP/outfileLD_39
+  End of processing: outfileLD_TEMP/outfileLD_13
+  End of processing: outfileLD_TEMP/outfileLD_11
+  End of processing: outfileLD_TEMP/outfileLD_27
+  End of processing: outfileLD_TEMP/outfileLD_3
+  End of processing: outfileLD_TEMP/outfileLD_5
+  End of processing: outfileLD_TEMP/outfileLD_12
+  End of processing: outfileLD_TEMP/outfileLD_37
+  End of processing: outfileLD_TEMP/outfileLD_36
+  End of processing: outfileLD_TEMP/outfileLD_10
+  End of processing: outfileLD_TEMP/outfileLD_16
+  End of processing: outfileLD_TEMP/outfileLD_30
+  End of processing: outfileLD_TEMP/outfileLD_24
+  End of processing: outfileLD_TEMP/outfileLD_28
+  End of processing: outfileLD_TEMP/outfileLD_7
+  End of processing: outfileLD_TEMP/outfileLD_21
+  End of processing: outfileLD_TEMP/outfileLD_31
+  End of processing: outfileLD_TEMP/outfileLD_1
+  End of processing: outfileLD_TEMP/outfileLD_23
+  End of processing: outfileLD_TEMP/outfileLD_14
+  End of processing: outfileLD_TEMP/outfileLD_15
+  End of processing: outfileLD_TEMP/outfileLD_2
+  End of processing: outfileLD_TEMP/outfileLD_25
+  End of processing: outfileLD_TEMP/outfileLD_6
+  End of processing: outfileLD_TEMP/outfileLD_4
+  End of processing: outfileLD_TEMP/outfileLD_35
+  End of processing: outfileLD_TEMP/outfileLD_17
+  End of processing: outfileLD_TEMP/outfileLD_19
+  End of processing: outfileLD_TEMP/outfileLD_40
+  End of processing: outfileLD_TEMP/outfileLD_32
+  End of processing: outfileLD_TEMP/outfileLD_18
+  End of processing: outfileLD_TEMP/outfileLD_34
+  End of processing: outfileLD_TEMP/outfileLD_22
+  End of processing: outfileLD_TEMP/outfileLD_33
+  End of processing: outfileLD_TEMP/outfileLD_20
+  End of processing: outfileLD_TEMP/outfileLD_38
+  End of processing: outfileLD_TEMP/outfileLD_29
+ END OF ALL PROCESSES
+GONE run took 325 seconds
+END OF ANALYSES
+PLINK v1.90b6.21 64-bit (19 Oct 2020)          www.cog-genomics.org/plink/1.9/
+(C) 2005-2020 Shaun Purcell, Christopher Chang   GNU General Public License v3
+Logging to i4_split2_wgs_n100_c200.log.
+Options in effect:
+  --allow-extra-chr
+  --chr contig3, contig12, contig17, contig22, contig23, contig25, contig26, contig27, contig33, contig40, contig43, contig45, contig53, contig54, contig56, contig65, contig66, contig69, contig79, contig83, contig85, contig88, contig89, contig91, contig95, contig109, contig111, contig114, contig121, contig122, contig124, contig134, contig139, contig146, contig155, contig158, contig163, contig169, contig173, contig194, contig195, contig197, contig203, contig205, contig207, contig212, contig217, contig225, contig226, contig227, contig228, contig229, contig230, contig237, contig238, contig239, contig241, contig243, contig249, contig253, contig257, contig267, contig268, contig270, contig273, contig275, contig280, contig281, contig282, contig284, contig285, contig288, contig295, contig297, contig298, contig305, contig306, contig307, contig310, contig312, contig316, contig324, contig327, contig330, contig332, contig335, contig336, contig337, contig339, contig341, contig342, contig347, contig348, contig352, contig358, contig359, contig362, contig363, contig369, contig370, contig371, contig380, contig381, contig382, contig391, contig394, contig404, contig406, contig408, contig409, contig411, contig412, contig413, contig421, contig422, contig424, contig427, contig430, contig432, contig438, contig439, contig441, contig442, contig444, contig451, contig466, contig468, contig470, contig472, contig477, contig480, contig481, contig482, contig483, contig485, contig497, contig498, contig503, contig508, contig512, contig518, contig519, contig521, contig526, contig527, contig528, contig535, contig539, contig548, contig549, contig553, contig554, contig561, contig565, contig566, contig567, contig570, contig573, contig575, contig579, contig584, contig589, contig595, contig596, contig602, contig607, contig609, contig611, contig612, contig614, contig615, contig626, contig627, contig629, contig635, contig638, contig642, contig643, contig651, contig654, contig658, contig660, contig662, contig664, contig668, contig675, contig677, contig680, contig685, contig688, contig694, contig701, contig711, contig722, contig723, contig725, contig729, contig736, contig743,
+  --file i4_split2_wgs_n100_c_nomaf
+  --out i4_split2_wgs_n100_c200
+  --recode
+
+193099 MB RAM detected; reserving 96549 MB for main workspace.
+Scanning .ped file... 0%0%1%2%3%4%5%6%7%8%9%10%11%12%13%14%15%16%17%18%19%20%21%22%23%24%25%26%27%28%29%30%31%32%33%34%35%36%37%38%39%40%41%42%43%44%45%46%47%48%49%50%51%52%53%54%55%56%57%58%59%60%61%62%63%64%65%66%67%68%69%70%71%72%73%74%75%76%77%78%79%80%81%82%83%84%85%86%87%88%89%90%91%92%93%94%95%96%97%98%100%.ped scan complete (for binary autoconversion).
+Performing single-pass .bed write (83113 variants, 100 people).
+0%1%2%3%4%5%6%7%8%9%10%11%12%13%14%15%16%17%18%19%20%21%22%23%24%25%26%27%28%29%30%31%32%33%34%35%36%37%38%39%40%41%42%43%44%45%46%47%48%49%50%51%52%53%54%55%56%57%58%59%60%61%62%63%64%65%66%67%68%69%70%71%72%73%74%75%76%77%78%79%80%81%82%83%84%85%86%87%88%89%90%91%92%93%94%--file: i4_split2_wgs_n100_c200-temporary.bed +
+i4_split2_wgs_n100_c200-temporary.bim + i4_split2_wgs_n100_c200-temporary.fam
+written.
+83113 variants loaded from .bim file.
+100 people (0 males, 0 females, 100 ambiguous) loaded from .fam.
+Ambiguous sex IDs written to i4_split2_wgs_n100_c200.nosex .
+Using 1 thread (no multithreaded calculations invoked).
+Before main variant filters, 100 founders and 0 nonfounders present.
+Calculating allele frequencies... 0%1%2%3%4%5%6%7%8%9%10%11%12%13%14%15%16%17%18%19%20%21%22%23%24%25%26%27%28%29%30%31%32%33%34%35%36%37%38%39%40%41%42%43%44%45%46%47%48%49%50%51%52%53%54%55%56%57%58%59%60%61%62%63%64%65%66%67%68%69%70%71%72%73%74%75%76%77%78%79%80%81%82%83%84%85%86%87%88%89%90%91%92%93%94%95%96%97%98%99% done.
+83113 variants and 100 people pass filters and QC.
+Note: No phenotypes present.
+--recode ped to i4_split2_wgs_n100_c200.ped + i4_split2_wgs_n100_c200.map ...
+0%1%2%3%4%5%6%7%8%9%10%11%12%13%14%15%16%17%18%19%20%21%22%23%24%25%26%27%28%29%30%31%32%33%34%35%36%37%38%39%40%41%42%43%44%45%46%47%48%49%50%51%52%53%54%55%56%57%58%59%60%61%62%63%64%65%66%67%68%69%70%71%72%73%74%75%76%77%78%79%80%81%82%83%84%85%86%87%88%89%90%91%92%93%94%95%96%97%98%99%done.
+DIVIDE .ped AND .map FILES IN CHROMOSOMES
+RUNNING ANALYSIS OF CHROMOSOMES ...
+CHROMOSOME ANALYSES took 25 seconds
+Running GONE
+  Start of processing: outfileLD_TEMP/outfileLD_1
+  Start of processing: outfileLD_TEMP/outfileLD_2
+  Start of processing: outfileLD_TEMP/outfileLD_3
+  Start of processing: outfileLD_TEMP/outfileLD_4
+  Start of processing: outfileLD_TEMP/outfileLD_5
+  Start of processing: outfileLD_TEMP/outfileLD_6
+  Start of processing: outfileLD_TEMP/outfileLD_7
+  Start of processing: outfileLD_TEMP/outfileLD_8
+  Start of processing: outfileLD_TEMP/outfileLD_9
+  Start of processing: outfileLD_TEMP/outfileLD_10
+  Start of processing: outfileLD_TEMP/outfileLD_11
+  Start of processing: outfileLD_TEMP/outfileLD_12
+  Start of processing: outfileLD_TEMP/outfileLD_13
+  Start of processing: outfileLD_TEMP/outfileLD_14
+  Start of processing: outfileLD_TEMP/outfileLD_15
+  Start of processing: outfileLD_TEMP/outfileLD_16
+  Start of processing: outfileLD_TEMP/outfileLD_17
+  Start of processing: outfileLD_TEMP/outfileLD_18
+  Start of processing: outfileLD_TEMP/outfileLD_19
+  Start of processing: outfileLD_TEMP/outfileLD_20
+  Start of processing: outfileLD_TEMP/outfileLD_21
+  Start of processing: outfileLD_TEMP/outfileLD_22
+  Start of processing: outfileLD_TEMP/outfileLD_23
+  Start of processing: outfileLD_TEMP/outfileLD_24
+  Start of processing: outfileLD_TEMP/outfileLD_25
+  Start of processing: outfileLD_TEMP/outfileLD_26
+  Start of processing: outfileLD_TEMP/outfileLD_27
+  Start of processing: outfileLD_TEMP/outfileLD_28
+  Start of processing: outfileLD_TEMP/outfileLD_29
+  Start of processing: outfileLD_TEMP/outfileLD_30
+  Start of processing: outfileLD_TEMP/outfileLD_31
+  Start of processing: outfileLD_TEMP/outfileLD_32
+  Start of processing: outfileLD_TEMP/outfileLD_33
+  Start of processing: outfileLD_TEMP/outfileLD_34
+  Start of processing: outfileLD_TEMP/outfileLD_35
+  Start of processing: outfileLD_TEMP/outfileLD_36
+  Start of processing: outfileLD_TEMP/outfileLD_37
+  Start of processing: outfileLD_TEMP/outfileLD_38
+  Start of processing: outfileLD_TEMP/outfileLD_39
+  Start of processing: outfileLD_TEMP/outfileLD_40
+  End of processing: outfileLD_TEMP/outfileLD_33
+  End of processing: outfileLD_TEMP/outfileLD_16
+  End of processing: outfileLD_TEMP/outfileLD_15
+  End of processing: outfileLD_TEMP/outfileLD_5
+  End of processing: outfileLD_TEMP/outfileLD_4
+  End of processing: outfileLD_TEMP/outfileLD_24
+  End of processing: outfileLD_TEMP/outfileLD_7
+  End of processing: outfileLD_TEMP/outfileLD_20
+  End of processing: outfileLD_TEMP/outfileLD_32
+  End of processing: outfileLD_TEMP/outfileLD_22
+  End of processing: outfileLD_TEMP/outfileLD_3
+  End of processing: outfileLD_TEMP/outfileLD_14
+  End of processing: outfileLD_TEMP/outfileLD_27
+  End of processing: outfileLD_TEMP/outfileLD_18
+  End of processing: outfileLD_TEMP/outfileLD_26
+  End of processing: outfileLD_TEMP/outfileLD_23
+  End of processing: outfileLD_TEMP/outfileLD_6
+  End of processing: outfileLD_TEMP/outfileLD_34
+  End of processing: outfileLD_TEMP/outfileLD_11
+  End of processing: outfileLD_TEMP/outfileLD_38
+  End of processing: outfileLD_TEMP/outfileLD_29
+  End of processing: outfileLD_TEMP/outfileLD_8
+  End of processing: outfileLD_TEMP/outfileLD_35
+  End of processing: outfileLD_TEMP/outfileLD_31
+  End of processing: outfileLD_TEMP/outfileLD_17
+  End of processing: outfileLD_TEMP/outfileLD_1
+  End of processing: outfileLD_TEMP/outfileLD_2
+  End of processing: outfileLD_TEMP/outfileLD_37
+  End of processing: outfileLD_TEMP/outfileLD_25
+  End of processing: outfileLD_TEMP/outfileLD_12
+  End of processing: outfileLD_TEMP/outfileLD_21
+  End of processing: outfileLD_TEMP/outfileLD_19
+  End of processing: outfileLD_TEMP/outfileLD_30
+  End of processing: outfileLD_TEMP/outfileLD_28
+  End of processing: outfileLD_TEMP/outfileLD_9
+  End of processing: outfileLD_TEMP/outfileLD_10
+  End of processing: outfileLD_TEMP/outfileLD_36
+  End of processing: outfileLD_TEMP/outfileLD_39
+  End of processing: outfileLD_TEMP/outfileLD_13
+  End of processing: outfileLD_TEMP/outfileLD_40
+ END OF ALL PROCESSES
+GONE run took 446 seconds
+END OF ANALYSES
+DIVIDE .ped AND .map FILES IN CHROMOSOMES
+RUNNING ANALYSIS OF CHROMOSOMES ...
+CHROMOSOME ANALYSES took 377 seconds
+Running GONE
+  Start of processing: outfileLD_TEMP/outfileLD_10
+  Start of processing: outfileLD_TEMP/outfileLD_3
+  Start of processing: outfileLD_TEMP/outfileLD_9
+  Start of processing: outfileLD_TEMP/outfileLD_12
+  Start of processing: outfileLD_TEMP/outfileLD_4
+  Start of processing: outfileLD_TEMP/outfileLD_13
+  Start of processing: outfileLD_TEMP/outfileLD_15
+  Start of processing: outfileLD_TEMP/outfileLD_11
+  Start of processing: outfileLD_TEMP/outfileLD_6
+  Start of processing: outfileLD_TEMP/outfileLD_1
+  Start of processing: outfileLD_TEMP/outfileLD_5
+  Start of processing: outfileLD_TEMP/outfileLD_2
+  Start of processing: outfileLD_TEMP/outfileLD_14
+  Start of processing: outfileLD_TEMP/outfileLD_8
+  Start of processing: outfileLD_TEMP/outfileLD_7
+  Start of processing: outfileLD_TEMP/outfileLD_16
+  Start of processing: outfileLD_TEMP/outfileLD_17
+  Start of processing: outfileLD_TEMP/outfileLD_18
+  Start of processing: outfileLD_TEMP/outfileLD_19
+  Start of processing: outfileLD_TEMP/outfileLD_20
+  Start of processing: outfileLD_TEMP/outfileLD_21
+  Start of processing: outfileLD_TEMP/outfileLD_22
+  Start of processing: outfileLD_TEMP/outfileLD_23
+  Start of processing: outfileLD_TEMP/outfileLD_24
+  Start of processing: outfileLD_TEMP/outfileLD_25
+  Start of processing: outfileLD_TEMP/outfileLD_26
+  Start of processing: outfileLD_TEMP/outfileLD_27
+  Start of processing: outfileLD_TEMP/outfileLD_28
+  Start of processing: outfileLD_TEMP/outfileLD_29
+  Start of processing: outfileLD_TEMP/outfileLD_30
+  Start of processing: outfileLD_TEMP/outfileLD_31
+  Start of processing: outfileLD_TEMP/outfileLD_32
+  Start of processing: outfileLD_TEMP/outfileLD_33
+  Start of processing: outfileLD_TEMP/outfileLD_34
+  Start of processing: outfileLD_TEMP/outfileLD_35
+  Start of processing: outfileLD_TEMP/outfileLD_36
+  Start of processing: outfileLD_TEMP/outfileLD_37
+  Start of processing: outfileLD_TEMP/outfileLD_38
+  Start of processing: outfileLD_TEMP/outfileLD_39
+  Start of processing: outfileLD_TEMP/outfileLD_40
+  End of processing: outfileLD_TEMP/outfileLD_6
+  End of processing: outfileLD_TEMP/outfileLD_20
+  End of processing: outfileLD_TEMP/outfileLD_14
+  End of processing: outfileLD_TEMP/outfileLD_29
+  End of processing: outfileLD_TEMP/outfileLD_35
+  End of processing: outfileLD_TEMP/outfileLD_25
+  End of processing: outfileLD_TEMP/outfileLD_27
+  End of processing: outfileLD_TEMP/outfileLD_23
+  End of processing: outfileLD_TEMP/outfileLD_33
+  End of processing: outfileLD_TEMP/outfileLD_36
+  End of processing: outfileLD_TEMP/outfileLD_3
+  End of processing: outfileLD_TEMP/outfileLD_11
+  End of processing: outfileLD_TEMP/outfileLD_5
+  End of processing: outfileLD_TEMP/outfileLD_26
+  End of processing: outfileLD_TEMP/outfileLD_28
+  End of processing: outfileLD_TEMP/outfileLD_15
+  End of processing: outfileLD_TEMP/outfileLD_40
+  End of processing: outfileLD_TEMP/outfileLD_1
+  End of processing: outfileLD_TEMP/outfileLD_10
+  End of processing: outfileLD_TEMP/outfileLD_9
+  End of processing: outfileLD_TEMP/outfileLD_38
+  End of processing: outfileLD_TEMP/outfileLD_32
+  End of processing: outfileLD_TEMP/outfileLD_18
+  End of processing: outfileLD_TEMP/outfileLD_31
+  End of processing: outfileLD_TEMP/outfileLD_16
+  End of processing: outfileLD_TEMP/outfileLD_22
+  End of processing: outfileLD_TEMP/outfileLD_37
+  End of processing: outfileLD_TEMP/outfileLD_30
+  End of processing: outfileLD_TEMP/outfileLD_12
+  End of processing: outfileLD_TEMP/outfileLD_17
+  End of processing: outfileLD_TEMP/outfileLD_24
+  End of processing: outfileLD_TEMP/outfileLD_21
+  End of processing: outfileLD_TEMP/outfileLD_34
+  End of processing: outfileLD_TEMP/outfileLD_4
+  End of processing: outfileLD_TEMP/outfileLD_39
+  End of processing: outfileLD_TEMP/outfileLD_2
+  End of processing: outfileLD_TEMP/outfileLD_8
+  End of processing: outfileLD_TEMP/outfileLD_13
+  End of processing: outfileLD_TEMP/outfileLD_7
+  End of processing: outfileLD_TEMP/outfileLD_19
+ END OF ALL PROCESSES
+GONE run took 325 seconds
+END OF ANALYSES
+PLINK v1.90b6.21 64-bit (19 Oct 2020)          www.cog-genomics.org/plink/1.9/
+(C) 2005-2020 Shaun Purcell, Christopher Chang   GNU General Public License v3
+Logging to i5_split2_wgs_n100_c200.log.
+Options in effect:
+  --allow-extra-chr
+  --chr contig3, contig7, contig8, contig9, contig10, contig17, contig19, contig21, contig22, contig27, contig36, contig41, contig43, contig45, contig50, contig54, contig64, contig68, contig69, contig70, contig74, contig79, contig80, contig87, contig91, contig97, contig98, contig99, contig100, contig107, contig114, contig122, contig128, contig131, contig133, contig140, contig141, contig144, contig147, contig149, contig151, contig156, contig158, contig163, contig165, contig167, contig171, contig174, contig176, contig180, contig191, contig203, contig212, contig221, contig229, contig231, contig234, contig235, contig242, contig243, contig244, contig249, contig250, contig251, contig252, contig257, contig259, contig260, contig271, contig273, contig276, contig280, contig282, contig283, contig284, contig286, contig287, contig290, contig291, contig293, contig295, contig297, contig304, contig308, contig312, contig314, contig321, contig326, contig329, contig334, contig340, contig341, contig343, contig344, contig350, contig356, contig360, contig362, contig367, contig376, contig378, contig379, contig381, contig390, contig397, contig399, contig401, contig407, contig409, contig411, contig414, contig415, contig416, contig417, contig418, contig426, contig429, contig433, contig437, contig442, contig444, contig445, contig454, contig456, contig459, contig463, contig465, contig468, contig473, contig479, contig481, contig490, contig497, contig498, contig501, contig502, contig504, contig508, contig509, contig510, contig514, contig517, contig523, contig526, contig529, contig532, contig539, contig540, contig547, contig548, contig551, contig554, contig556, contig561, contig562, contig565, contig573, contig575, contig576, contig579, contig581, contig584, contig586, contig602, contig606, contig612, contig613, contig619, contig620, contig626, contig635, contig636, contig642, contig647, contig650, contig655, contig656, contig661, contig666, contig668, contig669, contig680, contig681, contig683, contig690, contig693, contig695, contig697, contig700, contig704, contig713, contig719, contig721, contig728, contig731, contig734, contig738, contig742, contig749,
+  --file i5_split2_wgs_n100_c_nomaf
+  --out i5_split2_wgs_n100_c200
+  --recode
+
+193099 MB RAM detected; reserving 96549 MB for main workspace.
+Scanning .ped file... 0%0%1%2%3%4%5%6%7%8%9%10%11%12%13%14%15%16%17%18%19%20%21%22%23%24%25%26%27%28%29%30%31%32%33%34%35%36%37%38%39%40%41%42%43%44%45%46%47%48%49%50%51%52%53%54%55%56%57%58%59%60%61%62%63%64%65%66%67%68%69%70%71%72%73%74%75%76%77%78%79%80%81%82%83%84%85%86%87%88%89%90%91%92%93%94%95%96%97%98%100%.ped scan complete (for binary autoconversion).
+Performing single-pass .bed write (81704 variants, 100 people).
+0%1%2%3%4%5%6%7%8%9%10%11%12%13%14%15%16%17%18%19%20%21%22%23%24%25%26%27%28%29%30%31%32%33%34%35%36%37%38%39%40%41%42%43%44%45%46%47%48%49%50%51%52%53%54%55%56%57%58%59%60%61%62%63%64%65%66%67%68%69%70%71%72%73%74%75%76%77%78%79%80%81%82%83%84%85%86%87%88%89%90%91%92%93%94%--file: i5_split2_wgs_n100_c200-temporary.bed +
+i5_split2_wgs_n100_c200-temporary.bim + i5_split2_wgs_n100_c200-temporary.fam
+written.
+81704 variants loaded from .bim file.
+100 people (0 males, 0 females, 100 ambiguous) loaded from .fam.
+Ambiguous sex IDs written to i5_split2_wgs_n100_c200.nosex .
+Using 1 thread (no multithreaded calculations invoked).
+Before main variant filters, 100 founders and 0 nonfounders present.
+Calculating allele frequencies... 0%1%2%3%4%5%6%7%8%9%10%11%12%13%14%15%16%17%18%19%20%21%22%23%24%25%26%27%28%29%30%31%32%33%34%35%36%37%38%39%40%41%42%43%44%45%46%47%48%49%50%51%52%53%54%55%56%57%58%59%60%61%62%63%64%65%66%67%68%69%70%71%72%73%74%75%76%77%78%79%80%81%82%83%84%85%86%87%88%89%90%91%92%93%94%95%96%97%98%99% done.
+81704 variants and 100 people pass filters and QC.
+Note: No phenotypes present.
+--recode ped to i5_split2_wgs_n100_c200.ped + i5_split2_wgs_n100_c200.map ...
+0%1%2%3%4%5%6%7%8%9%10%11%12%13%14%15%16%17%18%19%20%21%22%23%24%25%26%27%28%29%30%31%32%33%34%35%36%37%38%39%40%41%42%43%44%45%46%47%48%49%50%51%52%53%54%55%56%57%58%59%60%61%62%63%64%65%66%67%68%69%70%71%72%73%74%75%76%77%78%79%80%81%82%83%84%85%86%87%88%89%90%91%92%93%94%95%96%97%98%99%done.
+DIVIDE .ped AND .map FILES IN CHROMOSOMES
+RUNNING ANALYSIS OF CHROMOSOMES ...
+CHROMOSOME ANALYSES took 25 seconds
+Running GONE
+  Start of processing: outfileLD_TEMP/outfileLD_1
+  Start of processing: outfileLD_TEMP/outfileLD_2
+  Start of processing: outfileLD_TEMP/outfileLD_3
+  Start of processing: outfileLD_TEMP/outfileLD_4
+  Start of processing: outfileLD_TEMP/outfileLD_5
+  Start of processing: outfileLD_TEMP/outfileLD_6
+  Start of processing: outfileLD_TEMP/outfileLD_7
+  Start of processing: outfileLD_TEMP/outfileLD_8
+  Start of processing: outfileLD_TEMP/outfileLD_9
+  Start of processing: outfileLD_TEMP/outfileLD_10
+  Start of processing: outfileLD_TEMP/outfileLD_11
+  Start of processing: outfileLD_TEMP/outfileLD_12
+  Start of processing: outfileLD_TEMP/outfileLD_13
+  Start of processing: outfileLD_TEMP/outfileLD_14
+  Start of processing: outfileLD_TEMP/outfileLD_15
+  Start of processing: outfileLD_TEMP/outfileLD_16
+  Start of processing: outfileLD_TEMP/outfileLD_17
+  Start of processing: outfileLD_TEMP/outfileLD_18
+  Start of processing: outfileLD_TEMP/outfileLD_19
+  Start of processing: outfileLD_TEMP/outfileLD_20
+  Start of processing: outfileLD_TEMP/outfileLD_21
+  Start of processing: outfileLD_TEMP/outfileLD_22
+  Start of processing: outfileLD_TEMP/outfileLD_23
+  Start of processing: outfileLD_TEMP/outfileLD_24
+  Start of processing: outfileLD_TEMP/outfileLD_25
+  Start of processing: outfileLD_TEMP/outfileLD_26
+  Start of processing: outfileLD_TEMP/outfileLD_27
+  Start of processing: outfileLD_TEMP/outfileLD_28
+  Start of processing: outfileLD_TEMP/outfileLD_29
+  Start of processing: outfileLD_TEMP/outfileLD_30
+  Start of processing: outfileLD_TEMP/outfileLD_31
+  Start of processing: outfileLD_TEMP/outfileLD_32
+  Start of processing: outfileLD_TEMP/outfileLD_33
+  Start of processing: outfileLD_TEMP/outfileLD_34
+  Start of processing: outfileLD_TEMP/outfileLD_35
+  Start of processing: outfileLD_TEMP/outfileLD_36
+  Start of processing: outfileLD_TEMP/outfileLD_37
+  Start of processing: outfileLD_TEMP/outfileLD_38
+  Start of processing: outfileLD_TEMP/outfileLD_39
+  Start of processing: outfileLD_TEMP/outfileLD_40
+  End of processing: outfileLD_TEMP/outfileLD_29
+  End of processing: outfileLD_TEMP/outfileLD_3
+  End of processing: outfileLD_TEMP/outfileLD_23
+  End of processing: outfileLD_TEMP/outfileLD_11
+  End of processing: outfileLD_TEMP/outfileLD_18
+  End of processing: outfileLD_TEMP/outfileLD_12
+  End of processing: outfileLD_TEMP/outfileLD_8
+  End of processing: outfileLD_TEMP/outfileLD_34
+  End of processing: outfileLD_TEMP/outfileLD_14
+  End of processing: outfileLD_TEMP/outfileLD_26
+  End of processing: outfileLD_TEMP/outfileLD_19
+  End of processing: outfileLD_TEMP/outfileLD_21
+  End of processing: outfileLD_TEMP/outfileLD_1
+  End of processing: outfileLD_TEMP/outfileLD_39
+  End of processing: outfileLD_TEMP/outfileLD_35
+  End of processing: outfileLD_TEMP/outfileLD_38
+  End of processing: outfileLD_TEMP/outfileLD_24
+  End of processing: outfileLD_TEMP/outfileLD_40
+  End of processing: outfileLD_TEMP/outfileLD_13
+  End of processing: outfileLD_TEMP/outfileLD_4
+  End of processing: outfileLD_TEMP/outfileLD_27
+  End of processing: outfileLD_TEMP/outfileLD_15
+  End of processing: outfileLD_TEMP/outfileLD_22
+  End of processing: outfileLD_TEMP/outfileLD_9
+  End of processing: outfileLD_TEMP/outfileLD_10
+  End of processing: outfileLD_TEMP/outfileLD_32
+  End of processing: outfileLD_TEMP/outfileLD_30
+  End of processing: outfileLD_TEMP/outfileLD_17
+  End of processing: outfileLD_TEMP/outfileLD_6
+  End of processing: outfileLD_TEMP/outfileLD_20
+  End of processing: outfileLD_TEMP/outfileLD_33
+  End of processing: outfileLD_TEMP/outfileLD_16
+  End of processing: outfileLD_TEMP/outfileLD_25
+  End of processing: outfileLD_TEMP/outfileLD_36
+  End of processing: outfileLD_TEMP/outfileLD_37
+  End of processing: outfileLD_TEMP/outfileLD_28
+  End of processing: outfileLD_TEMP/outfileLD_5
+  End of processing: outfileLD_TEMP/outfileLD_31
+  End of processing: outfileLD_TEMP/outfileLD_2
+  End of processing: outfileLD_TEMP/outfileLD_7
+ END OF ALL PROCESSES
+GONE run took 331 seconds
+END OF ANALYSES
