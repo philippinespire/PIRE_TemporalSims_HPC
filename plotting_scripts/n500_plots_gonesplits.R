@@ -110,3 +110,38 @@ p + geom_point(shape=16,col="green") +
   scale_y_log10(limits=c(0.1,162))
 
 ggsave("plots/gonesplit_NeC_violin_revised0429.pdf",device="pdf")
+
+
+### nec + neh together
+
+gonesplit1=gonesplit_comp
+
+gonesplit2=gonesplit_comp
+
+gonesplit1$metric="NEH"
+gonesplit2$metric="NEC"
+gonesplit1$Nerat=gonesplit1$NeHrat
+gonesplit2$Nerat=gonesplit2$NeCrat
+
+gonesplit12=rbind(gonesplit1,gonesplit2)
+
+gonesplit12$metric=factor(gonesplit12$metric,levels=c("NEH","NEC"))
+
+p <- ggplot(gonesplit12,aes(y=Nerat, x=chromo, fill=metric)) 
+p+ geom_hline(yintercept=1,linetype="dashed",col="gray") + geom_violin(position=position_dodge(width=0.5),scale="width", width=0.3, alpha=0.8,trim="false") +
+#  scale_color_manual(values=c("Two Samples"="purple"))+
+  scale_fill_manual(values=c("NEH"="black","NEC"="white"))+
+  ylab(expression(paste(hat(N)["E"],'/N'["E"]))) +
+  xlab("") +
+  facet_wrap(~sampn) +
+  scale_y_log10(limits=c(0.01,500)) +
+  theme_bw() +
+  theme(legend.position="none") +
+  ggtitle("GONE accuracy under different chromosome assembly schemes")
+
+ggsave("plots/gonesplits_NeHCrat_050922.pdf",device="pdf")
+
+
+#451946
+
+#shamalahamala22!

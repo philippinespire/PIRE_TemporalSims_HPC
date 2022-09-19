@@ -413,8 +413,28 @@ momiconf %>%
   facet_wrap(~sampn)
 ggsave("plots/momi_confusion_rad50k10k_exp_4mods.pdf",device="pdf")
 
+### fixed colors/etx
+momiconf %>%
+  #  filter(data!="rad10k") %>%
+  group_by(data,DeclineScenario) %>%
+  dplyr::summarize(Correct=sum(correct=="Correct")/0.45) %>%
+  ggplot(aes(data,DeclineScenario,fill=Correct)) +
+  geom_tile() +
+  ggtitle("momi2 model selection accuracy, historic expansion") +
+  scale_fill_gradientn(colours=rev(pal),limits=c(0,100),name="% Correct") +
+  scale_x_discrete(labels=c("10K RAD loci","50K RAD loci","WGS")) +
+  theme_bw() +
+  theme(plot.margin = unit(c(1, 1, 1, 6.5), "lines"), axis.title.x=element_blank(),axis.title.y=element_blank(),axis.text.y=element_blank())+
+  coord_cartesian(xlim = c(1, 3), clip = "off") +
+  annotate(geom = "text",y=c(3.85,3.7,3,2,1),x=0.2,label=c("Decline","Length","30","120","0"),size=4) +
+  annotate(geom = "text",y=c(3.8,3,2,1),x=-0.12,label=c(expression(lambda),"0.95","0.99","1"),size=4) +
+  annotate(geom = "segment", x=0.02,xend=0.02,y=0.5,yend=4) +
+  annotate(geom = "segment", x=-0.2,xend=0.38,y=3.5,yend=3.5)
+
+ggsave("plots/momi_confusion_exp.pdf",device="pdf")
+
 #### do bottleneck
-#### no historic-only change!!
+#### with historic-only change!!
 
 momiconf=read.csv(file="inferences/momi_nomaf_data_4mods_bot_deltaAIC.csv",head=TRUE)
 
@@ -500,6 +520,27 @@ momiconf %>%
   theme(axis.text.x = element_text(angle = 15))+
   facet_wrap(~sampn)
 ggsave("plots/momi_confusion_rad50k10k_bot_4mods.pdf",device="pdf")
+
+### fixed colors/etx
+momiconf %>%
+  #  filter(data!="rad10k") %>%
+  group_by(data,DeclineScenario) %>%
+  dplyr::summarize(Correct=sum(correct=="Correct")/0.45) %>%
+  ggplot(aes(data,DeclineScenario,fill=Correct)) +
+  geom_tile() +
+  ggtitle("momi2 model selection accuracy, historic bottleneck") +
+  scale_fill_gradientn(colours=rev(pal),limits=c(0,100),name="% Correct") +
+  scale_x_discrete(labels=c("10K RAD loci","50K RAD loci","WGS")) +
+  theme_bw() +
+  theme(plot.margin = unit(c(1, 1, 1, 6.5), "lines"), axis.title.x=element_blank(),axis.title.y=element_blank(),axis.text.y=element_blank())+
+  coord_cartesian(xlim = c(1, 3), clip = "off") +
+  annotate(geom = "text",y=c(3.85,3.7,3,2,1),x=0.2,label=c("Decline","Length","30","120","0"),size=4) +
+  annotate(geom = "text",y=c(3.8,3,2,1),x=-0.12,label=c(expression(lambda),"0.95","0.99","1"),size=4) +
+  annotate(geom = "segment", x=0.02,xend=0.02,y=0.5,yend=4) +
+  annotate(geom = "segment", x=-0.2,xend=0.38,y=3.5,yend=3.5)
+
+ggsave("plots/momi_confusion_bot.pdf",device="pdf")
+
 
 #### do singleton
 #### we don't need this - for all singletons change is selected!!
@@ -817,3 +858,74 @@ neestinf %>%
   xlab("Number of samples")
 
 ggsave("plots/neestinf_NeC_rad10k10k.pdf",device="pdf")
+
+
+
+#### lumping over scenarios
+
+neestinf=read.csv(file="inferences/LDNeoutall.csv",head=TRUE)
+
+neestinf$td=gsub("100","120Gens",neestinf$td)
+neestinf$td=gsub("130","90Gens",neestinf$td)
+neestinf$td=gsub("160","60Gens",neestinf$td)
+neestinf$td=gsub("190","30Gens",neestinf$td)
+
+neestinf$l=gsub("99","Slow",neestinf$l)
+neestinf$l=gsub("95","Fast",neestinf$l)
+
+neestinf %>% 
+  filter(scheme == "2samp") %>%
+  filter(maf == 0.05) %>% 
+  unite("DeclineScenario",td,l) -> neestinf
+
+neestinf$DeclineScenario=gsub("constant_constant","Constant",neestinf$DeclineScenario)
+neestinf$DeclineScenario=gsub("30Gens_Slow","Slow Decline,30 Generations",neestinf$DeclineScenario)
+neestinf$DeclineScenario=gsub("60Gens_Slow","Slow Decline,60 Generations",neestinf$DeclineScenario)
+neestinf$DeclineScenario=gsub("90Gens_Slow","Slow Decline,90 Generations",neestinf$DeclineScenario)
+neestinf$DeclineScenario=gsub("120Gens_Slow","Slow Decline,120 Generations",neestinf$DeclineScenario)
+neestinf$DeclineScenario=gsub("30Gens_Fast","Fast Decline,30 Generations",neestinf$DeclineScenario)
+neestinf$DeclineScenario=factor(neestinf$DeclineScenario,levels=c("Constant","Slow Decline,30 Generations","Slow Decline,60 Generations","Slow Decline,90 Generations","Slow Decline,120 Generations","Fast Decline,30 Generations"))
+
+neestinf$nsamp=gsub("50","n = 50",neestinf$nsamp)
+neestinf$nsamp=gsub("100","n = 100",neestinf$nsamp)
+neestinf$nsamp=gsub("200","n = 200",neestinf$nsamp)
+neestinf$sampn=factor(neestinf$nsamp,levels=c("n = 20","n = 50","n = 100","n = 200"))
+
+neestinf$nhist=as.factor(neestinf$nhist/10)
+
+titulo=expression(paste('Proportion ',N["E,H"],' estimates infinite'))
+neestinf %>%
+  #  filter(nloc=="10k") %>%
+  filter(timepoint=="t120") %>% 
+  #  filter(nhist==100000) %>%
+  group_by(sampn,nhist) %>%
+  dplyr::summarize(nInfinite=sum(Ne=="Infinite")) %>%
+  mutate(Infinite=nInfinite/0.6) %>% 
+  ggplot(aes(sampn,nhist,fill=Infinite)) +
+  geom_tile() +
+  ggtitle(titulo) +
+  scale_fill_gradientn(colours=pal,limits=c(0,100),name="% Infinite Estimates") +
+  xlab("Number of samples") +
+  ylab(expression(N["E,H"])) +
+  theme_bw()
+
+ggsave("plots/neestinf_NeH_all.pdf",device="pdf")
+
+titulo=expression(paste('Proportion ',N["E,C"],' estimates infinite'))
+neestinf %>%
+  #  filter(nloc=="10k") %>%
+  filter(timepoint=="t0") %>% 
+  #  filter(nhist==100000) %>%
+  group_by(sampn,nhist) %>%
+  dplyr::summarize(nInfinite=sum(Ne=="Infinite")) %>%
+  mutate(Infinite=nInfinite/0.6) %>% 
+  ggplot(aes(sampn,nhist,fill=Infinite)) +
+  geom_tile() +
+  ggtitle(titulo) +
+  scale_fill_gradientn(colours=pal,limits=c(0,100),name="% Infinite Estimates") +
+  xlab("Number of samples") +
+  ylab(expression(N["E,H"])) +
+  theme_bw()
+
+ggsave("plots/neestinf_NeC_all.pdf",device="pdf")
+

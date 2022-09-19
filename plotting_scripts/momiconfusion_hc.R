@@ -501,6 +501,28 @@ momiconf %>%
   facet_wrap(~sampn)
 ggsave("plots/momi_confusion_rad50k10k_bot.pdf",device="pdf")
 
+
+### fixed colors/etx
+momiconf %>%
+  #  filter(data!="rad10k") %>%
+  group_by(data,DeclineScenario) %>%
+  dplyr::summarize(Correct=sum(correct=="Correct")/0.45) %>%
+  ggplot(aes(data,DeclineScenario,fill=Correct)) +
+  geom_tile() +
+  ggtitle("momi2 model selection accuracy, historic bottleneck") +
+  scale_fill_gradientn(colours=rev(pal),limits=c(0,100),name="% Correct") +
+  scale_x_discrete(labels=c("10K RAD loci","50K RAD loci","WGS")) +
+  theme_bw() +
+  theme(plot.margin = unit(c(1, 1, 1, 7), "lines"), axis.title.x=element_blank(),axis.title.y=element_blank(),axis.text.y=element_blank())+
+  coord_cartesian(xlim = c(1, 3), clip = "off") +
+  annotate(geom = "text",y=c(7,6.7,6,5,4,3,2,1),x=0.2,label=c("Decline","Length","30","120","90","60","30","0"),size=4) +
+  annotate(geom = "text",y=c(6.8,6,5,4,3,2,1),x=-0.12,label=c(expression(lambda),"0.95","0.99","0.99","0.99","0.99","1"),size=4) +
+  annotate(geom = "segment", x=0.02,xend=0.02,y=0.5,yend=7.2) +
+  annotate(geom = "segment", x=-0.2,xend=0.38,y=6.5,yend=6.5)
+
+ggsave("plots/momi_confusion_bot.pdf",device="pdf")
+
+
 #### do singleton
 #### we don't need this - for all singletons change is selected!!
 
@@ -649,6 +671,72 @@ momiconf %>%
   scale_fill_gradient(low="red",high="blue",limits=c(0,5)) +
   scale_x_discrete(labels=c("Serial","Two Samples","Contemporary")) +
   facet_wrap(~sampn)
+
+
+####### one to rule them all
+
+#titulo=expression(paste('WGS, Ancestral ',N[E],' = 1k'))
+momiconf %>%
+  filter(data!="rad10k") %>%
+#  filter(NeAnc=="n10e3") %>%
+  group_by(data,DeclineScenario) %>%
+  dplyr::summarize(Correct=sum(correct=="Correct")) %>%
+  ggplot(aes(data,DeclineScenario,fill=Correct)) +
+  geom_tile() +
+  ggtitle("momi2 model selection accuracy") +
+  scale_fill_gradient(low="red",high="blue",limits=c(0,90)) +
+  scale_x_discrete(labels=c("50K RAD loci","WGS")) +
+  theme_bw()
+#  theme(axis.text.x = element_text(angle = 15))+
+#  facet_wrap(~sampn)
+ggsave("plots/momi_confusion_all.pdf",device="pdf")
+
+##### fixing y labels + colors
+
+install.packages("wesanderson")
+library("wesanderson")
+
+pal <- wes_palette("Zissou1", 100, type = "continuous")
+
+momiconf %>%
+  filter(data!="rad10k") %>%
+  group_by(data,DeclineScenario) %>%
+  dplyr::summarize(Correct=sum(correct=="Correct")/0.9) %>%
+  ggplot(aes(data,DeclineScenario,fill=Correct)) +
+  geom_tile() +
+  ggtitle("momi2 model selection accuracy") +
+  scale_fill_gradientn(colours=rev(pal),limits=c(0,100),name="% Correct") +
+  scale_x_discrete(labels=c("50K RAD loci","WGS")) +
+  theme_bw() +
+  theme(plot.margin = unit(c(1, 1, 1, 6), "lines"), axis.title.x=element_blank(),axis.title.y=element_blank(),axis.text.y=element_blank())+
+  coord_cartesian(xlim = c(1, 2), clip = "off") +
+  annotate(geom = "text",y=c(7,6.7,6,5,4,3,2,1),x=0.2,label=c("Decline","Length","30","120","90","60","30","0"),size=4) +
+  annotate(geom = "text",y=c(6.8,6,5,4,3,2,1),x=-0.12,label=c(expression(lambda),"0.95","0.99","0.99","0.99","0.99","1"),size=4) +
+  annotate(geom = "segment", x=0.02,xend=0.02,y=0.5,yend=7.2) +
+  annotate(geom = "segment", x=-0.2,xend=0.38,y=6.5,yend=6.5)
+
+ggsave("plots/momi_confusion_all.pdf",device="pdf",width=6,height=5)
+
+### with 10k RAD
+
+momiconf %>%
+#  filter(data!="rad10k") %>%
+  group_by(data,DeclineScenario) %>%
+  dplyr::summarize(Correct=sum(correct=="Correct")/0.9) %>%
+  ggplot(aes(data,DeclineScenario,fill=Correct)) +
+  geom_tile() +
+  ggtitle("momi2 model selection accuracy") +
+  scale_fill_gradientn(colours=rev(pal),limits=c(0,100),name="% Correct") +
+  scale_x_discrete(labels=c("10K RAD loci","50K RAD loci","WGS")) +
+  theme_bw() +
+  theme(plot.margin = unit(c(1, 1, 1, 7), "lines"), axis.title.x=element_blank(),axis.title.y=element_blank(),axis.text.y=element_blank())+
+  coord_cartesian(xlim = c(1, 3), clip = "off") +
+  annotate(geom = "text",y=c(7,6.7,6,5,4,3,2,1),x=0.2,label=c("Decline","Length","30","120","90","60","30","0"),size=4) +
+  annotate(geom = "text",y=c(6.8,6,5,4,3,2,1),x=-0.12,label=c(expression(lambda),"0.95","0.99","0.99","0.99","0.99","1"),size=4) +
+  annotate(geom = "segment", x=0.02,xend=0.02,y=0.5,yend=7.2) +
+  annotate(geom = "segment", x=-0.2,xend=0.38,y=6.5,yend=6.5)
+
+ggsave("plots/momi_confusion_10k.pdf",device="pdf")
 
 
 

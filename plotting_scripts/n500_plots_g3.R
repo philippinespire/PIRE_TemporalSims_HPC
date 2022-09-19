@@ -2,7 +2,8 @@ library(tidyverse)
 library(ggplot2)
 library(plyr)
 
-tru=read.csv("/Users/nerdbrained/Desktop/Rutger/slimulations/forwardslims_4manuscript/n500_inferences/truvalue.csv",header=T)
+#tru=read.csv("/Users/nerdbrained/Desktop/Rutger/slimulations/forwardslims_4manuscript/n500_inferences/truvalue.csv",header=T)
+tru=read.csv("inferences/truvalue.csv",header=T)
 tru$scen=paste(tru$NeAnc,tru$td,tru$lambda)
 
 momidat_basic=read.csv("inferences/momi_nomaf_data_deltaAIC.csv",header=T)
@@ -29,6 +30,7 @@ gonedat_basic$NeHrat <- gonedat_basic$Neh/gonedat_basic$trueNeH
 gonedat_basic$NeCrat <- gonedat_basic$Nec/gonedat_basic$trueNeC
 gonedat_basic$gentime="G=1"
 gonedat_basic$method="GONE"
+gonedat_basic$scheme="t0"
 
 stairdat_basic=read.csv("inferences/stairwaydata.csv",header=T)
 stairdat_basic$scen=paste(stairdat_basic$NeAnc,stairdat_basic$td,stairdat_basic$lambda)
@@ -40,6 +42,7 @@ stairdat_basic$NeHrat <- stairdat_basic$Neh/stairdat_basic$trueNeH
 stairdat_basic$NeCrat <- stairdat_basic$Nec/stairdat_basic$trueNeC
 stairdat_basic$gentime="G=1"
 stairdat_basic$method="Stairway"
+stairdat_basic$scheme="t0"
 
 momidat_g3=read.csv("inferences/momi_nomaf_data_g3_deltaAIC.csv",header=T)
 momidat_g3$Neh_best=ifelse(momidat_g3$delta<0,momidat_g3$Neh,momidat_g3$Neh_change)
@@ -65,6 +68,7 @@ gonedat_g3$NeHrat <- gonedat_g3$Neh/gonedat_g3$trueNeH
 gonedat_g3$NeCrat <- gonedat_g3$Nec/gonedat_g3$trueNeC
 gonedat_g3$gentime="G=3"
 gonedat_g3$method="GONE"
+gonedat_g3$scheme="t0"
 
 stairdat_g3=read.csv("inferences/stairwaydata_g3.csv",header=T)
 stairdat_g3$scen=paste(stairdat_g3$NeAnc,stairdat_g3$td,stairdat_g3$lambda)
@@ -76,6 +80,7 @@ stairdat_g3$NeHrat <- stairdat_g3$Neh/stairdat_g3$trueNeH
 stairdat_g3$NeCrat <- stairdat_g3$Nec/stairdat_g3$trueNeC
 stairdat_g3$gentime="G=3"
 stairdat_g3$method="Stairway"
+stairdat_g3$scheme="t0"
 
 momidat_basic %>% 
   filter(!grepl('td130|td160|td190 l99',scen)) %>% 
@@ -135,3 +140,75 @@ p + geom_point(shape=16,col=g3comp$col) + xlab("Method") + ylab(expression(paste
 
 ggsave("plots/g3_NeC_violin.pdf",device="pdf")
 
+
+
+###contemp-only
+
+g3comp %>% filter(scheme=="t0") -> g3compc
+
+g3comp1=g3compc
+
+g3comp2=g3compc
+
+g3comp1$metric="NEH"
+g3comp2$metric="NEC"
+g3comp1$Nerat=g3comp1$NeHrat
+g3comp2$Nerat=g3comp2$NeCrat
+
+g3comp12=rbind(g3comp1,g3comp2)
+
+g3comp12$metric=factor(g3comp12$metric,levels=c("NEH","NEC"))
+
+p <- ggplot(g3comp12,aes(y=Nerat, x=methcomb, fill=metric, colour=scheme)) 
+p+ geom_hline(yintercept=1,linetype="dashed",col="gray") + geom_violin(position=position_dodge(width=0.5),scale="width", width=0.3, alpha=0.8,trim="false") +
+  scale_color_manual(values=c("t0"="black"))+
+  scale_fill_manual(values=c("NEH"="black","NEC"="white"))+
+  ylab(expression(paste(hat(N)["E"],'/N'["E"]))) +
+  xlab("") +
+  facet_wrap(~gentime) +
+  # facet_grid(cols=vars(method),rows=vars(data)) +
+  scale_y_log10(limits=c(0.001,300000)) +
+  theme_bw() +
+  theme(legend.position="none") +
+  ggtitle("")
+
+ggsave("plots/gentime_NeHCrat_050922.pdf",device="pdf")
+
+
+###momi schemes
+
+g3comp %>% filter(methcomb=="momi2/RAD") -> g3compc
+
+g3comp1=g3compc
+
+g3comp2=g3compc
+
+g3comp1$metric="NEH"
+g3comp2$metric="NEC"
+g3comp1$Nerat=g3comp1$NeHrat
+g3comp2$Nerat=g3comp2$NeCrat
+
+g3comp12=rbind(g3comp1,g3comp2)
+
+g3comp12$metric=factor(g3comp12$metric,levels=c("NEH","NEC"))
+
+g3comp12$scheme=gsub("t0t120","Two Samples",g3comp12$scheme)
+g3comp12$scheme=gsub("t0","Contemporary Only",g3comp12$scheme)
+g3comp12$scheme=gsub("all","Serial Sampling",g3comp12$scheme)
+
+g3comp12$scheme=factor(g3comp12$scheme,levels=c("Contemporary Only","Two Samples","Serial Sampling"))
+
+p <- ggplot(g3comp12,aes(y=Nerat, x=scheme, fill=metric)) 
+p+ geom_hline(yintercept=1,linetype="dashed",col="gray") + geom_violin(position=position_dodge(width=0.5),scale="width", width=0.3, alpha=0.8,trim="false") +
+#  scale_color_manual(values=c("Contem"="black","t0t120"="black",""))+
+  scale_fill_manual(values=c("NEH"="black","NEC"="white"))+
+  ylab(expression(paste(hat(N)["E"],'/N'["E"]))) +
+  xlab("") +
+  facet_wrap(~gentime) +
+  # facet_grid(cols=vars(method),rows=vars(data)) +
+  scale_y_log10(limits=c(0.05,800)) +
+  theme_bw() +
+  theme(legend.position="none") +
+  ggtitle("")
+
+ggsave("plots/gentime_NeHCrat_momischemes_050922.pdf",device="pdf")
