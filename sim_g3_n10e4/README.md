@@ -1,5 +1,5 @@
 # Simulation scripts
-These scripts are written to perform simulations of a variety of demographic scenarios (constant population size, recent declines, ancient expansions or declines) for a population with a historical size (at 120 years before present) of 10e4 and a generation time of 1.
+These scripts are written to perform simulations of a variety of demographic scenarios (constant population size, recent declines, ancient expansions or declines) for a population with a historical size (at 120 years before present) of 10e4 and a generation time of 3.
 
 Scripts require a SLiM executable (written for SLiM v.3.0), Python, and msprime.
 
