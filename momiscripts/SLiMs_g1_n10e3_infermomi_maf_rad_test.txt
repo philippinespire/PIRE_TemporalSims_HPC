@@ -1,2 +1,0 @@
-slurmstepd: error: *** JOB 12847525 ON hal0181 CANCELLED AT 2021-05-27T13:41:47 DUE TO TIME LIMIT ***
-slurmstepd: error: Detected 8 oom-kill event(s) in step 12847525.batch cgroup. Some of your processes may have been killed by the cgroup out-of-memory handler.
