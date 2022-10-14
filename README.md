@@ -1,13 +1,13 @@
 # PIRE_TemporalSims_HPC
-Scripts for simulating recent demographic declines and running inferences on simulated data (writtenfor Rutgers' Amarel cluster)
+Scripts for simulating recent demographic declines and running inferences on simulated datasets (written for Rutgers' Amarel cluster) and plotting results with R.
 
-[pardon the mess - this is a work in progress!]
+This Github rep accompanies Reid & Pinsky 2022. Simulation-Based Evaluation of Methods, Data Types, and Temporal Sampling Schemes for Detecting Recent Population Declines. _Integrative and Comparative Biology_, icac144, https://doi.org/10.1093/icb/icac144.
 
-The basic workflow for generating data (scripts in the n10e3 folder) is:
-1) generate 5 pedigrees (= population replicates) for each scenario using SLiM (over the past 220 years)
-2) generate tree sequences for 25 chromosomes for each population replicate, with the pedigree fixed for each, using SLiM
-3) "recapitate" the tree sequences using pyslim and msmc - this will "finish" the tree using the coalescent
-4) add mutations to the tree
-5) generate VCF output files with different subsampling schemes
+The basic workflow used to perform the analyses described in the manuscript is as follows:
 
-The momiscripts/stairscripts/gonescripts folders contain scripts for post-processing the VCF files and efficiently running inferences on them.
+1) Perform demographic simulations and generate genotype (.vcf) files for whole simulated genomes using scripts found in the `sim_*` directories. These scripts are written to simulate population sizes (n) of either 10e3 or 10e4 using a generation time (g) of either 1 or 3.
+2) Filter the VCF files to generate datasets with different sample sizes and numbers of loci using scripts in the `filterscripts` directory.
+3) Perform inferences using the four methods evaluated in the manuscript (momi2, Stairway Plot, GONE, and NeEstimator) using scripts in the corresponding directories. Inferences from simulated datasets are found in the `inferences` directory.
+4) Plot results using R in the scripts found in the `plotting_scripts` directory.
+
+Additional details on running the scripts can be found in the `README.md` files within each directory.
