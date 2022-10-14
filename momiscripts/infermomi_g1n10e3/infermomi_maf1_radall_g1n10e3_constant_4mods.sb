@@ -1,0 +1,13 @@
+#!/bin/bash
+#SBATCH --nodes 1
+#SBATCH --ntasks-per-node 15
+#SBATCH --time 48:00:00
+#SBATCH --mem-per-cpu 4000
+#SBATCH --job-name SLiMs_g1_n10e3_constant_infermomi_maf1_radall_4mods
+#SBATCH --output SLiMs_g1_n10e3_constant_infermomi_maf1_radall_4mods.txt
+
+source ~/anaconda3/etc/profile.d/conda.sh
+
+conda activate momi-env
+
+python3 infermomi_maf1_radall_g1n10e3_constant_4mods.py

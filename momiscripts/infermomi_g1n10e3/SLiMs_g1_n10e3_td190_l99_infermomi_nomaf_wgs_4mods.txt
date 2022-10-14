@@ -1,0 +1,1 @@
+slurmstepd: error: *** JOB 20975182 ON slepner084 CANCELLED AT 2022-07-21T06:59:23 ***

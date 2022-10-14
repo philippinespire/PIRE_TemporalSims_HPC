@@ -1,0 +1,3 @@
+slurmstepd: error: *** STEP 15713756.0 ON hal0186 CANCELLED AT 2021-10-22T10:36:09 ***
+srun: Job step aborted: Waiting up to 32 seconds for job step to finish.
+slurmstepd: error: *** JOB 15713756 ON hal0186 CANCELLED AT 2021-10-22T10:36:09 ***

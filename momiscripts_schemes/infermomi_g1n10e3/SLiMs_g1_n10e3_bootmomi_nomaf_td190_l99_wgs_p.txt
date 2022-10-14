@@ -1,2 +1,0 @@
-slurmstepd: error: *** JOB 15453687 ON hal0181 CANCELLED AT 2021-10-13T18:41:12 ***
-slurmstepd: error: Detected 26 oom-kill event(s) in step 15453687.batch cgroup. Some of your processes may have been killed by the cgroup out-of-memory handler.

@@ -1,0 +1,2 @@
+slurmstepd: error: *** JOB 17709783 ON hal0036 CANCELLED AT 2022-02-23T08:31:05 ***
+slurmstepd: error: *** JOB 17718428 ON slepner064 CANCELLED AT 2022-02-23T14:17:15 ***

@@ -1,2 +1,0 @@
-slurmstepd: error: *** JOB 13050419 ON slepner079 CANCELLED AT 2021-06-09T07:01:34 ***
-slurmstepd: error: Detected 23 oom-kill event(s) in step 13050419.batch cgroup. Some of your processes may have been killed by the cgroup out-of-memory handler.

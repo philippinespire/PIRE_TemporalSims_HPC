@@ -1,1 +1,0 @@
-slurmstepd: error: *** JOB 17081511 ON hal0181 CANCELLED AT 2021-12-17T14:15:52 ***

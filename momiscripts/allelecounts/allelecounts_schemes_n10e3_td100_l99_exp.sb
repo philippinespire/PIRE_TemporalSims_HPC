@@ -1,0 +1,14 @@
+#!/bin/bash
+#SBATCH --nodes 1
+#SBATCH --ntasks-per-node 15
+#SBATCH --partition p_mlp195
+#SBATCH --time 8:00:00
+#SBATCH --mem-per-cpu 4000
+#SBATCH --job-name SLiMs_allelecount_n10e3_td100_l99_exp
+#SBATCH --output SLiMs_allelecount_n10e3_td100_l99_exp.txt
+
+source ~/anaconda3/etc/profile.d/conda.sh
+
+conda activate momi-env
+
+python3 allelecounts_schemes_n10e3_td100_l99_exp.py
